@@ -5,35 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
   <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/jquery.mobile.min.js"></script>
 </head>
 <body>
-  <div data-role="page">
+  <div data-role="page" data-theme="c">
 
     <div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="push"></div>
 
-    <div data-role="header">
+    <div data-role="header"  data-theme="a">
       <a data-iconpos="notext" data-role="button" data-icon="home" title="Home">Home</a>
       <h1>A</h1>
-      <a data-iconpos="notext" href="#panel" data-role="button" data-icon="flat-menu"></a>
+      <a data-iconpos="notext" href="#panel" data-role="button" data-icon="bars"></a>
     </div>
 
     <div data-role="content" role="main">
       <p>Sample text and <a href="#">links</a>.</p>
       <fieldset class="ui-grid-a">
-        <div class="ui-block-a"><button data-icon="flat-settings" data-theme="a">Button A</button></div>
-        <div class="ui-block-b"><button data-icon="flat-new" data-theme="b">Button B</button></div>
+        <div class="ui-block-a"><button data-icon="gear" data-theme="a">Button A</button></div>
+        <div class="ui-block-b"><button data-icon="edit" data-theme="b">Button B</button></div>
       </fieldset>
       <fieldset class="ui-grid-a">
-        <div class="ui-block-a"><button data-icon="flat-man" data-theme="c">Button C</button></div>
-        <div class="ui-block-b"><button data-icon="flat-mail" data-theme="d">Button D</button></div>
+        <div class="ui-block-a"><button data-icon="user" data-theme="c">Button C</button></div>
+        <div class="ui-block-b"><button data-icon="mail" data-theme="d">Button D</button></div>
       </fieldset>
       <fieldset class="ui-grid-a">
-        <div class="ui-block-a"><button data-icon="flat-lock" data-theme="e">Button E</button></div>
-        <div class="ui-block-b"><button data-icon="flat-menu" data-theme="f">Button F</button></div>
+        <div class="ui-block-a"><button data-icon="lock" data-theme="e">Button E</button></div>
+        <div class="ui-block-b"><button data-icon="bars" data-theme="f">Button F</button></div>
       </fieldset>
       <fieldset class="ui-grid-a">
-        <div class="ui-block-a"><button data-icon="flat-heart" data-theme="g">Button G</button></div>
+        <div class="ui-block-a"><button data-icon="heart" data-theme="g">Button G</button></div>
       </fieldset>
 
       <ul data-role="listview" data-inset="true">
@@ -43,15 +43,15 @@
       </ul>
 
       <div data-role="collapsible-set" data-theme="b" data-content-theme="b">
-        <div data-role="collapsible" data-collapsed-icon="flat-time" data-expanded-icon="flat-cross" data-collapsed="false">
+        <div data-role="collapsible" data-collapsed-icon="tag" data-expanded-icon="delete" data-collapsed="false">
           <h3>Section 1</h3>
           <p>I'm the collapsible content for section 1</p>
         </div>
-        <div data-role="collapsible" data-collapsed-icon="flat-calendar" data-expanded-icon="flat-cross">
+        <div data-role="collapsible" data-collapsed-icon="calendar" data-expanded-icon="delete">
           <h3>Section 2</h3>
           <p>I'm the collapsible content for section 2</p>
         </div>
-        <div data-role="collapsible" data-collapsed-icon="flat-settings" data-expanded-icon="flat-cross">
+        <div data-role="collapsible" data-collapsed-icon="gear" data-expanded-icon="delete">
           <h3>Section 3</h3>
           <p>I'm the collapsible content for section 3</p>
         </div>
@@ -62,6 +62,10 @@
           <input type="radio" name="radio-choice-a" data-theme="c" id="radio-choice-1-a" value="choice-1" checked="checked" />
           <label for="radio-choice-1-a">Radio</label>
 
+            <label>
+                <input type="radio" name="radio-choice-a" id="radio-choice-0a">One
+            </label>
+
           <input type="checkbox" name="checkbox-a" data-theme="c" id="checkbox-a" checked="checked" />
           <label for="checkbox-a">Checkbox</label>
         </fieldset>
@@ -69,25 +73,25 @@
 
       <div data-role="fieldcontain">
         <a href="#" data-role="button" data-icon="home" data-iconpos="notext" data-theme="b" data-inline="true">Home</a>
-        <a href="#" data-role="button" data-icon="flat-video" data-iconpos="notext" data-theme="b" data-inline="true">Video</a>
-        <a href="#" data-role="button" data-icon="flat-time" data-iconpos="notext" data-theme="b" data-inline="true">Time</a>
-        <a href="#" data-role="button" data-icon="flat-settings" data-iconpos="notext" data-theme="b" data-inline="true">Settings</a>
-        <a href="#" data-role="button" data-icon="flat-plus" data-iconpos="notext" data-theme="b" data-inline="true">Plus</a>
-        <a href="#" data-role="button" data-icon="flat-new" data-iconpos="notext" data-theme="b" data-inline="true">New</a>
-        <a href="#" data-role="button" data-icon="flat-menu" data-iconpos="notext" data-theme="b" data-inline="true">Menu</a>
-        <a href="#" data-role="button" data-icon="flat-man" data-iconpos="notext" data-theme="b" data-inline="true">Man</a>
-        <a href="#" data-role="button" data-icon="flat-mail" data-iconpos="notext" data-theme="b" data-inline="true">Mail</a>
-        <a href="#" data-role="button" data-icon="flat-lock" data-iconpos="notext" data-theme="b" data-inline="true">Lock</a>
-        <a href="#" data-role="button" data-icon="flat-location" data-iconpos="notext" data-theme="b" data-inline="true">Location</a>
-        <a href="#" data-role="button" data-icon="flat-heart" data-iconpos="notext" data-theme="b" data-inline="true">Heart</a>
-        <a href="#" data-role="button" data-icon="flat-eye" data-iconpos="notext" data-theme="b" data-inline="true">Eye</a>
-        <a href="#" data-role="button" data-icon="flat-cross" data-iconpos="notext" data-theme="b" data-inline="true">Cross</a>
-        <a href="#" data-role="button" data-icon="flat-cmd" data-iconpos="notext" data-theme="b" data-inline="true">Cmd</a>
-        <a href="#" data-role="button" data-icon="flat-checkround" data-iconpos="notext" data-theme="b" data-inline="true">Checkround</a>
-        <a href="#" data-role="button" data-icon="flat-calendar" data-iconpos="notext" data-theme="b" data-inline="true">Calendar</a>
-        <a href="#" data-role="button" data-icon="flat-bubble" data-iconpos="notext" data-theme="b" data-inline="true">Bubble</a>
-        <a href="#" data-role="button" data-icon="flat-volume" data-iconpos="notext" data-theme="b" data-inline="true">Volume</a>
-        <a href="#" data-role="button" data-icon="flat-camera" data-iconpos="notext" data-theme="b" data-inline="true">Camera</a>
+        <a href="#" data-role="button" data-icon="video" data-iconpos="notext" data-theme="b" data-inline="true">Video</a>
+        <a href="#" data-role="button" data-icon="tag" data-iconpos="notext" data-theme="b" data-inline="true">Tag</a>
+        <a href="#" data-role="button" data-icon="gear" data-iconpos="notext" data-theme="b" data-inline="true">Settings</a>
+        <a href="#" data-role="button" data-icon="plus" data-iconpos="notext" data-theme="b" data-inline="true">Plus</a>
+        <a href="#" data-role="button" data-icon="edit" data-iconpos="notext" data-theme="b" data-inline="true">Edit</a>
+        <a href="#" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b" data-inline="true">Bars</a>
+        <a href="#" data-role="button" data-icon="user" data-iconpos="notext" data-theme="b" data-inline="true">User</a>
+        <a href="#" data-role="button" data-icon="mail" data-iconpos="notext" data-theme="b" data-inline="true">Mail</a>
+        <a href="#" data-role="button" data-icon="lock" data-iconpos="notext" data-theme="b" data-inline="true">Lock</a>
+        <a href="#" data-role="button" data-icon="location" data-iconpos="notext" data-theme="b" data-inline="true">Location</a>
+        <a href="#" data-role="button" data-icon="heart" data-iconpos="notext" data-theme="b" data-inline="true">Heart</a>
+        <a href="#" data-role="button" data-icon="eye" data-iconpos="notext" data-theme="b" data-inline="true">Eye</a>
+        <a href="#" data-role="button" data-icon="delete" data-iconpos="notext" data-theme="b" data-inline="true">Delete</a>
+        <a href="#" data-role="button" data-icon="clock" data-iconpos="notext" data-theme="b" data-inline="true">Clock</a>
+        <a href="#" data-role="button" data-icon="check" data-iconpos="notext" data-theme="b" data-inline="true">Check</a>
+        <a href="#" data-role="button" data-icon="calendar" data-iconpos="notext" data-theme="b" data-inline="true">Calendar</a>
+        <a href="#" data-role="button" data-icon="comment" data-iconpos="notext" data-theme="b" data-inline="true">Comment</a>
+        <a href="#" data-role="button" data-icon="audio" data-iconpos="notext" data-theme="b" data-inline="true">Audio</a>
+        <a href="#" data-role="button" data-icon="camera" data-iconpos="notext" data-theme="b" data-inline="true">Camera</a>
       </div>
 
       <select name="flip-1" id="flip-1"  data-theme="b" data-role="slider">
@@ -97,10 +101,10 @@
 
       <div data-role="fieldcontain">
         <div data-role="controlgroup" data-type="horizontal">
-          <a href="#" data-icon="flat-mail" data-theme="a" data-iconpos="notext" data-role="button">Yes</a>
-          <a href="#" data-icon="flat-camera" data-theme="a" data-iconpos="notext" data-role="button">Yes</a>
-          <a href="#" data-icon="flat-heart" data-theme="a" data-iconpos="notext" data-role="button">Yes</a>
-          <a href="#" data-icon="flat-eye" data-theme="a" data-iconpos="notext" data-role="button">Yes</a>
+          <a href="#" data-icon="mail" data-theme="a" data-iconpos="notext" data-role="button">Yes</a>
+          <a href="#" data-icon="camera" data-theme="a" data-iconpos="notext" data-role="button">Yes</a>
+          <a href="#" data-icon="heart" data-theme="a" data-iconpos="notext" data-role="button">Yes</a>
+          <a href="#" data-icon="eye" data-theme="a" data-iconpos="notext" data-role="button">Yes</a>
         </div>
       </div>
 

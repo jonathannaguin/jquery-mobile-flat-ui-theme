@@ -1,393 +1,189 @@
-/* Active class used as the "on" state across all themes
+/* Globals */
+/* Font
 -----------------------------------------------------------------------------------------------------------*/
+html {
+    font-size: 100%;
+}
+body,
+input,
+select,
+textarea,
+button,
+.ui-btn {
+    font-size: 1em;
+    line-height: 1.3;
+    font-family: sans-serif /*{global-font-family}*/;
+}
+legend,
+.ui-input-text input,
+.ui-input-search input {
+    color: inherit;
+    text-shadow: inherit;
+}
+/* Form labels (overrides font-weight bold in bars, and mini font-size) */
+.ui-mobile label,
+div.ui-controlgroup-label {
+    font-weight: normal;
+    font-size: 16px;
+}
+/* Field contain separator (< 28em)
+-----------------------------------------------------------------------------------------------------------*/
+.ui-field-contain {
+    border-bottom-color: #828282;
+    border-bottom-color: rgba(0,0,0,.15);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+/* Buttons
+-----------------------------------------------------------------------------------------------------------*/
+.ui-btn,
+label.ui-btn {
+    font-weight: bold;
+    border-width: 1px;
+    border-style: solid;
+}
+.ui-btn:link {
+    text-decoration: none !important;
+}
 .ui-btn-active {
-	border: 1px solid 		#1abc9c /*{global-active-border}*/;
-	background: 			#1abc9c /*{global-active-background-color}*/;
-	font-weight: bold;
-	color: 					#ffffff /*{global-active-color}*/;
-	cursor: pointer;
-	text-decoration: none;
-  font-family: Lato, sans-serif
+    cursor: pointer;
 }
-.ui-btn-active:visited,
-.ui-btn-active:hover,
-.ui-btn-active a.ui-link-inherit {
-  color:  #ffffff /*{global-active-color}*/;
-}
-
-.ui-btn-active.ui-slider-bg {
-  background: #1abc9c;
-}
-
-/* button inner top highlight
+/* Corner rounding
 -----------------------------------------------------------------------------------------------------------*/
-
-.ui-slider-handle {
-  background:  #16a085;
-  border: 1px solid #16a085;
-}
-
-.ui-slider-label.ui-btn-corner-all,
-.ui-slider-switch.ui-btn-corner-all {
-	border-radius: 1em;
-	-webkit-border-radius: 1em;
-}
-
-.ui-slider-handle.ui-btn-corner-all {
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-}
-
-input.ui-input-text.ui-slider-input {
-	border: 2px solid #eee !important;
-}
-
-/* corner rounding classes
------------------------------------------------------------------------------------------------------------*/
-
+/* Class ui-btn-corner-all deprecated in 1.4 */
 .ui-corner-all {
-	-webkit-border-radius:  6px /*{global-radii-blocks}*/;
-	border-radius:  6px /*{global-radii-blocks}*/;
+    -webkit-border-radius: 				.6em /*{global-radii-blocks}*/;
+    border-radius: 						.6em /*{global-radii-blocks}*/;
 }
-
-/* Form field separator
+/* Buttons */
+.ui-btn-corner-all,
+.ui-btn.ui-corner-all,
+    /* Slider track */
+.ui-slider-track.ui-corner-all,
+    /*flipswitch*/
+.ui-flipswitch.ui-corner-all {
+    -webkit-border-radius: 				.3125em /*{global-radii-buttons}*/;
+    border-radius: 						.3125em /*{global-radii-buttons}*/;
+}
+/* Icon-only buttons */
+.ui-btn-icon-notext.ui-btn-corner-all,
+.ui-btn-icon-notext.ui-corner-all,
+    /* Count bubbles */
+.ui-li-count {
+    -webkit-border-radius: 				1em /*{global-radii-icononly}*/;
+    border-radius: 						1em /*{global-radii-icononly}*/;
+}
+/* Radius clip workaround for cleaning up corner trapping */
+.ui-btn-corner-all,
+.ui-corner-all {
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+}
+/* Shadow
 -----------------------------------------------------------------------------------------------------------*/
-.ui-br {
-
-	border-color: rgb(130,130,130);
-	border-color: rgba(130,130,130,.3);
-	border-style: solid;
-
+.ui-shadow {
 }
-
-/* Interaction cues
------------------------------------------------------------------------------------------------------------*/
-.ui-disabled {
-	filter: Alpha(Opacity=30);
-	opacity: .3;
-	zoom: 1;
+.ui-shadow-inset {
 }
-.ui-disabled,
-.ui-disabled a {
-	cursor: default !important;
-	pointer-events: none;
+.ui-overlay-shadow {
 }
-
 /* Icons
 -----------------------------------------------------------------------------------------------------------*/
-
-.ui-icon,
-.ui-icon-searchfield:after {
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	line-height: 16px;
-	color: white;
+.ui-btn:after,
+html .ui-btn.ui-icon-checkbox-off:after,
+html .ui-btn.ui-icon-radio-off:after {
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    display: none;
 }
-
-.ui-btn-icon-notext .ui-btn-inner .ui-icon:before { margin-left: 1px;}
-
-.ui-li-link-alt .ui-btn-inner .ui-icon {
-	margin: -10px -10px auto auto !important;
+/* Alt icons */
+.ui-icon-alt.ui-btn:after,
+.ui-icon-alt .ui-btn:after,
+html .ui-icon-alt.ui-icon-checkbox-off:after,
+html .ui-icon-alt.ui-icon-radio-off:after,
+html .ui-icon-alt .ui-icon-checkbox-off:after,
+html .ui-icon-alt .ui-icon-radio-off:after {
+    background-color: 					#999 /*{global-icon-color}*/;
+    background-color: 					rgba(255,255,255,.3) /*{global-icon-disc-alt}*/;
 }
-
-/* supporting original icons */
-.ui-icon-plus, .ui-icon-minus, .ui-icon-delete, .ui-icon-arrow-r,
-.ui-icon-arrow-l, .ui-icon-arrow-u, .ui-icon-arrow-d, .ui-icon-check,
-.ui-icon-gear, .ui-icon-refresh, .ui-icon-forward, .ui-icon-back,
-.ui-icon-grid, .ui-icon-star, .ui-icon-alert, .ui-icon-info, .ui-icon-home, .ui-icon-search, .ui-icon-searchfield:after,
-.ui-icon-checkbox-off, .ui-icon-checkbox-on, .ui-icon-radio-off, .ui-icon-radio-on, .ui-icon-email , .ui-icon-page,
-.ui-icon-question , .ui-icon-foursquare, .ui-icon-dollar , .ui-icon-euro,
-.ui-icon-pound , .ui-icon-apple , .ui-icon-chat , .ui-icon-trash , .ui-icon-mappin , .ui-icon-direction,
-.ui-icon-heart , .ui-icon-wrench , .ui-icon-play , .ui-icon-pause , .ui-icon-stop , .ui-icon-person , .ui-icon-music,
-.ui-icon-wifi , .ui-icon-phone , .ui-icon-power ,
-.ui-icon-lightning , .ui-icon-drink , .ui-icon-android {
-	background-color: 						#666666 /*{global-icon-color}*/;
-	background-color: 						rgba(0,0,0,.4) /*{global-icon-disc}*/;
-	background-image: url(images/icons-18-white.png) /*{global-icon-set}*/;
+/* No disc */
+.ui-icon-nodisc.ui-btn:after,
+.ui-icon-nodisc .ui-btn:after {
+    background-color: transparent;
 }
-
-/* Alt icon color
------------------------------------------------------------------------------------------------------------*/
-
-.ui-icon-alt .ui-icon,
-.ui-icon-alt .ui-icon-searchfield:after {
-	background-color: 						#fff;
-	background-color: 						rgba(255,255,255,.3);
-	background-image: url(images/icons-18-black.png);
-	background-repeat: no-repeat;
+/* Icon shadow */
+.ui-shadow-icon.ui-btn:after,
+.ui-shadow-icon .ui-btn:after {
 }
-
-/* No disc
------------------------------------------------------------------------------------------------------------*/
-
-.ui-icon-nodisc .ui-icon,
-.ui-icon-nodisc .ui-icon-searchfield:after,
-.ui-icon-nodisc .ui-icon-alt .ui-icon,
-.ui-icon-nodisc .ui-icon-alt .ui-icon-searchfield:after {
-	background-color: transparent;
+.ui-icon-action:after, .ui-icon-arrow-d-l:after, .ui-icon-arrow-d-r:after, .ui-icon-arrow-d:after, .ui-icon-arrow-l:after, .ui-icon-arrow-r:after, .ui-icon-arrow-u-l:after, .ui-icon-arrow-u-r:after, .ui-icon-arrow-u:after, .ui-icon-audio:after, .ui-icon-calendar:after, .ui-icon-camera:after, .ui-icon-carat-d:after, .ui-icon-carat-l:after, .ui-icon-carat-r:after, .ui-icon-carat-u:after, .ui-icon-check:after, .ui-icon-clock:after, .ui-icon-cloud:after, .ui-icon-grid:after, .ui-icon-mail:after, .ui-icon-eye:after, .ui-icon-gear:after, .ui-icon-heart:after, .ui-icon-home:after, .ui-icon-info:after, .ui-icon-bullets:after, .ui-icon-bars:after, .ui-icon-navigation:after, .ui-icon-lock:after, .ui-icon-search:after, .ui-icon-location:after, .ui-icon-minus:after, .ui-icon-forbidden:after, .ui-icon-edit:after, .ui-icon-user:after, .ui-icon-phone:after, .ui-icon-plus:after, .ui-icon-power:after, .ui-icon-recycle:after, .ui-icon-forward:after, .ui-icon-refresh:after, .ui-icon-shop:after, .ui-icon-comment:after, .ui-icon-star:after, .ui-icon-tag:after, .ui-icon-back:after, .ui-icon-video:after, .ui-icon-alert:after, .ui-icon-delete:after {
+    display: block;
 }
-
-/* Icon sprite
------------------------------------------------------------------------------------------------------------*/
-
-/* plus minus */
-.ui-icon-plus {
-	background-position: 	-1px -1px;
+/* Checkbox and radio */
+html .ui-btn.ui-icon-checkbox-off:after,
+html .ui-btn.ui-icon-checkbox-on:after,
+html .ui-btn.ui-icon-radio-off:after,
+html .ui-btn.ui-icon-radio-on:after {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: -9px 2px 0 2px;
 }
-.ui-icon-minus {
-	background-position: 	-37px -1px;
+.ui-btn.ui-icon-checkbox-off:after,
+.ui-btn.ui-icon-radio-off:after {
+    background-image: none;
+    filter: Alpha(Opacity=30);
+    opacity: .3;
 }
-/* delete/close */
-.ui-icon-delete {
-	background-position: 	-73px -1px;
+.ui-btn.ui-icon-checkbox-off:after,
+.ui-btn.ui-icon-checkbox-on:after {
+    -webkit-border-radius: .1875em;
+    border-radius: .1875em;
 }
-/* arrows */
-.ui-icon-arrow-r {
-	background-position: 	-108px -1px;
+.ui-radio .ui-btn.ui-icon-radio-on:after {
+    background-image: none;
+    background-color: #fff;
+    width: 8px;
+    height: 8px;
+    border-width: 5px;
+    border-style: solid;
 }
-.ui-icon-arrow-l {
-	background-position: 	-144px -1px;
+.ui-icon-alt.ui-btn.ui-icon-radio-on:after,
+.ui-icon-alt .ui-btn.ui-icon-radio-on:after {
+    background-color: #000;
 }
-.ui-icon-arrow-u {
-	background-position: 	-180px -1px;
-}
-.ui-icon-arrow-d {
-	background-position: 	-216px -1px;
-}
-/* misc */
-.ui-icon-check {
-	background-position: 	-252px -1px;
-}
-.ui-icon-gear {
-	background-position: 	-288px -1px;
-}
-.ui-icon-refresh {
-	background-position: 	-323px -1px;
-}
-.ui-icon-forward {
-	background-position: 	-360px -1px;
-}
-.ui-icon-back {
-	background-position: 	-396px -1px;
-}
-.ui-icon-grid {
-	background-position: 	-432px -1px;
-}
-.ui-icon-star {
-	background-position: 	-467px -1px;
-}
-.ui-icon-alert {
-	background-position: 	-503px -1px;
-}
-.ui-icon-info {
-	background-position: 	-539px -1px;
-}
-.ui-icon-home {
-	background-position: 	-575px -1px;
-}
-/* search */
-.ui-icon-search,
-.ui-icon-searchfield:after {
-	background-position: 	-611px -1px;
-}
-/* checkbox radio */
-.ui-icon-checkbox-on {
-	background-position: 	-647px -1px;
-}
-.ui-icon-checkbox-off {
-	background-position: 	-683px -1px;
-}
-.ui-icon-radio-on {
-	background-position: 	-718px -1px;
-}
-.ui-icon-radio-off {
-	background-position: 	-754px -1px;
-}
-/* menu edit */
-.ui-icon-bars {
-	background-position: 	-788px -1px;
-
-}
-.ui-icon-edit {
-	background-position: 	-824px -1px;
-}
-
-/* HD/"retina" sprite
------------------------------------------------------------------------------------------------------------*/
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3),
-       only screen and (min--moz-device-pixel-ratio: 1.3),
-       only screen and (min-resolution: 200dpi) {
-
-	.ui-icon-plus, .ui-icon-minus, .ui-icon-delete, .ui-icon-arrow-r,
-	.ui-icon-arrow-l, .ui-icon-arrow-u, .ui-icon-arrow-d, .ui-icon-check,
-	.ui-icon-gear, .ui-icon-refresh, .ui-icon-forward, .ui-icon-back,
-	.ui-icon-grid, .ui-icon-star, .ui-icon-alert, .ui-icon-info, .ui-icon-home, .ui-icon-bars, .ui-icon-edit,
-	.ui-icon-search, .ui-icon-searchfield:after,
-	.ui-icon-checkbox-off, .ui-icon-checkbox-on, .ui-icon-radio-off, .ui-icon-radio-on {
-		background-image: url(images/icons-36-white.png);
-		-moz-background-size: 864px 18px;
-		-o-background-size: 864px 18px;
-		-webkit-background-size: 864px 18px;
-		background-size: 864px 18px;
-	}
-
-	.ui-icon-alt .ui-icon {
-		background-image: url(images/icons-36-black.png);
-	}
-
-	.ui-icon-plus {
-		background-position: 	0px 50%;
-	}
-	.ui-icon-minus {
-		background-position: 	-36px 50%;
-	}
-	.ui-icon-delete {
-		background-position: 	-72px 50%;
-	}
-	.ui-icon-arrow-r {
-		background-position: 	-108px 50%;
-	}
-	.ui-icon-arrow-l {
-		background-position: 	-144px 50%;
-	}
-	.ui-icon-arrow-u {
-		background-position: 	-179px 50%;
-	}
-	.ui-icon-arrow-d {
-		background-position: 	-215px 50%;
-	}
-	.ui-icon-check {
-		background-position: 	-252px 50%;
-	}
-	.ui-icon-gear {
-		background-position: 	-287px 50%;
-	}
-	.ui-icon-refresh {
-		background-position: 	-323px 50%;
-	}
-	.ui-icon-forward {
-		background-position: 	-360px 50%;
-	}
-	.ui-icon-back {
-		background-position: 	-395px 50%;
-	}
-	.ui-icon-grid {
-		background-position: 	-431px 50%;
-	}
-	.ui-icon-star {
-		background-position: 	-467px 50%;
-	}
-	.ui-icon-alert {
-		background-position: 	-503px 50%;
-	}
-	.ui-icon-info {
-		background-position: 	-538px 50%;
-	}
-	.ui-icon-home {
-		background-position: 	-575px 50%;
-	}
-	.ui-icon-search,
-	.ui-icon-searchfield:after {
-		background-position: 	-611px 50%;
-	}
-	.ui-icon-checkbox-on {
-		background-position: 	-647px 50%;
-	}
-	.ui-icon-checkbox-off {
-		background-position: 	-683px 50%;
-	}
-	.ui-icon-radio-on {
-		background-position: 	-718px 50%;
-	}
-	.ui-icon-radio-off {
-		background-position: 	-754px 50%;
-	}
-	.ui-icon-bars {
-		background-position: 	-788px 50%;
-
-	}.ui-icon-edit {
-		background-position: 	-824px 50%;
-	}
-}
-
-/* checks,radios */
-.ui-checkbox .ui-icon,
-.ui-selectmenu-list .ui-icon {
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-}
-.ui-icon-checkbox-off,
-.ui-icon-radio-off {
-	background-color: transparent;
-}
-.ui-checkbox-on .ui-icon,
-.ui-radio-on .ui-icon {
-}
-
-/* loading icon */
+/* Loader */
 .ui-icon-loading {
-	background: url(images/ajax-loader.gif);
-	background-size: 46px 46px;
+    background: url(images/ajax-loader.gif);
+    background-size: 2.875em 2.875em;
 }
 
-/* Button corner class
+/* Disabled
 -----------------------------------------------------------------------------------------------------------*/
-.ui-btn-corner-all {
-	-webkit-border-radius: 				6px /*{global-radii-buttons}*/;
-	border-radius: 						6px /*{global-radii-buttons}*/;
+/* Class ui-disabled deprecated in 1.4 */
+.ui-disabled,
+.ui-state-disabled,
+.ui-select .ui-btn.ui-state-disabled {
+    filter: Alpha(Opacity=30);
+    opacity: .3;
+    cursor: default !important;
+    pointer-events: none;
 }
-
-.ui-btn-icon-notext.ui-btn-corner-all {
-  -webkit-border-radius:        1em /*{global-radii-buttons}*/;
-  border-radius:            1em /*{global-radii-buttons}*/;
-}
-
-/* radius clip workaround for cleaning up corner trapping */
-.ui-corner-all,
-.ui-btn-corner-all {
-	/*-webkit-background-clip: padding;
-	background-clip: padding-box;*/
-}
-
-/* Overlay / modal
+/* Focus state outline
 -----------------------------------------------------------------------------------------------------------*/
-
-.ui-overlay {
-	background: #666;
-	filter: Alpha(Opacity=50);
-	opacity: .5;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
-/* Focus state - set here for specificity (note: these classes are added by JavaScript)
------------------------------------------------------------------------------------------------------------*/
-
-.ui-btn:focus, .ui-link-inherit:focus {
-	outline: 0;
-}
+.ui-btn:focus,
 .ui-btn.ui-focus {
-	z-index: 1;
+    outline: 0;
 }
-
-/* unset box shadow in browsers that don't do it right
------------------------------------------------------------------------------------------------------------*/
-
-.ui-mobile-nosupport-boxshadow * {
-	-moz-box-shadow: none !important;
-	-webkit-box-shadow: none !important;
-	box-shadow: none !important;
+/* Unset box-shadow in browsers that don't do it right */
+.ui-noboxshadow * {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
 }
-
-/* ...and bring back focus */
-.ui-mobile-nosupport-boxshadow .ui-focus,
-.ui-mobile-nosupport-boxshadow .ui-btn:focus,
-.ui-mobile-nosupport-boxshadow .ui-link-inherit:focus {
-	outline-width: 1px;
-	outline-style: auto;
+.ui-noboxshadow .ui-btn:focus,
+.ui-noboxshadow .ui-focus {
+    outline-width: 1px;
+    outline-style: auto;
 }

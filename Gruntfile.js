@@ -1,6 +1,7 @@
 module.exports = function (grunt) {
 
   var cssFiles =  [
+    'src/css/icons.css',
     'src/css/fonts.css',
     'src/css/swatches.css',
     'src/css/global.css',
