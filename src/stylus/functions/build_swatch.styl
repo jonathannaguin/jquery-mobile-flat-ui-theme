@@ -15,6 +15,7 @@ build_swatch(swatch)
     .ui-bar-{swatch} {
         border-width: 1px;
         border-style: solid;
+        background: primary_color;
     }
     /* Page background */
     .ui-page-theme-{swatch},
@@ -27,9 +28,9 @@ build_swatch(swatch)
     .ui-li-static.ui-body-{swatch} > .ui-li-count,
     .ui-li-divider.ui-bar-{swatch} > .ui-li-count,
     .ui-listview li .ui-li-count.ui-body-{swatch} {
-        background: #f9f9f9;
-        border-color: #bbb ;
-        color: #111 ;
+        background: background_color;
+        border-color: primary_color ;
+        color: #34495e ;
     }
     /* Body: Read-only lists, text inputs, collapsible content */
     .ui-body-{swatch},
@@ -38,11 +39,21 @@ build_swatch(swatch)
     html .ui-body-{swatch} .ui-body-inherit,
     html body .ui-group-theme-{swatch} .ui-body-inherit,
     .ui-overlay-{swatch} {
-        background: #f9f9f9;
-        border-color: #bbb ;
-        color: #111 ;
+        background: primary_color;
+        border-color: primary_color ;
+        color: font_color ;
         background-image: none;
     }
+
+    /* Nested Bodies: Read-only lists, text inputs, collapsible content */
+    .ui-page-theme-{swatch} .ui-body-inherit > .ui-body-inherit,
+    html .ui-bar-{swatch} .ui-body-inherit > .ui-body-inherit,
+    html .ui-body-{swatch} .ui-body-inherit >.ui-body-inherit,
+    html body .ui-group-theme-{swatch} .ui-body-inherit > .ui-body-inherit{
+        background: background_color;
+        border-color: primary_color + 5%;
+    }
+
     .ui-body-{swatch} {
         border-width: 1px;
         border-style: solid;
