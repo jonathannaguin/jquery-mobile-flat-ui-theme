@@ -1,3 +1,16 @@
+/*!
+* jQuery Mobile 1.4.0-alpha.2
+* Git HEAD hash: fatal: Not a git repository (or any of the parent directories): .git <> Date: Thu Aug 15 2013 14:15:11 UTC
+* http://jquerymobile.com
+*
+* Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
+* Released under the MIT license.
+* http://jquery.org/license
+*
+*
+* Taken from jquery.mobile.theme.css
+*/
+
 /* Globals */
 /* Font
 -----------------------------------------------------------------------------------------------------------*/
@@ -52,32 +65,39 @@ label.ui-btn {
 -----------------------------------------------------------------------------------------------------------*/
 /* Class ui-btn-corner-all deprecated in 1.4 */
 .ui-corner-all {
-    -webkit-border-radius: 				.6em /*{global-radii-blocks}*/;
-    border-radius: 						.6em /*{global-radii-blocks}*/;
+    -webkit-border-radius:              .6em /*{global-radii-blocks}*/;
+    border-radius:                      .6em /*{global-radii-blocks}*/;
 }
 /* Buttons */
 .ui-btn-corner-all,
 .ui-btn.ui-corner-all,
-    /* Slider track */
+/* Slider track */
 .ui-slider-track.ui-corner-all,
-    /*flipswitch*/
-.ui-flipswitch.ui-corner-all {
-    -webkit-border-radius: 				.3125em /*{global-radii-buttons}*/;
-    border-radius: 						.3125em /*{global-radii-buttons}*/;
+/* Flipswitch */
+.ui-flipswitch.ui-corner-all,
+/* Count bubble */
+.ui-li-count {
+    -webkit-border-radius:              .3125em /*{global-radii-buttons}*/;
+    border-radius:                      .3125em /*{global-radii-buttons}*/;
 }
 /* Icon-only buttons */
 .ui-btn-icon-notext.ui-btn-corner-all,
-.ui-btn-icon-notext.ui-corner-all,
-    /* Count bubbles */
-.ui-li-count {
-    -webkit-border-radius: 				1em /*{global-radii-icononly}*/;
-    border-radius: 						1em /*{global-radii-icononly}*/;
+.ui-btn-icon-notext.ui-corner-all {
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
 }
 /* Radius clip workaround for cleaning up corner trapping */
 .ui-btn-corner-all,
 .ui-corner-all {
     -webkit-background-clip: padding;
     background-clip: padding-box;
+}
+/* Popup arrow */
+.ui-popup.ui-corner-all > .ui-popup-arrow-guide {
+    left: .6em /*{global-radii-blocks}*/;
+    right: .6em /*{global-radii-blocks}*/;
+    top: .6em /*{global-radii-blocks}*/;
+    bottom: .6em /*{global-radii-blocks}*/;
 }
 /* Shadow
 -----------------------------------------------------------------------------------------------------------*/
@@ -89,16 +109,19 @@ label.ui-btn {
 }
 /* Icons
 -----------------------------------------------------------------------------------------------------------*/
-.ui-btn:after,
+.ui-btn-icon-left:after,
+.ui-btn-icon-right:after,
+.ui-btn-icon-top:after,
+.ui-btn-icon-bottom:after,
+.ui-btn-icon-notext:after,
 html .ui-btn.ui-icon-checkbox-off:after,
 html .ui-btn.ui-icon-radio-off:after {
-    background-color: 					#999 /*{global-icon-color}*/;
-    background-color: 					rgba(0,0,0,.3) /*{global-icon-disc}*/;
+    background-color:                   #999 /*{global-icon-color}*/;
+    background-color:                   rgba(0,0,0,.3) /*{global-icon-disc}*/;
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-border-radius: 1em;
     border-radius: 1em;
-    display: none;
 }
 /* Alt icons */
 .ui-icon-alt.ui-btn:after,
@@ -107,8 +130,8 @@ html .ui-icon-alt.ui-icon-checkbox-off:after,
 html .ui-icon-alt.ui-icon-radio-off:after,
 html .ui-icon-alt .ui-icon-checkbox-off:after,
 html .ui-icon-alt .ui-icon-radio-off:after {
-    background-color: 					#999 /*{global-icon-color}*/;
-    background-color: 					rgba(255,255,255,.3) /*{global-icon-disc-alt}*/;
+    background-color:                   #999 /*{global-icon-color}*/;
+    background-color:                   rgba(255,255,255,.3) /*{global-icon-disc-alt}*/;
 }
 /* No disc */
 .ui-icon-nodisc.ui-btn:after,
@@ -118,9 +141,9 @@ html .ui-icon-alt .ui-icon-radio-off:after {
 /* Icon shadow */
 .ui-shadow-icon.ui-btn:after,
 .ui-shadow-icon .ui-btn:after {
-}
-.ui-icon-action:after, .ui-icon-arrow-d-l:after, .ui-icon-arrow-d-r:after, .ui-icon-arrow-d:after, .ui-icon-arrow-l:after, .ui-icon-arrow-r:after, .ui-icon-arrow-u-l:after, .ui-icon-arrow-u-r:after, .ui-icon-arrow-u:after, .ui-icon-audio:after, .ui-icon-calendar:after, .ui-icon-camera:after, .ui-icon-carat-d:after, .ui-icon-carat-l:after, .ui-icon-carat-r:after, .ui-icon-carat-u:after, .ui-icon-check:after, .ui-icon-clock:after, .ui-icon-cloud:after, .ui-icon-grid:after, .ui-icon-mail:after, .ui-icon-eye:after, .ui-icon-gear:after, .ui-icon-heart:after, .ui-icon-home:after, .ui-icon-info:after, .ui-icon-bullets:after, .ui-icon-bars:after, .ui-icon-navigation:after, .ui-icon-lock:after, .ui-icon-search:after, .ui-icon-location:after, .ui-icon-minus:after, .ui-icon-forbidden:after, .ui-icon-edit:after, .ui-icon-user:after, .ui-icon-phone:after, .ui-icon-plus:after, .ui-icon-power:after, .ui-icon-recycle:after, .ui-icon-forward:after, .ui-icon-refresh:after, .ui-icon-shop:after, .ui-icon-comment:after, .ui-icon-star:after, .ui-icon-tag:after, .ui-icon-back:after, .ui-icon-video:after, .ui-icon-alert:after, .ui-icon-delete:after {
-    display: block;
+    -webkit-box-shadow: 0 1px 0             rgba(255,255,255,.3) /*{global-icon-shadow}*/;
+    -moz-box-shadow: 0 1px 0                rgba(255,255,255,.3) /*{global-icon-shadow}*/;
+    box-shadow: 0 1px 0                     rgba(255,255,255,.3) /*{global-icon-shadow}*/;
 }
 /* Checkbox and radio */
 html .ui-btn.ui-icon-checkbox-off:after,
@@ -138,8 +161,8 @@ html .ui-btn.ui-icon-radio-on:after {
     filter: Alpha(Opacity=30);
     opacity: .3;
 }
-.ui-btn.ui-icon-checkbox-off:after,
-.ui-btn.ui-icon-checkbox-on:after {
+html .ui-btn.ui-icon-checkbox-off:after,
+html .ui-btn.ui-icon-checkbox-on:after {
     -webkit-border-radius: .1875em;
     border-radius: .1875em;
 }
@@ -149,7 +172,7 @@ html .ui-btn.ui-icon-radio-on:after {
     width: 8px;
     height: 8px;
     border-width: 5px;
-    border-style: solid;
+    border-style: solid; 
 }
 .ui-icon-alt.ui-btn.ui-icon-radio-on:after,
 .ui-icon-alt .ui-btn.ui-icon-radio-on:after {
@@ -161,11 +184,13 @@ html .ui-btn.ui-icon-radio-on:after {
     background-size: 2.875em 2.875em;
 }
 
+
 /* Disabled
 -----------------------------------------------------------------------------------------------------------*/
-/* Class ui-disabled deprecated in 1.4 */
+/* Class ui-disabled deprecated in 1.4. :disabled not supported by IE8 so we use [disabled] */
 .ui-disabled,
 .ui-state-disabled,
+button[disabled],
 .ui-select .ui-btn.ui-state-disabled {
     filter: Alpha(Opacity=30);
     opacity: .3;
@@ -179,7 +204,15 @@ html .ui-btn.ui-icon-radio-on:after {
     outline: 0;
 }
 /* Unset box-shadow in browsers that don't do it right */
-.ui-noboxshadow * {
+.ui-noboxshadow .ui-shadow,
+.ui-noboxshadow .ui-shadow-inset,
+.ui-noboxshadow .ui-overlay-shadow,
+.ui-noboxshadow .ui-shadow-icon.ui-btn:after,
+.ui-noboxshadow .ui-shadow-icon .ui-btn:after,
+.ui-noboxshadow .ui-focus,
+.ui-noboxshadow .ui-btn:focus,
+.ui-noboxshadow  input:focus,
+.ui-noboxshadow .ui-panel {
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important;

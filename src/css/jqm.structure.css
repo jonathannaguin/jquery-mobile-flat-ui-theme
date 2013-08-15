@@ -1,6 +1,6 @@
 /*!
-* jQuery Mobile 1.4.0-alpha.1
-* Git HEAD hash: fatal: Not a git repository (or any of the parent directories): .git <> Date: Fri Jul 26 2013 14:29:35 UTC
+* jQuery Mobile 1.4.0-alpha.2
+* Git HEAD hash: fatal: Not a git repository (or any of the parent directories): .git <> Date: Thu Aug 15 2013 14:15:11 UTC
 * http://jquerymobile.com
 *
 * Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
@@ -29,9 +29,10 @@
     min-width: 0;
 }
 @-moz-document url-prefix() {
-	.ui-mobile fieldset {
-		display: table-column;
-	}
+    .ui-mobile fieldset {
+        display: table-column;
+        vertical-align: middle;
+    }
 }
 /* Viewport */
 .ui-mobile-viewport {
@@ -182,6 +183,10 @@ div.ui-mobile-viewport {
     border-style: solid;
     position: relative;
 }
+.ui-header:empty,
+.ui-footer:empty {
+    min-height: 2.6875em;
+}
 .ui-header .ui-title,
 .ui-footer .ui-title {
     font-size: 1em;
@@ -251,9 +256,6 @@ div.ui-mobile-viewport {
 .ui-mini .ui-btn {
     font-size: inherit;
 }
-.ui-mini .ui-controlgroup-label {
-    font-size: 16px;
-}
 /* Make buttons in toolbars default to mini and inline. */
 .ui-header .ui-btn,
 .ui-footer .ui-btn {
@@ -270,7 +272,7 @@ div.ui-mobile-viewport {
 .ui-mini .ui-btn-icon-notext,
 .ui-header .ui-btn-icon-notext,
 .ui-footer .ui-btn-icon-notext {
-    font-size: 16px;
+    font-size: 16px;    
     padding: 0;
 }
 .ui-btn-inline {
@@ -281,8 +283,7 @@ div.ui-mobile-viewport {
 .ui-btn-icon-left {
     padding-left: 2.5em;
 }
-.ui-btn-icon-right,
-.ui-listview > li > .ui-btn[class*="ui-icon-"] {
+.ui-btn-icon-right {
     padding-right: 2.5em;
 }
 .ui-btn-icon-top {
@@ -298,7 +299,11 @@ div.ui-mobile-viewport {
     padding-left: .3125em;
     padding-right: .3125em;
 }
-.ui-btn[class*="ui-icon-"]:after {
+.ui-btn-icon-left:after,
+.ui-btn-icon-right:after,
+.ui-btn-icon-top:after,
+.ui-btn-icon-bottom:after,
+.ui-btn-icon-notext:after {
     content: "";
     position: absolute;
     display: block;
@@ -307,16 +312,14 @@ div.ui-mobile-viewport {
 }
 .ui-btn-icon-notext:after,
 .ui-btn-icon-left:after,
-.ui-btn-icon-right:after,
-.ui-listview > li > .ui-btn[class*="ui-icon-"]:after {
+.ui-btn-icon-right:after {
     top: 50%;
     margin-top: -11px;
 }
 .ui-btn-icon-left:after {
     left: .5625em;
 }
-.ui-btn-icon-right:after,
-.ui-listview > li > .ui-btn[class*="ui-icon-"]:after {
+.ui-btn-icon-right:after {
     right: .5625em;
 }
 .ui-mini.ui-btn-icon-left:after,
@@ -369,6 +372,30 @@ div.ui-mobile-viewport {
 .ui-btn-icon-notext.ui-btn-right {
     top: .3125em;
     right: .3125em;
+}
+/* Button elements */
+button.ui-btn,
+.ui-controlgroup-controls button.ui-btn-icon-notext {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+}
+/* Firefox adds a 1px border in a button element. We negate this to make sure they have the same height as other buttons in controlgroups. */
+button.ui-btn::-moz-focus-inner {
+    border: 0;
+}
+button.ui-btn-inline {
+    width: auto;
+}
+button.ui-btn-icon-notext,
+.ui-controlgroup-horizontal .ui-controlgroup-controls button.ui-btn {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 1.75em;
 }
 /* Form labels */
 .ui-mobile label,
@@ -938,11 +965,11 @@ div.ui-mobile-viewport {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateX(0); /* Needed to work around an iOS 3.1 bug that causes listview thumbs to disappear when -webkit-visibility:hidden is used. */
     -webkit-transform-origin: 0;
-
+    
     -moz-backface-visibility: hidden;
     -moz-transform: translateX(0);
     -moz-transform-origin: 0;
-
+    
     backface-visibility :hidden;
     transform: translateX(0);
     transform-origin: 0;
@@ -965,7 +992,7 @@ div.ui-mobile-viewport {
     -moz-animation-duration: 250ms;
     animation-name: flipintoright;
     animation-duration: 250ms;
-
+    
 }
 .turn.out.reverse {
     -webkit-transform: rotateY(90deg) scale(.9);
@@ -1032,17 +1059,17 @@ div.ui-mobile-viewport {
 .flow {
     -webkit-transform-origin: 50% 30%;
     -webkit-box-shadow: 0 0 20px rgba(0,0,0,.4);
-    -moz-transform-origin: 50% 30%;
+    -moz-transform-origin: 50% 30%; 
     -moz-box-shadow: 0 0 20px rgba(0,0,0,.4);
-    transform-origin: 50% 30%;
+    transform-origin: 50% 30%;  
     box-shadow: 0 0 20px rgba(0,0,0,.4);
 }
 .ui-dialog.flow {
     -webkit-transform-origin: none;
     -webkit-box-shadow: none;
-    -moz-transform-origin: none;
+    -moz-transform-origin: none;    
     -moz-box-shadow: none;
-    transform-origin: none;
+    transform-origin: none; 
     box-shadow: none;
 }
 .flow.out {
@@ -1248,9 +1275,17 @@ li.ui-block-e {
     padding: 0;
     list-style: none;
 }
-[class*="ui-grid-"] .ui-btn,
-[class*="ui-grid-"] button.ui-btn-inline,
-[class*="ui-grid-"] button.ui-btn-icon-notext {
+/* No margin in grids for 100% width button elements until we can use max-width: fill-available; */
+[class*="ui-block-"] > button.ui-btn {
+    margin-right: 0;
+    margin-left: 0;
+}
+[class*="ui-block-"] > .ui-btn,
+[class*="ui-block-"] > .ui-select,
+[class*="ui-block-"] > .ui-checkbox,
+[class*="ui-block-"] > .ui-radio,
+[class*="ui-block-"] > button.ui-btn-inline,
+[class*="ui-block-"] > button.ui-btn-icon-notext {
     margin-right: .3125em;
     margin-left: .3125em;
 }
@@ -1285,7 +1320,7 @@ li.ui-block-e {
 }
 .ui-grid-solo > .ui-block-a {
     width: 100%;
-    float: none;
+    float: none; 
 }
 /* preset breakpoint to switch to stacked grid styles below 35em (560px) */
 @media (max-width: 35em) {
@@ -1294,8 +1329,8 @@ li.ui-block-e {
     .ui-responsive > .ui-block-c,
     .ui-responsive > .ui-block-d,
     .ui-responsive > .ui-block-e {
-        width: 100%;
-        float: none;
+        width: 100%; 
+        float: none; 
     }
 }
 /* fixed page header & footer configuration */
@@ -1336,11 +1371,12 @@ li.ui-block-e {
     filter: Alpha(Opacity=90);
     opacity: .9;
 }
+/* updatePagePadding() will update the padding to actual height of header and footer. */
 .ui-page-header-fixed {
-    padding-top: 2.6875em;
+    padding-top: 2.8125em;
 }
 .ui-page-footer-fixed {
-    padding-bottom: 2.6875em;
+    padding-bottom: 2.8125em;
 }
 .ui-page-header-fullscreen > .ui-content,
 .ui-page-footer-fullscreen > .ui-content {
@@ -1358,7 +1394,7 @@ li.ui-block-e {
     clip: rect(1px,1px,1px,1px);
 }
 .ui-header-fixed .ui-btn,
-.ui-footer-fixed .ui-btn {
+.ui-footer-fixed .ui-btn { 
     z-index: 10;
 }
 /* workarounds for other widgets */
@@ -1446,33 +1482,6 @@ li.ui-block-e {
 .ui-footer .ui-title ~ .ui-navbar .ui-grid-duo .ui-block-a:first-child + .ui-block-b .ui-btn {
     border-top-width: 1px;
 }
-/* TODO: This file only contains CSS for the button widget and should be renamed to jquery.mobile.forms.button.css */
-button.ui-btn {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 100%;
-}
-/* Firefox adds a 1px border in a button element. We negate this to make sure they have the same height as other buttons in controlgroups. */
-button.ui-btn::-moz-focus-inner {
-    border: 0;
-}
-button.ui-btn-inline {
-    width: auto;
-}
-button.ui-btn-icon-notext {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    width: 1.75em;
-}
-/* No margin in grids for 100% width button elements until we can use max-width: fill-available; */
-[class*="ui-grid-"] button.ui-btn {
-    margin-right: 0;
-    margin-left: 0;
-}
 /* Hide the native input element */
 .ui-input-btn input {
     position: absolute;
@@ -1484,7 +1493,7 @@ button.ui-btn-icon-notext {
     border: 0;
     outline: 0;
     -webkit-border-radius: inherit;
-    border-bottom-radius: inherit;
+    border-bottom-radius: inherit;  
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
@@ -1549,17 +1558,23 @@ button.ui-btn-icon-notext {
 }
 .ui-collapsible-content {
     display: block;
-    margin: 0;
-    padding: .625em 1em;
+    margin: 0;  
+    padding: .5em 1em;
+    background-image: none;
+}
+.ui-collapsible-themed-content .ui-collapsible-content {
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
-    background-image: none;
+    border-bottom-width: 1px;
+    border-style: solid;
+}
+.ui-collapsible-inset.ui-collapsible-themed-content .ui-collapsible-content {
+    border-left-width: 1px;
+    border-right-width: 1px;
 }
 .ui-collapsible-inset .ui-collapsible-content {
     margin: 0;
-    border-right-width: 1px;
-    border-left-width: 1px;
 }
 .ui-collapsible-content-collapsed {
     display: none;
@@ -1570,27 +1585,27 @@ button.ui-btn-icon-notext {
 }
 .ui-collapsible-heading,
 .ui-collapsible-heading > .ui-btn {
-    -webkit-border-radius: inherit;
-    border-radius: inherit;
+    -webkit-border-radius: inherit; 
+    border-radius: inherit; 
 }
 .ui-collapsible-set .ui-collapsible.ui-first-child {
-    -webkit-border-top-right-radius: inherit;
+    -webkit-border-top-right-radius: inherit;   
     border-top-right-radius: inherit;
-    -webkit-border-top-left-radius: inherit;
-    border-top-left-radius: inherit;
+    -webkit-border-top-left-radius: inherit;    
+    border-top-left-radius: inherit;        
 }
 .ui-collapsible-content,
 .ui-collapsible-set .ui-collapsible.ui-last-child {
-    -webkit-border-bottom-right-radius: inherit;
+    -webkit-border-bottom-right-radius: inherit;    
     border-bottom-right-radius: inherit;
-    -webkit-border-bottom-left-radius: inherit;
-    border-bottom-left-radius: inherit;
+    -webkit-border-bottom-left-radius: inherit; 
+    border-bottom-left-radius: inherit;     
 }
 .ui-collapsible-themed-content:not(.ui-collapsible-collapsed) > .ui-collapsible-heading {
-    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;  
     border-bottom-right-radius: 0;
-    -webkit-border-bottom-left-radius: 0;
-    border-bottom-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;   
+    border-bottom-left-radius: 0;       
 }
 .ui-collapsible-set .ui-collapsible {
     margin: -1px -1em 0;
@@ -1609,6 +1624,13 @@ fieldset.ui-controlgroup {
 .ui-field-contain .ui-controlgroup,
 .ui-field-contain fieldset.ui-controlgroup {
     margin: 0;
+}
+.ui-mini .ui-controlgroup-label {
+    font-size: 16px;
+}
+.ui-controlgroup.ui-mini .ui-btn-icon-notext,
+.ui-controlgroup .ui-mini.ui-btn-icon-notext {
+    font-size: inherit;
 }
 .ui-controlgroup-controls .ui-btn,
 .ui-controlgroup-controls .ui-checkbox,
@@ -1651,7 +1673,7 @@ fieldset.ui-controlgroup {
 .ui-controlgroup-horizontal .ui-controlgroup-controls button.ui-btn-icon-notext {
     width: 1.5em;
 }
-.ui-controlgroup-controls .ui-btn-icon-notext {
+ .ui-controlgroup-controls .ui-btn-icon-notext {
     height: auto;
     padding: .7em 1em;
 }
@@ -1723,7 +1745,7 @@ fieldset.ui-controlgroup {
     clip: rect(1px,1px,1px,1px);
 }
 .ui-dialog {
-    background: none !important; /* this is to ensure that dialog theming does not apply (by default at least) on the page div */
+     background: none !important; /* this is to ensure that dialog theming does not apply (by default at least) on the page div */
 }
 .ui-dialog-contain {
     width: 92.5%;
@@ -1733,23 +1755,23 @@ fieldset.ui-controlgroup {
     position: relative;
     top: -1em;
 }
-.ui-dialog-contain > .ui-header,
-.ui-dialog-contain > .ui-content,
-.ui-dialog-contain > .ui-footer {
+.ui-dialog-contain > .ui-header, 
+.ui-dialog-contain > .ui-content, 
+.ui-dialog-contain > .ui-footer { 
     display: block;
-    position: relative;
+    position: relative; 
     width: auto;
     margin: 0;
 }
 .ui-dialog-contain > .ui-header {
     overflow: hidden;
-    z-index: 10;
+    z-index: 10; 
     padding: 0;
     border-top-width: 0;
 }
 .ui-dialog-contain > .ui-footer {
-    z-index: 10;
-    padding: 0 1em;
+    z-index: 10; 
+    padding: 0 1em; 
     border-bottom-width: 0;
 }
 .ui-popup-open .ui-header-fixed,
@@ -1871,7 +1893,7 @@ fieldset.ui-controlgroup {
 }
 .ui-popup > .ui-btn-left,
 .ui-popup > .ui-btn-right {
-    position: absolute;
+    position: absolute; 
     top: -11px;
     margin: 0;
     z-index: 1101;
@@ -1924,109 +1946,114 @@ fieldset.ui-controlgroup {
  * arrow positioning code as to which range of values is acceptable for the
  * arrow container's top/left coordinate.
  **/
-.ui-popup.ui-corner-all > .arrow-guide {
-    left: .6em /*{global-radii-blocks}*/;
-    right: .6em /*{global-radii-blocks}*/;
-    top: .6em /*{global-radii-blocks}*/;
-    bottom: .6em /*{global-radii-blocks}*/;
-}
-.arrow-container {
+.ui-popup-arrow-container {
     width: 20px;
     height: 20px;
 }
 /* aside from the "infinities" (-1000,2000), triangle height is used */
-.arrow-container.l {
+.ui-popup-arrow-container.ui-popup-arrow-l {
     left: -10px;
     clip: rect(-1000px,10px,2000px,-1000px);
 }
-.arrow-container.ie.l {
-    clip: rect(-1000px 10px 2000px -1000px);
-}
-.arrow-container.t {
+.ui-popup-arrow-container.ui-popup-arrow-t {
     top: -10px;
     clip: rect(-1000px,2000px,10px,-1000px);
 }
-.arrow-container.ie.t {
-    clip: rect(-1000px 2000px 10px -1000px);
-}
-.arrow-container.r {
+.ui-popup-arrow-container.ui-popup-arrow-r {
     right: -10px;
     clip: rect(-1000px,2000px,2000px,10px);
 }
-.arrow-container.ie.r {
-    clip: rect(-1000px 2000px 2000px 10px);
-}
-.arrow-container.b {
+.ui-popup-arrow-container.ui-popup-arrow-b {
     bottom: -10px;
     clip: rect(10px,2000px,1000px,-1000px);
 }
-.arrow-container.ie.b {
-    clip: rect(10px 2000px 1000px -1000px);
-}
 /**
- * The arrow needs to be centred inside the arrow container such that, when
- * rotated 45 degrees, its corners touch, but do not break through, the sides
- * of the arrow container:
- *
- * +----------+
- * |    /\    |
- * |   /  \  <------ arrow container
- * |  /    \  |
- * | /      \ |
- * |/  arrow \|
- * |\        /|
- * | \      / |
- * |  \    /  |
- * |   \  /   |
- * |    \/    |
- * +----------+
+ * For each side, the arrow is twice the desired size and its corner is aligned
+ * with the edge of the container:
+ *                                           
+ *           /\         /\                +----+         /\
+ *          /  \       /  \                         | /\ |top   /  \
+ *      +----+  \     /  +----+       +-->|/  \|     /    \
+ *  left| /  |   \   /   |  \ |right  |   |    |    /      \
+ *      |/   |    \ /    |   \|             |  /|    |\  /        \
+ *      |\   |    / \    |   /|             | / +----+ \ \ +----+ /
+ *      | \  |   /   \   |  / |       | \        /  \|    |/
+ *      +----+  /     \  +----+       |  \      /    |    |
+ *       ^  \  /       \  /  ^        |   \    /  +->|\  /|
+ *       |   \/         \/   |        |    \  /   |  | \/ |bottom
+ *       |                   |        |     \/    |  +----+
+ *       +-------------------+--------+-----------+
+ *                           |
+ *                    arrow container
+ *                     (clips arrow)
  **/
-.arrow {
-    /* (2*desired triangle height)/sqrt(2) - does not account for border - centred within the outer rectangle */
-    width: 14.142135624px;
-    height: 14.142135624px;
-    /* ( (2*desired triangle height) - (above width/height) ) / 2 */
-    left: 2.928932188px;
-    top: 2.928932188px;
+.ui-popup-arrow-container .ui-popup-arrow {
+    /* (4*desired triangle height)/sqrt(2) - does not account for border - centred within the outer rectangle */
+    width: 28.284271247px;
+    height: 28.284271247px;
+    border-width: 1px;
+    border-style: solid;
 }
-.arrow-container.ie .arrow {
-    /* Fix rotation center  - see http://www.useragentman.com/IETransformsTranslator/ */
-    margin-left: -3px;
-    margin-top: -3px;
+.ui-popup-arrow-container.ui-popup-arrow-t .ui-popup-arrow {
+    left: -4.142135623px;
+    top: 5.857864376px;
 }
-.arrow-background {
+.ui-popup-arrow-container.ui-popup-arrow-b .ui-popup-arrow {
+    left: -4.142135623px;
+    top: -14.142135623px;
+}
+.ui-popup-arrow-container.ui-popup-arrow-l .ui-popup-arrow {
+    left: 5.857864376px;
+    top: -4.142135623px;
+}
+.ui-popup-arrow-container.ui-popup-arrow-r .ui-popup-arrow {
+    left: -14.142135623px;
+    top: -4.142135623px;
+}
+/* Fix rotation center for oldIE - see http://www.useragentman.com/IETransformsTranslator/ */
+.ui-popup-arrow-container.ui-popup-arrow-t.ie .ui-popup-arrow {
+    margin-left: -5.857864376269049px;
+    margin-top: -7.0710678118654755px;
+}
+.ui-popup-arrow-container.ui-popup-arrow-b.ie .ui-popup-arrow {
+    margin-left: -5.857864376269049px;
+    margin-top: -4.142135623730951px;
+}
+ 
+.ui-popup-arrow-container.ui-popup-arrow-l.ie .ui-popup-arrow {
+    margin-left: -7.0710678118654755px;
+    margin-top: -5.857864376269049px;
+}
+.ui-popup-arrow-container.ui-popup-arrow-r.ie .ui-popup-arrow {
+    margin-left: -4.142135623730951px;
+    margin-top: -5.857864376269049px;
+}
+.ui-popup-arrow-background {
     /* desired triangle height is used here */
     width: 20px;
     height: 20px;
 }
-.arrow-container.t .arrow-background {
-    /* 0px triangle height */
+.ui-popup-arrow-container.ui-popup-arrow-t .ui-popup-arrow-background
+.ui-popup-arrow-container.ui-popup-arrow-b .ui-popup-arrow-background {
     background-position: 0 10px;
 }
-.arrow-container.l .arrow-background {
-    /* triangle height 0px */
+.ui-popup-arrow-container.ui-popup-arrow-l .ui-popup-arrow-background,
+.ui-popup-arrow-container.ui-popup-arrow-r .ui-popup-arrow-background {
     background-position: 10px 0;
 }
-/* For some reason (probably because of all the decimal places) there's a
-   rounding error in the background position, so push it over by one */
-.arrow-container.b .arrow-background {
-    background-position: 0 11px;
-}
-.arrow-container.r .arrow-background {
-    background-position: 11px 0;
-}
-.ui-popup > .arrow-guide {
+/* structure */
+.ui-popup > .ui-popup-arrow-guide {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    pointer-events: none;
+    visibility: hidden;
 }
-.arrow-container {
+.ui-popup-arrow-container {
     position: absolute;
 }
-.arrow {
+.ui-popup-arrow {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -2035,57 +2062,57 @@ fieldset.ui-controlgroup {
     overflow: hidden;
     box-sizing: border-box;
 }
-.arrow-container.ie .arrow {
+.ui-popup-arrow-container.ie .ui-popup-arrow {
     -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
     filter: progid:DXImageTransform.Microsoft.Matrix(
-        M11=0.7071067811865474,
-        M12=-0.7071067811865477,
-        M21=0.7071067811865477,
-        M22=0.7071067811865474,
-        SizingMethod='auto expand');
+            M11=0.7071067811865474,
+            M12=-0.7071067811865477,
+            M21=0.7071067811865477,
+            M22=0.7071067811865474,
+            SizingMethod='auto expand');
 }
-.arrow-background {
+.ui-popup-arrow-background {
     position: absolute;
     border: 0;
 }
-.arrow-container.ie .arrow-background {
+.ui-popup-arrow-container.ie .ui-popup-arrow-background {
     background: none;
 }
-.arrow-container.t .arrow-background,
-.arrow-container.b .arrow-background {
+.ui-popup-arrow-container.ui-popup-arrow-t .ui-popup-arrow-background,
+.ui-popup-arrow-container.ui-popup-arrow-b .ui-popup-arrow-background {
     /* Undo rotation and reflect in x axis */
     -webkit-transform: rotate(-45deg) scale(1, -1);
     -moz-transform: rotate(-45deg) scale(1, -1);
     -ms-transform: rotate(-45deg) scale(1, -1);
     transform: rotate(-45deg) scale(1, -1);
 }
-.arrow-container.t.ie .arrow-background,
-.arrow-container.b.ie .arrow-background {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=-0.7071067811865467, M21=-0.7071067811865467, M22=-0.7071067811865483, SizingMethod='auto expand')";
-    filter: progid:DXImageTransform.Microsoft.Matrix(
-        M11=0.7071067811865483,
-        M12=-0.7071067811865467,
-        M21=-0.7071067811865467,
-        M22=-0.7071067811865483,
-        SizingMethod='auto expand');
+.ui-popup-arrow-container.ui-popup-arrow-t.ie .ui-popup-arrow-background,
+.ui-popup-arrow-container.ui-popup-arrow-b.ie .ui-popup-arrow-background {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=-0.7071067811865467, M21=-0.7071067811865467, M22=-0.7071067811865483, SizingMethod='auto expand')";
+   filter: progid:DXImageTransform.Microsoft.Matrix(
+            M11=0.7071067811865483,
+            M12=-0.7071067811865467,
+            M21=-0.7071067811865467,
+            M22=-0.7071067811865483,
+            SizingMethod='auto expand');
 }
-.arrow-container.l .arrow-background,
-.arrow-container.r .arrow-background {
+.ui-popup-arrow-container.ui-popup-arrow-l .ui-popup-arrow-background,
+.ui-popup-arrow-container.ui-popup-arrow-r .ui-popup-arrow-background {
     /* Undo rotation and reflect in y axis */
     -webkit-transform: rotate(-45deg) scale(-1, 1);
     -moz-transform: rotate(-45deg) scale(-1, 1);
     -ms-transform: rotate(-45deg) scale(-1, 1);
     transform: rotate(-45deg) scale(-1, 1);
 }
-.arrow-container.l.ie .arrow-background,
-.arrow-container.r.ie .arrow-background {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-0.7071067811865483, M12=0.7071067811865467, M21=0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
-    filter: progid:DXImageTransform.Microsoft.Matrix(
-        M11=-0.7071067811865483,
-        M12=0.7071067811865467,
-        M21=0.7071067811865467,
-        M22=0.7071067811865483,
-        SizingMethod='auto expand');
+.ui-popup-arrow-container.ui-popup-arrow-l.ie .ui-popup-arrow-background,
+.ui-popup-arrow-container.ui-popup-arrow-r.ie .ui-popup-arrow-background {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-0.7071067811865483, M12=0.7071067811865467, M21=0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
+   filter: progid:DXImageTransform.Microsoft.Matrix(
+            M11=-0.7071067811865483,
+            M12=0.7071067811865467,
+            M21=0.7071067811865467,
+            M22=0.7071067811865483,
+            SizingMethod='auto expand');
 }
 .ui-checkbox,
 .ui-radio {
@@ -2166,7 +2193,7 @@ fieldset.ui-controlgroup {
     max-height: 100%;
     outline: 0;
     -webkit-border-radius: inherit;
-    border-radius: inherit;
+    border-radius: inherit; 
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
@@ -2175,15 +2202,15 @@ fieldset.ui-controlgroup {
     z-index: 2;
 }
 @-moz-document url-prefix() {
-	.ui-select .ui-btn select {
-		opacity: 0.0001;
-	}
+    .ui-select .ui-btn select {
+        opacity: 0.0001;
+    }
 }
 /* Display none because of issues with IE/WP's filter alpha opacity */
 .ui-select .ui-state-disabled select {
     display: none;
 }
-/* Because we add all classes of the select and option elements to the span... */
+/* Because we add all classes of the select and option elements to the span... */ 
 .ui-select span.ui-state-disabled {
     filter: Alpha(Opacity=100);
     opacity: 1;
@@ -2205,7 +2232,7 @@ fieldset.ui-controlgroup {
     padding-right: 4.6875em;
 }
 .ui-select .ui-btn-icon-right .ui-li-count {
-    right: 3.636em;
+    right: 3.2em;
 }
 /* We set the rules for the span as well to fix an issue on Chrome with text-overflow ellipsis for the button in combination with text-align center. */
 .ui-select .ui-btn > span:not(.ui-li-count) {
@@ -2223,7 +2250,7 @@ fieldset.ui-controlgroup {
 .ui-selectmenu .ui-header {
     margin: 0;
     padding: 0;
-    border: 0;
+    border-width: 0;
 }
 .ui-selectmenu.ui-dialog .ui-header {
     z-index: 1;
@@ -2250,7 +2277,7 @@ fieldset.ui-controlgroup {
 .ui-selectmenu .ui-selectmenu-list {
     margin: 0;
     -webkit-border-radius: inherit;
-    border-radius: inherit;
+    border-radius: inherit; 
 }
 .ui-header:not(.ui-screen-hidden) + .ui-selectmenu-list {
     -webkit-border-top-right-radius: 0;
@@ -2280,13 +2307,15 @@ fieldset.ui-controlgroup {
 .ui-panel-inner > .ui-listview {
     margin: -1em;
 }
-.ui-collapsible-content > .ui-listview {
-    margin: -.625em -1em;
-}
 .ui-content .ui-listview-inset,
-.ui-panel-inner > .ui-listview-inset,
-.ui-collapsible-content > .ui-listview-inset {
+.ui-panel-inner > .ui-listview-inset {
     margin: 1em 0;
+}
+.ui-collapsible-content > .ui-listview {
+    margin: -.5em -1em;
+}
+.ui-collapsible-content > .ui-listview-inset {
+    margin: .5em 0;
 }
 .ui-listview > li {
     display: block;
@@ -2334,7 +2363,7 @@ fieldset.ui-controlgroup {
 }
 .ui-listview > li.ui-first-child,
 .ui-listview > li.ui-first-child > a.ui-btn {
-    -webkit-border-top-right-radius: inherit;
+    -webkit-border-top-right-radius: inherit;   
     border-top-right-radius: inherit;
     -webkit-border-top-left-radius: inherit;
     border-top-left-radius: inherit;
@@ -2353,7 +2382,7 @@ fieldset.ui-controlgroup {
     border-bottom-right-radius: 0;
 }
 .ui-listview > li.ui-first-child > a.ui-btn + a.ui-btn {
-    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-left-radius: 0;  
     border-top-left-radius: 0;
     -webkit-border-top-right-radius: inherit;
     border-top-right-radius: inherit;
@@ -2366,15 +2395,15 @@ fieldset.ui-controlgroup {
 }
 .ui-listview > li.ui-first-child img:first-child:not(.ui-li-icon) {
     -webkit-border-top-left-radius: inherit;
-    border-top-left-radius: inherit;
+    border-top-left-radius: inherit;    
 }
 .ui-listview > li.ui-last-child img:first-child:not(.ui-li-icon) {
     -webkit-border-bottom-left-radius: inherit;
-    border-bottom-left-radius: inherit;
+    border-bottom-left-radius: inherit; 
 }
 .ui-collapsible-content > .ui-listview:not(.ui-listview-inset) {
     -webkit-border-radius: inherit;
-    border-bottom-radius: inherit;
+    border-bottom-radius: inherit;  
 }
 .ui-listview .ui-li-static {
     padding: .7em 1em;
@@ -2391,7 +2420,7 @@ fieldset.ui-controlgroup {
 .ui-listview .ui-li-divider.ui-li-has-count {
     padding-right: 2.8125em;
 }
-.ui-listview .ui-li-has-count > .ui-btn[class*="ui-icon-"] {
+.ui-listview .ui-li-has-count > .ui-btn-icon-right {
     padding-right: 4.6875em;
 }
 .ui-listview .ui-li-has-thumb > .ui-btn,
@@ -2399,6 +2428,7 @@ fieldset.ui-controlgroup {
     min-height: 3.625em;
     padding-left: 6.25em;
 }
+/* ui-li-has-icon deprecated in 1.4. TODO: remove in 1.5 */
 .ui-listview .ui-li-has-icon > .ui-btn,
 .ui-listview .ui-li-static.ui-li-has-icon {
     min-height: 1.25em;
@@ -2407,30 +2437,32 @@ fieldset.ui-controlgroup {
 /* Used by both listview and custom multiple select button */
 .ui-li-count {
     position: absolute;
-    font-size: 12px;
+    font-size: 12.5px;
     font-weight: bold;
     text-align: center;
     border-width: 1px;
     border-style: solid;
-    padding: 0 .5em;
-    line-height: 1.666em;
-    min-height: 1.666em;
-    min-width: .666em;
-    right: .833em;
+    padding: 0 .48em;
+    line-height: 1.6em;
+    min-height: 1.6em;
+    min-width: .64em;
+    right: .8em;
     top: 50%;
-    margin-top: -.916em;
+    margin-top: -.88em;
 }
-.ui-listview .ui-btn[class*="ui-icon-"] .ui-li-count {
-    right: 3.636em;
+.ui-listview .ui-btn-icon-right .ui-li-count {
+    right: 3.2em;
 }
 .ui-listview .ui-li-has-thumb > img:first-child,
-.ui-listview .ui-li-has-thumb > .ui-btn > img:first-child {
+.ui-listview .ui-li-has-thumb > .ui-btn > img:first-child,
+.ui-listview .ui-li-has-thumb .ui-li-thumb {
     position: absolute;
     left: 0;
     top: 0;
     max-height: 5em;
     max-width: 5em;
 }
+/* ui-li-has-icon deprecated in 1.4. TODO: remove in 1.5 */
 .ui-listview .ui-li-has-icon > img:first-child,
 .ui-listview .ui-li-has-icon > .ui-btn > img:first-child {
     position: absolute;
@@ -2541,6 +2573,22 @@ ol.ui-listview > li p:first-child ~ *,
 ol.ui-listview > li img:first-child + * ~ * {
     margin-top: 0;
     text-indent: 2.04em; /* (1.4em + .3em) * .9em / .75em */
+}
+html .ui-filterable + .ui-listview,
+html .ui-filterable.ui-listview {
+    margin-top: .5em;
+}
+.ui-collapsible-content > form.ui-filterable {
+    margin-top: -.5em;
+}
+.ui-collapsible-content > .ui-input-search.ui-filterable {
+    margin-top: 0;
+}
+.ui-collapsible-content > .ui-filterable + .ui-listview:not(.ui-listview-inset) > li.ui-first-child,
+.ui-collapsible-content > .ui-filterable + .ui-listview:not(.ui-listview-inset) > li.ui-first-child > a.ui-btn,
+.ui-collapsible-content > .ui-filterable.ui-listview:not(.ui-listview-inset) > li.ui-first-child,
+.ui-collapsible-content > .ui-filterable.ui-listview:not(.ui-listview-inset) > li.ui-first-child > a.ui-btn {
+    border-top-width: 1px;
 }
 div.ui-slider {
     height: 30px;
@@ -2703,7 +2751,7 @@ div.ui-slider-switch.ui-mini {
         display: inline-block;
         width: 5.8em;
     }
-}
+}   
 /* slider tooltip
 -----------------------------------------------------------------------------------------------------------*/
 .ui-slider-popup {
@@ -2786,20 +2834,15 @@ div.ui-rangeslider label {
 }
 .ui-input-text,
 .ui-input-search {
-    margin: -.5em -.5em 1.5em -.5em;
+    margin: .5em 0;
     background-image: none;
     border-width: 1px;
     border-style: solid;
-}
-.ui-input-inset,
-textarea.ui-input-text {
-    margin: .5em 0;
 }
 .ui-input-text input,
 .ui-input-search input,
 textarea.ui-input-text {
     padding: .4em;
-    min-height: 2.2em;
     line-height: 1.4em;
     display: block;
     width: 100%;
@@ -2812,6 +2855,7 @@ textarea.ui-input-text {
 .ui-input-text input,
 .ui-input-search input {
     margin: 0;
+    min-height: 2.2em;
     text-align: left; /* Opera aligns type="date" right by default */
     border: 0;
     background: transparent none;
@@ -2820,7 +2864,6 @@ textarea.ui-input-text {
     border-radius: inherit;
 }
 textarea.ui-input-text {
-    height: 3.125em;
     overflow: auto;
     resize: vertical;
 }
@@ -2875,7 +2918,7 @@ textarea.ui-mini {
     position: absolute;
     right: 0;
     top: 50%;
-    margin: -15px .3125em 0;
+    margin: -14px .3125em 0;
     border: 0;
     background-color: transparent;
 }
@@ -2990,7 +3033,7 @@ for Android 4.1 */
     .ui-field-contain .ui-flipswitch.ui-flipswitch-active {
         width: 1.875em;
     }
-}
+}   
 .ui-table {
     border: 0;
     border-collapse: collapse;
@@ -3029,14 +3072,14 @@ for Android 4.1 */
 /* Add alternating row stripes */
 .table-stripe tbody tr:nth-child(odd) td,
 .table-stripe tbody tr:nth-child(odd) th {
-    background-color: #eeeeee; /* non-RGBA fallback  */
-    background-color: rgba(0,0,0,0.04);
+  background-color: #eeeeee; /* non-RGBA fallback  */
+  background-color: rgba(0,0,0,0.04);
 }
 /* Add stroke to the header and last item */
 .table-stripe thead th,
 .table-stripe tbody tr:last-child {
-    border-bottom: 1px solid #d6d6d6; /* non-RGBA fallback  */
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid #d6d6d6; /* non-RGBA fallback  */
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 /*
  Styles for the table columntoggle mode
@@ -3127,35 +3170,35 @@ for Android 4.1 */
  Styles for the table columntoggle mode
 */
 .ui-table-reflow td .ui-table-cell-label,
-.ui-table-reflow th .ui-table-cell-label {
+.ui-table-reflow th .ui-table-cell-label { 
     display: none;
 }
-/* Mobile first styles: Begin with the stacked presentation at narrow widths */
+/* Mobile first styles: Begin with the stacked presentation at narrow widths */ 
 @media only all {
-    /* Hide the table headers */
-    .ui-table-reflow thead td,
+    /* Hide the table headers */ 
+    .ui-table-reflow thead td, 
     .ui-table-reflow thead th {
         display: none;
     }
-    /* Show the table cells as a block level element */
+    /* Show the table cells as a block level element */ 
     .ui-table-reflow td,
-    .ui-table-reflow th {
+    .ui-table-reflow th { 
         text-align: left;
         display: block;
     }
-    /* Add a fair amount of top margin to visually separate each row when stacked */
+    /* Add a fair amount of top margin to visually separate each row when stacked */  
     .ui-table-reflow tbody th {
         margin-top: 3em;
     }
-    /* Make the label elements a percentage width */
+    /* Make the label elements a percentage width */ 
     .ui-table-reflow td .ui-table-cell-label,
-    .ui-table-reflow th .ui-table-cell-label {
-        padding: .4em;
-        min-width: 30%;
+    .ui-table-reflow th .ui-table-cell-label { 
+        padding: .4em; 
+        min-width: 30%; 
         display: inline-block;
         margin: -.4em 1em -.4em -.4em;
     }
-    /* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */
+    /* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */ 
     .ui-table-reflow th .ui-table-cell-label-top,
     .ui-table-reflow td .ui-table-cell-label-top {
         display: block;
@@ -3166,13 +3209,13 @@ for Android 4.1 */
         font-weight: normal;
     }
 }
-/* Breakpoint to show as a standard table at 560px (35em x 16px) or wider */
+/* Breakpoint to show as a standard table at 560px (35em x 16px) or wider */ 
 @media ( min-width: 35em ) {
     /* Fixes table rendering when switching between breakpoints in Safari <= 5. See https://github.com/jquery/jquery-mobile/issues/5380 */
     .ui-table-reflow.ui-responsive {
         display: table-row-group;
     }
-    /* Show the table header rows */
+    /* Show the table header rows */ 
     .ui-table-reflow.ui-responsive td,
     .ui-table-reflow.ui-responsive th,
     .ui-table-reflow.ui-responsive tbody th,
@@ -3182,14 +3225,14 @@ for Android 4.1 */
         display: table-cell;
         margin: 0;
     }
-    /* Hide the labels in each cell */
+    /* Hide the labels in each cell */ 
     .ui-table-reflow.ui-responsive td .ui-table-cell-label,
-    .ui-table-reflow.ui-responsive th .ui-table-cell-label {
+    .ui-table-reflow.ui-responsive th .ui-table-cell-label { 
         display: none;
     }
 }
-/* Hack to make IE9 and WP7.5 treat cells like block level elements, scoped to ui-responsive class */
-/* Applied in a max-width media query up to the table layout breakpoint so we don't need to negate this*/
+/* Hack to make IE9 and WP7.5 treat cells like block level elements, scoped to ui-responsive class */ 
+/* Applied in a max-width media query up to the table layout breakpoint so we don't need to negate this*/ 
 @media ( max-width: 35em ) {
     .ui-table-reflow.ui-responsive td,
     .ui-table-reflow.ui-responsive th {
@@ -3223,7 +3266,7 @@ for Android 4.1 */
     padding-bottom: 1px;
 }
 .ui-panel-display-reveal {
-    z-index: 0;
+    z-index: 1;
 }
 .ui-panel-display-push {
     z-index: 999;
@@ -3234,11 +3277,12 @@ for Android 4.1 */
 .ui-panel-inner {
     padding: 1em;
 }
-/* container and page */
+/* container */
 .ui-panel-page-container {
-    -webkit-transform: translate3d(0,0,0);
+    overflow-x: visible;
 }
-.ui-panel-page-container .ui-page-active {
+/* page */
+.ui-panel-page-container-themed .ui-page-active {
     background: none;
 }
 /* wrapper */
@@ -3249,7 +3293,7 @@ for Android 4.1 */
     overflow-x: hidden;
     z-index: 999;
 }
-/* fiixed toolbars */
+/* fixed toolbars */
 .ui-panel-fixed-toolbar {
     overflow-x: hidden;
 }
@@ -3273,6 +3317,7 @@ for Android 4.1 */
     transition: transform 300ms ease;
 }
 /* hardware acceleration for smoother transitions on WebKit browsers */
+.ui-panel-animate.ui-panel-page-container,
 .ui-panel-animate.ui-panel:not(.ui-panel-display-reveal) {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translate3d(0,0,0);
@@ -3292,12 +3337,12 @@ for Android 4.1 */
 }
 /* panel left open */
 .ui-panel-position-left.ui-panel-display-reveal, /* negate "panel left" for reveal */
-.ui-panel-position-left.ui-panel-open {
+.ui-panel-open.ui-panel-position-left {
     left: 0;
 }
 /* animated: panel left open (for overlay and push) */
-.ui-panel-animate.ui-panel-position-left.ui-panel-open.ui-panel-display-overlay,
-.ui-panel-animate.ui-panel-position-left.ui-panel-open.ui-panel-display-push {
+.ui-panel-animate.ui-panel-open.ui-panel-position-left.ui-panel-display-overlay,
+.ui-panel-animate.ui-panel-open.ui-panel-position-left.ui-panel-display-push {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
     -moz-transform: none;
@@ -3320,22 +3365,22 @@ for Android 4.1 */
     right: 0;
 }
 /* animated: panel right open (for overlay and push) */
-.ui-panel-animate.ui-panel-position-right.ui-panel-open.ui-panel-display-overlay,
-.ui-panel-animate.ui-panel-position-right.ui-panel-open.ui-panel-display-push {
+.ui-panel-animate.ui-panel-open.ui-panel-position-right.ui-panel-display-overlay,
+.ui-panel-animate.ui-panel-open.ui-panel-position-right.ui-panel-display-push {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
     -moz-transform: none;
 }
 /* positioning: pages, fixed toolbars and dismiss */
 /* panel left open */
-.ui-panel-page-content-position-left.ui-panel-page-content-open,
-.ui-panel-dismiss-position-left.ui-panel-dismiss-open {
+.ui-panel-page-content-position-left,
+.ui-panel-dismiss-open.ui-panel-dismiss-position-left {
     left: 17em;
     right: -17em;
 }
 /* animated: panel left open (for reveal and push) */
-.ui-panel-animate.ui-panel-page-content-position-left.ui-panel-page-content-open.ui-panel-page-content-display-reveal,
-.ui-panel-animate.ui-panel-page-content-position-left.ui-panel-page-content-open.ui-panel-page-content-display-push {
+.ui-panel-animate.ui-panel-page-content-position-left.ui-panel-page-content-display-reveal,
+.ui-panel-animate.ui-panel-page-content-position-left.ui-panel-page-content-display-push {
     left: 0;
     right: 0;
     -webkit-transform: translate3d(17em,0,0);
@@ -3343,14 +3388,14 @@ for Android 4.1 */
     transform: translate3d(17em,0,0);
 }
 /* panel right open */
-.ui-panel-page-content-position-right.ui-panel-page-content-open,
-.ui-panel-dismiss-position-right.ui-panel-dismiss-open {
+.ui-panel-page-content-position-right,
+.ui-panel-dismiss-open.ui-panel-dismiss-position-right {
     left: -17em;
     right: 17em;
 }
 /* animated: panel right open (for reveal and push) */
-.ui-panel-animate.ui-panel-page-content-position-right.ui-panel-page-content-open.ui-panel-page-content-display-reveal,
-.ui-panel-animate.ui-panel-page-content-position-right.ui-panel-page-content-open.ui-panel-page-content-display-push {
+.ui-panel-animate.ui-panel-page-content-position-right.ui-panel-page-content-display-reveal, 
+.ui-panel-animate.ui-panel-page-content-position-right.ui-panel-page-content-display-push {
     left: 0;
     right: 0;
     -webkit-transform: translate3d(-17em,0,0);
@@ -3358,7 +3403,7 @@ for Android 4.1 */
     transform: translate3d(-17em,0,0);
 }
 /* negate "panel left/right open" for overlay */
-.ui-panel-page-content-open.ui-panel-page-content-display-overlay {
+.ui-panel-page-content-display-overlay {
     left: 0;
 }
 /* shadows and borders */
@@ -3382,42 +3427,38 @@ for Android 4.1 */
     -moz-box-shadow: -5px 0 5px rgba(0,0,0,.15);
     box-shadow: -5px 0 5px rgba(0,0,0,.15);
 }
-.ui-panel-display-push.ui-panel-open.ui-panel-position-left {
+.ui-panel-open.ui-panel-position-left.ui-panel-display-push {
     border-right-width: 1px;
     margin-right: -1px;
 }
-.ui-panel-page-content-open.ui-panel-page-content-position-left.ui-panel-page-content-display-push {
+.ui-panel-page-content-position-left.ui-panel-page-content-display-push {
     margin-left: 1px;
     width: auto;
 }
-.ui-panel-display-push.ui-panel-open.ui-panel-position-right {
+.ui-panel-open.ui-panel-position-right.ui-panel-display-push {
     border-left-width: 1px;
     margin-left: -1px;
 }
-.ui-panel-page-content-open.ui-panel-page-content-position-right.ui-panel-page-content-display-push {
+.ui-panel-page-content-position-right.ui-panel-page-content-display-push {
     margin-right: 1px;
     width: auto;
 }
 /* wrap on wide viewports once open */
-@media (min-width:55em){
+@media (min-width:55em) {
     .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-left.ui-panel-page-content-display-push,
-    .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-left.ui-panel-page-content-display-reveal,
-    .ui-responsive-panel.ui-panel-fixed-toolbar.ui-panel-page-content-open.ui-panel-page-content-position-left.ui-panel-page-content-display-push,
-    .ui-responsive-panel.ui-panel-fixed-toolbar.ui-panel-page-content-open.ui-panel-page-content-position-left.ui-panel-page-content-display-reveal {
+    .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-left.ui-panel-page-content-display-reveal {
         margin-right: 17em;
     }
     .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-right.ui-panel-page-content-display-push,
-    .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-right.ui-panel-page-content-display-reveal,
-    .ui-responsive-panel.ui-panel-fixed-toolbar.ui-panel-page-content-open.ui-panel-page-content-position-right.ui-panel-page-content-display-push,
-    .ui-responsive-panel.ui-panel-fixed-toolbar.ui-panel-page-content-open.ui-panel-page-content-position-right.ui-panel-page-content-display-reveal {
+    .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-right.ui-panel-page-content-display-reveal {
         margin-left: 17em;
     }
     .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-display-push,
     .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-display-reveal {
-        width: auto;
+        width: auto;    
     }
-    .ui-responsive-panel .ui-panel-dismiss-display-push {
+    .ui-responsive-panel .ui-panel-dismiss-display-push,
+    .ui-responsive-panel.ui-page-active ~ .ui-panel-dismiss-display-push {
         display: none;
     }
 }
-@import url( "jquery.mobile.filterable.css" );

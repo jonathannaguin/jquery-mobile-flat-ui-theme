@@ -3,13 +3,14 @@ build_swatch(swatch)
 
     /* Bar: Toolbars, dividers, slider track */
     .ui-bar-{swatch},
+    .ui-overlay-{swatch} .ui-bar-inherit,
     .ui-page-theme-{swatch} .ui-bar-inherit,
     html .ui-bar-{swatch} .ui-bar-inherit,
     html .ui-body-{swatch} .ui-bar-inherit,
     html body .ui-group-theme-{swatch} .ui-bar-inherit {
-        background: 			background_color;
-        border-color:	 		primary_color;
-        color: 					font_color;
+        background:             background_color;
+        border-color:             primary_color;
+        color:                     font_color;
         font-weight: bold;
     }
     .ui-bar-{swatch} {
@@ -17,35 +18,31 @@ build_swatch(swatch)
         border-style: solid;
         background: primary_color;
     }
-    /* Page background */
+
+    /* Page and overlay */
+    .ui-overlay-{swatch},
     .ui-page-theme-{swatch},
-    .ui-page-theme-{swatch} .ui-panel-wrapper,
-    .ui-page-theme-{swatch} .ui-li-count,
-    html .ui-bar-{swatch} .ui-li-count,
-    html .ui-body-{swatch} .ui-li-count,
-    html body .ui-group-theme-{swatch} .ui-li-count,
-    .ui-btn.ui-btn-{swatch} > .ui-li-count,
-    .ui-li-static.ui-body-{swatch} > .ui-li-count,
-    .ui-li-divider.ui-bar-{swatch} > .ui-li-count,
-    .ui-listview li .ui-li-count.ui-body-{swatch} {
+    .ui-page-theme-{swatch} .ui-panel-wrapper {
         background: background_color;
         border-color: primary_color ;
         color: #34495e ;
     }
+
     /* Body: Read-only lists, text inputs, collapsible content */
     .ui-body-{swatch},
+    .ui-overlay-{swatch} .ui-body-inherit,
     .ui-page-theme-{swatch} .ui-body-inherit,
     html .ui-bar-{swatch} .ui-body-inherit,
     html .ui-body-{swatch} .ui-body-inherit,
     html body .ui-group-theme-{swatch} .ui-body-inherit,
-    .ui-overlay-{swatch} {
+    html .ui-panel-page-container-{swatch} {
         background: primary_color;
         border-color: primary_color ;
         color: font_color ;
         background-image: none;
     }
 
-    /* Nested Bodies: Read-only lists, text inputs, collapsible content */
+    /* -- NEW RULE => Nested Bodies: Read-only lists, text inputs, collapsible content */
     .ui-page-theme-{swatch} .ui-body-inherit > .ui-body-inherit,
     html .ui-bar-{swatch} .ui-body-inherit > .ui-body-inherit,
     html .ui-body-{swatch} .ui-body-inherit >.ui-body-inherit,
@@ -53,12 +50,14 @@ build_swatch(swatch)
         background: background_color;
         border-color: primary_color + 5%;
     }
+    /*end of -- NEW RULE*/
 
     .ui-body-{swatch} {
         border-width: 1px;
         border-style: solid;
     }
     /* Links */
+    .ui-overlay-{swatch} a,
     .ui-page-theme-{swatch} a,
     html .ui-bar-{swatch} a,
     html .ui-body-{swatch} a,
@@ -66,106 +65,113 @@ build_swatch(swatch)
         color: link_color;
         font-weight: bold;
     }
+    .ui-overlay-{swatch} a:visited,
     .ui-page-theme-{swatch} a:visited,
     html .ui-bar-{swatch} a:visited,
     html .ui-body-{swatch} a:visited,
     html body .ui-group-theme-{swatch} a:visited {
         color: highlight_color;
     }
+    .ui-overlay-{swatch} a:hover,
     .ui-page-theme-{swatch} a:hover,
     html .ui-bar-{swatch} a:hover,
     html .ui-body-{swatch} a:hover,
     html body .ui-group-theme-{swatch} a:hover {
         color: highlight_color;
     }
+    .ui-overlay-{swatch} a:active,
     .ui-page-theme-{swatch} a:active,
     html .ui-bar-{swatch} a:active,
     html .ui-body-{swatch} a:active,
     html body .ui-group-theme-{swatch} a:active {
         color: highlight_color;
     }
-    /* Button up */
+    /* Button up + Button visited*/
+    .ui-overlay-{swatch} .ui-btn,
     .ui-page-theme-{swatch} .ui-btn,
     html .ui-bar-{swatch} .ui-btn,
     html .ui-body-{swatch} .ui-btn,
-    html body .ui-btn.ui-btn-{swatch},
     html body .ui-group-theme-{swatch} .ui-btn,
-    [class*="ui-group-theme-"] .ui-btn.ui-btn-{swatch},
+    html head + body .ui-btn.ui-btn-{swatch},
+    .ui-overlay-{swatch} .ui-btn:visited,
     .ui-page-theme-{swatch} .ui-btn:visited,
     html .ui-bar-{swatch} .ui-btn:visited,
     html .ui-body-{swatch} .ui-btn:visited,
-    html body .ui-btn.ui-btn-{swatch}:visited,
     html body .ui-group-theme-{swatch} .ui-btn:visited,
-    [class*="ui-group-theme-"] .ui-btn.ui-btn-{swatch}:visited {
-        background: 			primary_color;
-        border-color:	 		primary_color;
-        color: 					font_color;
+    html head + body .ui-btn.ui-btn-{swatch}:visited{
+        background:             primary_color;
+        border-color:             primary_color;
+        color:                     font_color;
     }
     /* Button hover */
+    .ui-overlay-{swatch} .ui-btn:hover,
     .ui-page-theme-{swatch} .ui-btn:hover,
     html .ui-bar-{swatch} .ui-btn:hover,
     html .ui-body-{swatch} .ui-btn:hover,
-    html body .ui-btn.ui-btn-{swatch}:hover,
     html body .ui-group-theme-{swatch} .ui-btn:hover,
-    [class*="ui-group-theme-"] .ui-btn.ui-btn-{swatch}:hover {
-        background: 			highlight_color;
-        border-color:	 		highlight_color;
-        color: 					font_color;
+    html head + body .ui-btn.ui-btn-{swatch}:hover  {
+        background:             highlight_color;
+        border-color:             highlight_color;
+        color:                     font_color;
     }
     /* Button down */
+    .ui-overlay-{swatch} .ui-btn:active,
     .ui-page-theme-{swatch} .ui-btn:active,
     html .ui-bar-{swatch} .ui-btn:active,
     html .ui-body-{swatch} .ui-btn:active,
-    html body .ui-btn.ui-btn-{swatch}:active,
     html body .ui-group-theme-{swatch} .ui-btn:active,
-    [class*="ui-group-theme-"] .ui-btn.ui-btn-{swatch}:active {
-        background: 			highlight_color;
-        border-color:	 		highlight_color;
-        color: 					font_color;
+    html head + body .ui-btn.ui-btn-{swatch}:active  {
+        background:             highlight_color;
+        border-color:             highlight_color;
+        color:                     font_color;
     }
-    /* Active button */
+    /* Active button + Active checkbox icon + Active flipswitch background  + Active slider track */
+    .ui-overlay-{swatch} .ui-btn.ui-btn-active,
     .ui-page-theme-{swatch} .ui-btn.ui-btn-active,
     html .ui-bar-{swatch} .ui-btn.ui-btn-active,
     html .ui-body-{swatch} .ui-btn.ui-btn-active,
-    html body .ui-btn.ui-btn-{swatch}.ui-btn-active,
     html body .ui-group-theme-{swatch} .ui-btn.ui-btn-active,
-    [class*="ui-group-theme-"] .ui-btn.ui-btn-{swatch}.ui-btn-active,
+    html head + body .ui-btn.ui-btn-{swatch}.ui-btn-active,
+    .ui-overlay-{swatch} .ui-icon-checkbox-on:after,
     .ui-page-theme-{swatch} .ui-icon-checkbox-on:after,
     html .ui-bar-{swatch} .ui-icon-checkbox-on:after,
     html .ui-body-{swatch} .ui-icon-checkbox-on:after,
     html body .ui-group-theme-{swatch} .ui-icon-checkbox-on:after,
     .ui-btn.ui-icon-checkbox-on.ui-btn-{swatch}:after,
+    .ui-overlay-{swatch} .ui-flipswitch-active,
     .ui-page-theme-{swatch} .ui-flipswitch-active,
     html .ui-bar-{swatch} .ui-flipswitch-active,
     html .ui-body-{swatch} .ui-flipswitch-active,
     html body .ui-group-theme-{swatch} .ui-flipswitch-active,
     html body .ui-flipswitch.ui-bar-{swatch}.ui-flipswitch-active,
+    .ui-overlay-{swatch} .ui-slider-track .ui-btn-active,
     .ui-page-theme-{swatch} .ui-slider-track .ui-btn-active,
     html .ui-bar-{swatch} .ui-slider-track .ui-btn-active,
     html .ui-body-{swatch} .ui-slider-track .ui-btn-active,
     html body .ui-group-theme-{swatch} .ui-slider-track .ui-btn-active,
-    html body div.ui-slider-track.ui-body-{swatch} .ui-btn-active {
-        background-color: 		highlight_color;
-        border-color:	 		highlight_color;
-        color: 					font_color;
+    html body div.ui-slider-track.ui-body-{swatch} .ui-btn-active{
+        background-color:         highlight_color;
+        border-color:             highlight_color;
+        color:                     font_color;
 
     }
     /* Active radio button icon */
+    .ui-overlay-{swatch} .ui-icon-radio-on:after,
     .ui-page-theme-{swatch} .ui-icon-radio-on:after,
     html .ui-bar-{swatch} .ui-icon-radio-on:after,
     html .ui-body-{swatch} .ui-icon-radio-on:after,
     html body .ui-group-theme-{swatch} .ui-icon-radio-on:after,
     .ui-btn.ui-icon-radio-on.ui-btn-{swatch}:after {
-        border-color:			highlight_color;
+        border-color:            highlight_color;
     }
 
-    /* Slider switch button */
+    /* -- NEW RULE => Slider switch button */
     .ui-slider.ui-slider-switch.ui-bar-{swatch} .ui-slider-label{
-        background-color: 		background_color - 8%;
+        background-color:         background_color - 8%;
     }
 
     .ui-slider.ui-slider-switch.ui-bar-{swatch} .ui-slider-label.ui-btn-active{
-        background-color: 		primary_color + 8%;
+        background-color:         primary_color + 8%;
         color: inherit;
     }
 
@@ -175,25 +181,26 @@ build_swatch(swatch)
 
     .ui-slider.ui-slider-switch.ui-bar-{swatch} .ui-slider-handle{
         background-color:  primary_color;
-        border-color:	primary_color + 8%;
+        border-color:    primary_color + 8%;
     }
+    /*end of -- NEW RULE*/
 
 
     /* Focus */
+    .ui-overlay-{swatch} .ui-btn:focus,
     .ui-page-theme-{swatch} .ui-btn:focus,
     html .ui-bar-{swatch} .ui-btn:focus,
     html .ui-body-{swatch} .ui-btn:focus,
-    html body .ui-btn.ui-btn-{swatch}:focus,
     html body .ui-group-theme-{swatch} .ui-btn:focus,
-    [class*="ui-group-theme-"] .ui-btn.ui-btn-{swatch}:focus,
+    html head + body .ui-btn.ui-btn-{swatch}:focus,
+    /* Focus buttons and text inputs with div wrap */
+    .ui-overlay-{swatch} .ui-focus,
     .ui-page-theme-{swatch} .ui-focus,
     html .ui-bar-{swatch} .ui-focus,
     html .ui-body-{swatch} .ui-focus,
-    html body .ui-btn-{swatch}.ui-focus,
-    html body .ui-body-{swatch}.ui-focus,
     html body .ui-group-theme-{swatch} .ui-focus,
-    [class*="ui-group-theme-"] .ui-btn-{swatch}.ui-focus,
-    [class*="ui-group-theme-"] .ui-body-{swatch}.ui-focus {
+    html head + body .ui-btn-{swatch}.ui-focus,
+    html head + body .ui-body-{swatch}.ui-focus{
         border-color: highlight_color;
         -webkit-transition: border linear 0.2s
         -moz-transition: border linear 0.2s

@@ -755,138 +755,165 @@
     url(fonts/lato-italic.ttf) format('truetype');
 }
 
-.ui-bar-a,.ui-page-theme-a .ui-bar-inherit,html .ui-bar-a .ui-bar-inherit,html .ui-body-a .ui-bar-inherit,html body .ui-group-theme-a .ui-bar-inherit{background:#fff;border-color:#f2f2f2;color:#000;font-weight:bold}
+.ui-bar-a,.ui-overlay-a .ui-bar-inherit,.ui-page-theme-a .ui-bar-inherit,html .ui-bar-a .ui-bar-inherit,html .ui-body-a .ui-bar-inherit,html body .ui-group-theme-a .ui-bar-inherit{background:#fff;border-color:#f2f2f2;color:#000;font-weight:bold}
 .ui-bar-a{border-width:1px;border-style:solid;background:#f2f2f2}
-.ui-page-theme-a,.ui-page-theme-a .ui-panel-wrapper,.ui-page-theme-a .ui-li-count,html .ui-bar-a .ui-li-count,html .ui-body-a .ui-li-count,html body .ui-group-theme-a .ui-li-count,.ui-btn.ui-btn-a > .ui-li-count,.ui-li-static.ui-body-a > .ui-li-count,.ui-li-divider.ui-bar-a > .ui-li-count,.ui-listview li .ui-li-count.ui-body-a{background:#fff;border-color:#f2f2f2;color:#34495e}
-.ui-body-a,.ui-page-theme-a .ui-body-inherit,html .ui-bar-a .ui-body-inherit,html .ui-body-a .ui-body-inherit,html body .ui-group-theme-a .ui-body-inherit,.ui-overlay-a{background:#f2f2f2;border-color:#f2f2f2;color:#000;background-image:none}
+.ui-overlay-a,.ui-page-theme-a,.ui-page-theme-a .ui-panel-wrapper{background:#fff;border-color:#f2f2f2;color:#34495e}
+.ui-body-a,.ui-overlay-a .ui-body-inherit,.ui-page-theme-a .ui-body-inherit,html .ui-bar-a .ui-body-inherit,html .ui-body-a .ui-body-inherit,html body .ui-group-theme-a .ui-body-inherit,html .ui-panel-page-container-a{background:#f2f2f2;border-color:#f2f2f2;color:#000;background-image:none}
 .ui-page-theme-a .ui-body-inherit > .ui-body-inherit,html .ui-bar-a .ui-body-inherit > .ui-body-inherit,html .ui-body-a .ui-body-inherit >.ui-body-inherit,html body .ui-group-theme-a .ui-body-inherit > .ui-body-inherit{background:#fff;border-color:#f3f3f3}
 .ui-body-a{border-width:1px;border-style:solid}
-.ui-page-theme-a a,html .ui-bar-a a,html .ui-body-a a,html body .ui-group-theme-a a{color:#2c3e50;font-weight:bold}
-.ui-page-theme-a a:visited,html .ui-bar-a a:visited,html .ui-body-a a:visited,html body .ui-group-theme-a a:visited{color:#a1a6a9}
-.ui-page-theme-a a:active,html .ui-bar-a a:active,html .ui-body-a a:active,html body .ui-group-theme-a a:active{color:#a1a6a9}
-.ui-page-theme-a .ui-btn,html .ui-bar-a .ui-btn,html .ui-body-a .ui-btn,html body .ui-btn.ui-btn-a,html body .ui-group-theme-a .ui-btn,[class*="ui-group-theme-"] .ui-btn.ui-btn-a,.ui-page-theme-a .ui-btn:visited,html .ui-bar-a .ui-btn:visited,html .ui-body-a .ui-btn:visited,html body .ui-btn.ui-btn-a:visited,html body .ui-group-theme-a .ui-btn:visited,[class*="ui-group-theme-"] .ui-btn.ui-btn-a:visited{background:#f2f2f2;border-color:#f2f2f2;color:#000}
-.ui-page-theme-a .ui-btn:active,html .ui-bar-a .ui-btn:active,html .ui-body-a .ui-btn:active,html body .ui-btn.ui-btn-a:active,html body .ui-group-theme-a .ui-btn:active,[class*="ui-group-theme-"] .ui-btn.ui-btn-a:active{background:#a1a6a9;border-color:#a1a6a9;color:#000}
-.ui-page-theme-a .ui-btn.ui-btn-active,html .ui-bar-a .ui-btn.ui-btn-active,html .ui-body-a .ui-btn.ui-btn-active,html body .ui-btn.ui-btn-a.ui-btn-active,html body .ui-group-theme-a .ui-btn.ui-btn-active,[class*="ui-group-theme-"] .ui-btn.ui-btn-a.ui-btn-active,.ui-page-theme-a .ui-icon-checkbox-on:after,html .ui-bar-a .ui-icon-checkbox-on:after,html .ui-body-a .ui-icon-checkbox-on:after,html body .ui-group-theme-a .ui-icon-checkbox-on:after,.ui-btn.ui-icon-checkbox-on.ui-btn-a:after,.ui-page-theme-a .ui-flipswitch-active,html .ui-bar-a .ui-flipswitch-active,html .ui-body-a .ui-flipswitch-active,html body .ui-group-theme-a .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active,.ui-page-theme-a .ui-slider-track .ui-btn-active,html .ui-bar-a .ui-slider-track .ui-btn-active,html .ui-body-a .ui-slider-track .ui-btn-active,html body .ui-group-theme-a .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-a .ui-btn-active{background-color:#a1a6a9;border-color:#a1a6a9;color:#000}
-.ui-page-theme-a .ui-icon-radio-on:after,html .ui-bar-a .ui-icon-radio-on:after,html .ui-body-a .ui-icon-radio-on:after,html body .ui-group-theme-a .ui-icon-radio-on:after,.ui-btn.ui-icon-radio-on.ui-btn-a:after{border-color:#a1a6a9}
+.ui-overlay-a a,.ui-page-theme-a a,html .ui-bar-a a,html .ui-body-a a,html body .ui-group-theme-a a{color:#2c3e50;font-weight:bold}
+.ui-overlay-a a:visited,.ui-page-theme-a a:visited,html .ui-bar-a a:visited,html .ui-body-a a:visited,html body .ui-group-theme-a a:visited{color:#a1a6a9}
+.ui-overlay-a a:hover,.ui-page-theme-a a:hover,html .ui-bar-a a:hover,html .ui-body-a a:hover,html body .ui-group-theme-a a:hover{color:#a1a6a9}
+.ui-overlay-a a:active,.ui-page-theme-a a:active,html .ui-bar-a a:active,html .ui-body-a a:active,html body .ui-group-theme-a a:active{color:#a1a6a9}
+.ui-overlay-a .ui-btn,.ui-page-theme-a .ui-btn,html .ui-bar-a .ui-btn,html .ui-body-a .ui-btn,html body .ui-group-theme-a .ui-btn,html head + body .ui-btn.ui-btn-a,.ui-overlay-a .ui-btn:visited,.ui-page-theme-a .ui-btn:visited,html .ui-bar-a .ui-btn:visited,html .ui-body-a .ui-btn:visited,html body .ui-group-theme-a .ui-btn:visited,html head + body .ui-btn.ui-btn-a:visited{background:#f2f2f2;border-color:#f2f2f2;color:#000}
+.ui-overlay-a .ui-btn:hover,.ui-page-theme-a .ui-btn:hover,html .ui-bar-a .ui-btn:hover,html .ui-body-a .ui-btn:hover,html body .ui-group-theme-a .ui-btn:hover,html head + body .ui-btn.ui-btn-a:hover{background:#a1a6a9;border-color:#a1a6a9;color:#000}
+.ui-overlay-a .ui-btn:active,.ui-page-theme-a .ui-btn:active,html .ui-bar-a .ui-btn:active,html .ui-body-a .ui-btn:active,html body .ui-group-theme-a .ui-btn:active,html head + body .ui-btn.ui-btn-a:active{background:#a1a6a9;border-color:#a1a6a9;color:#000}
+.ui-overlay-a .ui-btn.ui-btn-active,.ui-page-theme-a .ui-btn.ui-btn-active,html .ui-bar-a .ui-btn.ui-btn-active,html .ui-body-a .ui-btn.ui-btn-active,html body .ui-group-theme-a .ui-btn.ui-btn-active,html head + body .ui-btn.ui-btn-a.ui-btn-active,.ui-overlay-a .ui-icon-checkbox-on:after,.ui-page-theme-a .ui-icon-checkbox-on:after,html .ui-bar-a .ui-icon-checkbox-on:after,html .ui-body-a .ui-icon-checkbox-on:after,html body .ui-group-theme-a .ui-icon-checkbox-on:after,.ui-btn.ui-icon-checkbox-on.ui-btn-a:after,.ui-overlay-a .ui-flipswitch-active,.ui-page-theme-a .ui-flipswitch-active,html .ui-bar-a .ui-flipswitch-active,html .ui-body-a .ui-flipswitch-active,html body .ui-group-theme-a .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active,.ui-overlay-a .ui-slider-track .ui-btn-active,.ui-page-theme-a .ui-slider-track .ui-btn-active,html .ui-bar-a .ui-slider-track .ui-btn-active,html .ui-body-a .ui-slider-track .ui-btn-active,html body .ui-group-theme-a .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-a .ui-btn-active{background-color:#a1a6a9;border-color:#a1a6a9;color:#000}
+.ui-overlay-a .ui-icon-radio-on:after,.ui-page-theme-a .ui-icon-radio-on:after,html .ui-bar-a .ui-icon-radio-on:after,html .ui-body-a .ui-icon-radio-on:after,html body .ui-group-theme-a .ui-icon-radio-on:after,.ui-btn.ui-icon-radio-on.ui-btn-a:after{border-color:#a1a6a9}
 .ui-slider.ui-slider-switch.ui-bar-a .ui-slider-label{background-color:#ebebeb}
 .ui-slider.ui-slider-switch.ui-bar-a .ui-slider-label.ui-btn-active{background-color:#f3f3f3;color:inherit}
 div.ui-slider-switch.ui-bar-a{border:none}
 .ui-slider.ui-slider-switch.ui-bar-a .ui-slider-handle{background-color:#f2f2f2;border-color:#f3f3f3}
-.ui-page-theme-a .ui-btn:focus,html .ui-bar-a .ui-btn:focus,html .ui-body-a .ui-btn:focus,html body .ui-btn.ui-btn-a:focus,html body .ui-group-theme-a .ui-btn:focus,[class*="ui-group-theme-"] .ui-btn.ui-btn-a:focus,.ui-page-theme-a .ui-focus,html .ui-bar-a .ui-focus,html .ui-body-a .ui-focus,html body .ui-btn-a.ui-focus,html body .ui-body-a.ui-focus,html body .ui-group-theme-a .ui-focus,[class*="ui-group-theme-"] .ui-btn-a.ui-focus,[class*="ui-group-theme-"] .ui-body-a.ui-focus{border-color:#a1a6a9;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
+.ui-overlay-a .ui-btn:focus,.ui-page-theme-a .ui-btn:focus,html .ui-bar-a .ui-btn:focus,html .ui-body-a .ui-btn:focus,html body .ui-group-theme-a .ui-btn:focus,html head + body .ui-btn.ui-btn-a:focus,/* Focus buttons and text inputs with div wrap */,.ui-overlay-a .ui-focus,.ui-page-theme-a .ui-focus,html .ui-bar-a .ui-focus,html .ui-body-a .ui-focus,html body .ui-group-theme-a .ui-focus,html head + body .ui-btn-a.ui-focus,html head + body .ui-body-a.ui-focus{border-color:#a1a6a9;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
 
-.ui-bar-b,.ui-page-theme-b .ui-bar-inherit,html .ui-bar-b .ui-bar-inherit,html .ui-body-b .ui-bar-inherit,html body .ui-group-theme-b .ui-bar-inherit{background:#fff;border-color:#16a085;color:#fff;font-weight:bold}
+.ui-bar-b,.ui-overlay-b .ui-bar-inherit,.ui-page-theme-b .ui-bar-inherit,html .ui-bar-b .ui-bar-inherit,html .ui-body-b .ui-bar-inherit,html body .ui-group-theme-b .ui-bar-inherit{background:#fff;border-color:#16a085;color:#fff;font-weight:bold}
 .ui-bar-b{border-width:1px;border-style:solid;background:#16a085}
-.ui-page-theme-b,.ui-page-theme-b .ui-panel-wrapper,.ui-page-theme-b .ui-li-count,html .ui-bar-b .ui-li-count,html .ui-body-b .ui-li-count,html body .ui-group-theme-b .ui-li-count,.ui-btn.ui-btn-b > .ui-li-count,.ui-li-static.ui-body-b > .ui-li-count,.ui-li-divider.ui-bar-b > .ui-li-count,.ui-listview li .ui-li-count.ui-body-b{background:#fff;border-color:#16a085;color:#34495e}
-.ui-body-b,.ui-page-theme-b .ui-body-inherit,html .ui-bar-b .ui-body-inherit,html .ui-body-b .ui-body-inherit,html body .ui-group-theme-b .ui-body-inherit,.ui-overlay-b{background:#16a085;border-color:#16a085;color:#fff;background-image:none}
+.ui-overlay-b,.ui-page-theme-b,.ui-page-theme-b .ui-panel-wrapper{background:#fff;border-color:#16a085;color:#34495e}
+.ui-body-b,.ui-overlay-b .ui-body-inherit,.ui-page-theme-b .ui-body-inherit,html .ui-bar-b .ui-body-inherit,html .ui-body-b .ui-body-inherit,html body .ui-group-theme-b .ui-body-inherit,html .ui-panel-page-container-b{background:#16a085;border-color:#16a085;color:#fff;background-image:none}
 .ui-page-theme-b .ui-body-inherit > .ui-body-inherit,html .ui-bar-b .ui-body-inherit > .ui-body-inherit,html .ui-body-b .ui-body-inherit >.ui-body-inherit,html body .ui-group-theme-b .ui-body-inherit > .ui-body-inherit{background:#fff;border-color:#18ae91}
 .ui-body-b{border-width:1px;border-style:solid}
-.ui-page-theme-b a,html .ui-bar-b a,html .ui-body-b a,html body .ui-group-theme-b a{color:#16a085;font-weight:bold}
-.ui-page-theme-b a:visited,html .ui-bar-b a:visited,html .ui-body-b a:visited,html body .ui-group-theme-b a:visited{color:#1abc9c}
-.ui-page-theme-b a:active,html .ui-bar-b a:active,html .ui-body-b a:active,html body .ui-group-theme-b a:active{color:#1abc9c}
-.ui-page-theme-b .ui-btn,html .ui-bar-b .ui-btn,html .ui-body-b .ui-btn,html body .ui-btn.ui-btn-b,html body .ui-group-theme-b .ui-btn,[class*="ui-group-theme-"] .ui-btn.ui-btn-b,.ui-page-theme-b .ui-btn:visited,html .ui-bar-b .ui-btn:visited,html .ui-body-b .ui-btn:visited,html body .ui-btn.ui-btn-b:visited,html body .ui-group-theme-b .ui-btn:visited,[class*="ui-group-theme-"] .ui-btn.ui-btn-b:visited{background:#16a085;border-color:#16a085;color:#fff}
-.ui-page-theme-b .ui-btn:active,html .ui-bar-b .ui-btn:active,html .ui-body-b .ui-btn:active,html body .ui-btn.ui-btn-b:active,html body .ui-group-theme-b .ui-btn:active,[class*="ui-group-theme-"] .ui-btn.ui-btn-b:active{background:#1abc9c;border-color:#1abc9c;color:#fff}
-.ui-page-theme-b .ui-btn.ui-btn-active,html .ui-bar-b .ui-btn.ui-btn-active,html .ui-body-b .ui-btn.ui-btn-active,html body .ui-btn.ui-btn-b.ui-btn-active,html body .ui-group-theme-b .ui-btn.ui-btn-active,[class*="ui-group-theme-"] .ui-btn.ui-btn-b.ui-btn-active,.ui-page-theme-b .ui-icon-checkbox-on:after,html .ui-bar-b .ui-icon-checkbox-on:after,html .ui-body-b .ui-icon-checkbox-on:after,html body .ui-group-theme-b .ui-icon-checkbox-on:after,.ui-btn.ui-icon-checkbox-on.ui-btn-b:after,.ui-page-theme-b .ui-flipswitch-active,html .ui-bar-b .ui-flipswitch-active,html .ui-body-b .ui-flipswitch-active,html body .ui-group-theme-b .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-b.ui-flipswitch-active,.ui-page-theme-b .ui-slider-track .ui-btn-active,html .ui-bar-b .ui-slider-track .ui-btn-active,html .ui-body-b .ui-slider-track .ui-btn-active,html body .ui-group-theme-b .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-b .ui-btn-active{background-color:#1abc9c;border-color:#1abc9c;color:#fff}
-.ui-page-theme-b .ui-icon-radio-on:after,html .ui-bar-b .ui-icon-radio-on:after,html .ui-body-b .ui-icon-radio-on:after,html body .ui-group-theme-b .ui-icon-radio-on:after,.ui-btn.ui-icon-radio-on.ui-btn-b:after{border-color:#1abc9c}
+.ui-overlay-b a,.ui-page-theme-b a,html .ui-bar-b a,html .ui-body-b a,html body .ui-group-theme-b a{color:#16a085;font-weight:bold}
+.ui-overlay-b a:visited,.ui-page-theme-b a:visited,html .ui-bar-b a:visited,html .ui-body-b a:visited,html body .ui-group-theme-b a:visited{color:#1abc9c}
+.ui-overlay-b a:hover,.ui-page-theme-b a:hover,html .ui-bar-b a:hover,html .ui-body-b a:hover,html body .ui-group-theme-b a:hover{color:#1abc9c}
+.ui-overlay-b a:active,.ui-page-theme-b a:active,html .ui-bar-b a:active,html .ui-body-b a:active,html body .ui-group-theme-b a:active{color:#1abc9c}
+.ui-overlay-b .ui-btn,.ui-page-theme-b .ui-btn,html .ui-bar-b .ui-btn,html .ui-body-b .ui-btn,html body .ui-group-theme-b .ui-btn,html head + body .ui-btn.ui-btn-b,.ui-overlay-b .ui-btn:visited,.ui-page-theme-b .ui-btn:visited,html .ui-bar-b .ui-btn:visited,html .ui-body-b .ui-btn:visited,html body .ui-group-theme-b .ui-btn:visited,html head + body .ui-btn.ui-btn-b:visited{background:#16a085;border-color:#16a085;color:#fff}
+.ui-overlay-b .ui-btn:hover,.ui-page-theme-b .ui-btn:hover,html .ui-bar-b .ui-btn:hover,html .ui-body-b .ui-btn:hover,html body .ui-group-theme-b .ui-btn:hover,html head + body .ui-btn.ui-btn-b:hover{background:#1abc9c;border-color:#1abc9c;color:#fff}
+.ui-overlay-b .ui-btn:active,.ui-page-theme-b .ui-btn:active,html .ui-bar-b .ui-btn:active,html .ui-body-b .ui-btn:active,html body .ui-group-theme-b .ui-btn:active,html head + body .ui-btn.ui-btn-b:active{background:#1abc9c;border-color:#1abc9c;color:#fff}
+.ui-overlay-b .ui-btn.ui-btn-active,.ui-page-theme-b .ui-btn.ui-btn-active,html .ui-bar-b .ui-btn.ui-btn-active,html .ui-body-b .ui-btn.ui-btn-active,html body .ui-group-theme-b .ui-btn.ui-btn-active,html head + body .ui-btn.ui-btn-b.ui-btn-active,.ui-overlay-b .ui-icon-checkbox-on:after,.ui-page-theme-b .ui-icon-checkbox-on:after,html .ui-bar-b .ui-icon-checkbox-on:after,html .ui-body-b .ui-icon-checkbox-on:after,html body .ui-group-theme-b .ui-icon-checkbox-on:after,.ui-btn.ui-icon-checkbox-on.ui-btn-b:after,.ui-overlay-b .ui-flipswitch-active,.ui-page-theme-b .ui-flipswitch-active,html .ui-bar-b .ui-flipswitch-active,html .ui-body-b .ui-flipswitch-active,html body .ui-group-theme-b .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-b.ui-flipswitch-active,.ui-overlay-b .ui-slider-track .ui-btn-active,.ui-page-theme-b .ui-slider-track .ui-btn-active,html .ui-bar-b .ui-slider-track .ui-btn-active,html .ui-body-b .ui-slider-track .ui-btn-active,html body .ui-group-theme-b .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-b .ui-btn-active{background-color:#1abc9c;border-color:#1abc9c;color:#fff}
+.ui-overlay-b .ui-icon-radio-on:after,.ui-page-theme-b .ui-icon-radio-on:after,html .ui-bar-b .ui-icon-radio-on:after,html .ui-body-b .ui-icon-radio-on:after,html body .ui-group-theme-b .ui-icon-radio-on:after,.ui-btn.ui-icon-radio-on.ui-btn-b:after{border-color:#1abc9c}
 .ui-slider.ui-slider-switch.ui-bar-b .ui-slider-label{background-color:#ebebeb}
 .ui-slider.ui-slider-switch.ui-bar-b .ui-slider-label.ui-btn-active{background-color:#19b798;color:inherit}
 div.ui-slider-switch.ui-bar-b{border:none}
 .ui-slider.ui-slider-switch.ui-bar-b .ui-slider-handle{background-color:#16a085;border-color:#19b798}
-.ui-page-theme-b .ui-btn:focus,html .ui-bar-b .ui-btn:focus,html .ui-body-b .ui-btn:focus,html body .ui-btn.ui-btn-b:focus,html body .ui-group-theme-b .ui-btn:focus,[class*="ui-group-theme-"] .ui-btn.ui-btn-b:focus,.ui-page-theme-b .ui-focus,html .ui-bar-b .ui-focus,html .ui-body-b .ui-focus,html body .ui-btn-b.ui-focus,html body .ui-body-b.ui-focus,html body .ui-group-theme-b .ui-focus,[class*="ui-group-theme-"] .ui-btn-b.ui-focus,[class*="ui-group-theme-"] .ui-body-b.ui-focus{border-color:#1abc9c;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
+.ui-overlay-b .ui-btn:focus,.ui-page-theme-b .ui-btn:focus,html .ui-bar-b .ui-btn:focus,html .ui-body-b .ui-btn:focus,html body .ui-group-theme-b .ui-btn:focus,html head + body .ui-btn.ui-btn-b:focus,/* Focus buttons and text inputs with div wrap */,.ui-overlay-b .ui-focus,.ui-page-theme-b .ui-focus,html .ui-bar-b .ui-focus,html .ui-body-b .ui-focus,html body .ui-group-theme-b .ui-focus,html head + body .ui-btn-b.ui-focus,html head + body .ui-body-b.ui-focus{border-color:#1abc9c;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
 
-.ui-bar-c,.ui-page-theme-c .ui-bar-inherit,html .ui-bar-c .ui-bar-inherit,html .ui-body-c .ui-bar-inherit,html body .ui-group-theme-c .ui-bar-inherit{background:#2c3e50;border-color:#2c3e50;color:#fff;font-weight:bold}
+.ui-bar-c,.ui-overlay-c .ui-bar-inherit,.ui-page-theme-c .ui-bar-inherit,html .ui-bar-c .ui-bar-inherit,html .ui-body-c .ui-bar-inherit,html body .ui-group-theme-c .ui-bar-inherit{background:#2c3e50;border-color:#2c3e50;color:#fff;font-weight:bold}
 .ui-bar-c{border-width:1px;border-style:solid;background:#2c3e50}
-.ui-page-theme-c,.ui-page-theme-c .ui-panel-wrapper,.ui-page-theme-c .ui-li-count,html .ui-bar-c .ui-li-count,html .ui-body-c .ui-li-count,html body .ui-group-theme-c .ui-li-count,.ui-btn.ui-btn-c > .ui-li-count,.ui-li-static.ui-body-c > .ui-li-count,.ui-li-divider.ui-bar-c > .ui-li-count,.ui-listview li .ui-li-count.ui-body-c{background:#2c3e50;border-color:#2c3e50;color:#34495e}
-.ui-body-c,.ui-page-theme-c .ui-body-inherit,html .ui-bar-c .ui-body-inherit,html .ui-body-c .ui-body-inherit,html body .ui-group-theme-c .ui-body-inherit,.ui-overlay-c{background:#2c3e50;border-color:#2c3e50;color:#fff;background-image:none}
+.ui-overlay-c,.ui-page-theme-c,.ui-page-theme-c .ui-panel-wrapper{background:#2c3e50;border-color:#2c3e50;color:#34495e}
+.ui-body-c,.ui-overlay-c .ui-body-inherit,.ui-page-theme-c .ui-body-inherit,html .ui-bar-c .ui-body-inherit,html .ui-body-c .ui-body-inherit,html body .ui-group-theme-c .ui-body-inherit,html .ui-panel-page-container-c{background:#2c3e50;border-color:#2c3e50;color:#fff;background-image:none}
 .ui-page-theme-c .ui-body-inherit > .ui-body-inherit,html .ui-bar-c .ui-body-inherit > .ui-body-inherit,html .ui-body-c .ui-body-inherit >.ui-body-inherit,html body .ui-group-theme-c .ui-body-inherit > .ui-body-inherit{background:#2c3e50;border-color:#33485c}
 .ui-body-c{border-width:1px;border-style:solid}
-.ui-page-theme-c a,html .ui-bar-c a,html .ui-body-c a,html body .ui-group-theme-c a{color:#2c3e50;font-weight:bold}
-.ui-page-theme-c a:visited,html .ui-bar-c a:visited,html .ui-body-c a:visited,html body .ui-group-theme-c a:visited{color:#4e6d8d}
-.ui-page-theme-c a:active,html .ui-bar-c a:active,html .ui-body-c a:active,html body .ui-group-theme-c a:active{color:#4e6d8d}
-.ui-page-theme-c .ui-btn,html .ui-bar-c .ui-btn,html .ui-body-c .ui-btn,html body .ui-btn.ui-btn-c,html body .ui-group-theme-c .ui-btn,[class*="ui-group-theme-"] .ui-btn.ui-btn-c,.ui-page-theme-c .ui-btn:visited,html .ui-bar-c .ui-btn:visited,html .ui-body-c .ui-btn:visited,html body .ui-btn.ui-btn-c:visited,html body .ui-group-theme-c .ui-btn:visited,[class*="ui-group-theme-"] .ui-btn.ui-btn-c:visited{background:#2c3e50;border-color:#2c3e50;color:#fff}
-.ui-page-theme-c .ui-btn:active,html .ui-bar-c .ui-btn:active,html .ui-body-c .ui-btn:active,html body .ui-btn.ui-btn-c:active,html body .ui-group-theme-c .ui-btn:active,[class*="ui-group-theme-"] .ui-btn.ui-btn-c:active{background:#4e6d8d;border-color:#4e6d8d;color:#fff}
-.ui-page-theme-c .ui-btn.ui-btn-active,html .ui-bar-c .ui-btn.ui-btn-active,html .ui-body-c .ui-btn.ui-btn-active,html body .ui-btn.ui-btn-c.ui-btn-active,html body .ui-group-theme-c .ui-btn.ui-btn-active,[class*="ui-group-theme-"] .ui-btn.ui-btn-c.ui-btn-active,.ui-page-theme-c .ui-icon-checkbox-on:after,html .ui-bar-c .ui-icon-checkbox-on:after,html .ui-body-c .ui-icon-checkbox-on:after,html body .ui-group-theme-c .ui-icon-checkbox-on:after,.ui-btn.ui-icon-checkbox-on.ui-btn-c:after,.ui-page-theme-c .ui-flipswitch-active,html .ui-bar-c .ui-flipswitch-active,html .ui-body-c .ui-flipswitch-active,html body .ui-group-theme-c .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-c.ui-flipswitch-active,.ui-page-theme-c .ui-slider-track .ui-btn-active,html .ui-bar-c .ui-slider-track .ui-btn-active,html .ui-body-c .ui-slider-track .ui-btn-active,html body .ui-group-theme-c .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-c .ui-btn-active{background-color:#4e6d8d;border-color:#4e6d8d;color:#fff}
-.ui-page-theme-c .ui-icon-radio-on:after,html .ui-bar-c .ui-icon-radio-on:after,html .ui-body-c .ui-icon-radio-on:after,html body .ui-group-theme-c .ui-icon-radio-on:after,.ui-btn.ui-icon-radio-on.ui-btn-c:after{border-color:#4e6d8d}
+.ui-overlay-c a,.ui-page-theme-c a,html .ui-bar-c a,html .ui-body-c a,html body .ui-group-theme-c a{color:#2c3e50;font-weight:bold}
+.ui-overlay-c a:visited,.ui-page-theme-c a:visited,html .ui-bar-c a:visited,html .ui-body-c a:visited,html body .ui-group-theme-c a:visited{color:#4e6d8d}
+.ui-overlay-c a:hover,.ui-page-theme-c a:hover,html .ui-bar-c a:hover,html .ui-body-c a:hover,html body .ui-group-theme-c a:hover{color:#4e6d8d}
+.ui-overlay-c a:active,.ui-page-theme-c a:active,html .ui-bar-c a:active,html .ui-body-c a:active,html body .ui-group-theme-c a:active{color:#4e6d8d}
+.ui-overlay-c .ui-btn,.ui-page-theme-c .ui-btn,html .ui-bar-c .ui-btn,html .ui-body-c .ui-btn,html body .ui-group-theme-c .ui-btn,html head + body .ui-btn.ui-btn-c,.ui-overlay-c .ui-btn:visited,.ui-page-theme-c .ui-btn:visited,html .ui-bar-c .ui-btn:visited,html .ui-body-c .ui-btn:visited,html body .ui-group-theme-c .ui-btn:visited,html head + body .ui-btn.ui-btn-c:visited{background:#2c3e50;border-color:#2c3e50;color:#fff}
+.ui-overlay-c .ui-btn:hover,.ui-page-theme-c .ui-btn:hover,html .ui-bar-c .ui-btn:hover,html .ui-body-c .ui-btn:hover,html body .ui-group-theme-c .ui-btn:hover,html head + body .ui-btn.ui-btn-c:hover{background:#4e6d8d;border-color:#4e6d8d;color:#fff}
+.ui-overlay-c .ui-btn:active,.ui-page-theme-c .ui-btn:active,html .ui-bar-c .ui-btn:active,html .ui-body-c .ui-btn:active,html body .ui-group-theme-c .ui-btn:active,html head + body .ui-btn.ui-btn-c:active{background:#4e6d8d;border-color:#4e6d8d;color:#fff}
+.ui-overlay-c .ui-btn.ui-btn-active,.ui-page-theme-c .ui-btn.ui-btn-active,html .ui-bar-c .ui-btn.ui-btn-active,html .ui-body-c .ui-btn.ui-btn-active,html body .ui-group-theme-c .ui-btn.ui-btn-active,html head + body .ui-btn.ui-btn-c.ui-btn-active,.ui-overlay-c .ui-icon-checkbox-on:after,.ui-page-theme-c .ui-icon-checkbox-on:after,html .ui-bar-c .ui-icon-checkbox-on:after,html .ui-body-c .ui-icon-checkbox-on:after,html body .ui-group-theme-c .ui-icon-checkbox-on:after,.ui-btn.ui-icon-checkbox-on.ui-btn-c:after,.ui-overlay-c .ui-flipswitch-active,.ui-page-theme-c .ui-flipswitch-active,html .ui-bar-c .ui-flipswitch-active,html .ui-body-c .ui-flipswitch-active,html body .ui-group-theme-c .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-c.ui-flipswitch-active,.ui-overlay-c .ui-slider-track .ui-btn-active,.ui-page-theme-c .ui-slider-track .ui-btn-active,html .ui-bar-c .ui-slider-track .ui-btn-active,html .ui-body-c .ui-slider-track .ui-btn-active,html body .ui-group-theme-c .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-c .ui-btn-active{background-color:#4e6d8d;border-color:#4e6d8d;color:#fff}
+.ui-overlay-c .ui-icon-radio-on:after,.ui-page-theme-c .ui-icon-radio-on:after,html .ui-bar-c .ui-icon-radio-on:after,html .ui-body-c .ui-icon-radio-on:after,html body .ui-group-theme-c .ui-icon-radio-on:after,.ui-btn.ui-icon-radio-on.ui-btn-c:after{border-color:#4e6d8d}
 .ui-slider.ui-slider-switch.ui-bar-c .ui-slider-label{background-color:#28394a}
 .ui-slider.ui-slider-switch.ui-bar-c .ui-slider-label.ui-btn-active{background-color:#374d64;color:inherit}
 div.ui-slider-switch.ui-bar-c{border:none}
 .ui-slider.ui-slider-switch.ui-bar-c .ui-slider-handle{background-color:#2c3e50;border-color:#374d64}
-.ui-page-theme-c .ui-btn:focus,html .ui-bar-c .ui-btn:focus,html .ui-body-c .ui-btn:focus,html body .ui-btn.ui-btn-c:focus,html body .ui-group-theme-c .ui-btn:focus,[class*="ui-group-theme-"] .ui-btn.ui-btn-c:focus,.ui-page-theme-c .ui-focus,html .ui-bar-c .ui-focus,html .ui-body-c .ui-focus,html body .ui-btn-c.ui-focus,html body .ui-body-c.ui-focus,html body .ui-group-theme-c .ui-focus,[class*="ui-group-theme-"] .ui-btn-c.ui-focus,[class*="ui-group-theme-"] .ui-body-c.ui-focus{border-color:#4e6d8d;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
+.ui-overlay-c .ui-btn:focus,.ui-page-theme-c .ui-btn:focus,html .ui-bar-c .ui-btn:focus,html .ui-body-c .ui-btn:focus,html body .ui-group-theme-c .ui-btn:focus,html head + body .ui-btn.ui-btn-c:focus,/* Focus buttons and text inputs with div wrap */,.ui-overlay-c .ui-focus,.ui-page-theme-c .ui-focus,html .ui-bar-c .ui-focus,html .ui-body-c .ui-focus,html body .ui-group-theme-c .ui-focus,html head + body .ui-btn-c.ui-focus,html head + body .ui-body-c.ui-focus{border-color:#4e6d8d;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
 
-.ui-bar-d,.ui-page-theme-d .ui-bar-inherit,html .ui-bar-d .ui-bar-inherit,html .ui-body-d .ui-bar-inherit,html body .ui-group-theme-d .ui-bar-inherit{background:#fff;border-color:#c1392b;color:#fff;font-weight:bold}
+.ui-bar-d,.ui-overlay-d .ui-bar-inherit,.ui-page-theme-d .ui-bar-inherit,html .ui-bar-d .ui-bar-inherit,html .ui-body-d .ui-bar-inherit,html body .ui-group-theme-d .ui-bar-inherit{background:#fff;border-color:#c1392b;color:#fff;font-weight:bold}
 .ui-bar-d{border-width:1px;border-style:solid;background:#c1392b}
-.ui-page-theme-d,.ui-page-theme-d .ui-panel-wrapper,.ui-page-theme-d .ui-li-count,html .ui-bar-d .ui-li-count,html .ui-body-d .ui-li-count,html body .ui-group-theme-d .ui-li-count,.ui-btn.ui-btn-d > .ui-li-count,.ui-li-static.ui-body-d > .ui-li-count,.ui-li-divider.ui-bar-d > .ui-li-count,.ui-listview li .ui-li-count.ui-body-d{background:#fff;border-color:#c1392b;color:#34495e}
-.ui-body-d,.ui-page-theme-d .ui-body-inherit,html .ui-bar-d .ui-body-inherit,html .ui-body-d .ui-body-inherit,html body .ui-group-theme-d .ui-body-inherit,.ui-overlay-d{background:#c1392b;border-color:#c1392b;color:#fff;background-image:none}
+.ui-overlay-d,.ui-page-theme-d,.ui-page-theme-d .ui-panel-wrapper{background:#fff;border-color:#c1392b;color:#34495e}
+.ui-body-d,.ui-overlay-d .ui-body-inherit,.ui-page-theme-d .ui-body-inherit,html .ui-bar-d .ui-body-inherit,html .ui-body-d .ui-body-inherit,html body .ui-group-theme-d .ui-body-inherit,html .ui-panel-page-container-d{background:#c1392b;border-color:#c1392b;color:#fff;background-image:none}
 .ui-page-theme-d .ui-body-inherit > .ui-body-inherit,html .ui-bar-d .ui-body-inherit > .ui-body-inherit,html .ui-body-d .ui-body-inherit >.ui-body-inherit,html body .ui-group-theme-d .ui-body-inherit > .ui-body-inherit{background:#fff;border-color:#cc3c2d}
 .ui-body-d{border-width:1px;border-style:solid}
-.ui-page-theme-d a,html .ui-bar-d a,html .ui-body-d a,html body .ui-group-theme-d a{color:#c0392b;font-weight:bold}
-.ui-page-theme-d a:visited,html .ui-bar-d a:visited,html .ui-body-d a:visited,html body .ui-group-theme-d a:visited{color:#e84c3d}
-.ui-page-theme-d a:active,html .ui-bar-d a:active,html .ui-body-d a:active,html body .ui-group-theme-d a:active{color:#e84c3d}
-.ui-page-theme-d .ui-btn,html .ui-bar-d .ui-btn,html .ui-body-d .ui-btn,html body .ui-btn.ui-btn-d,html body .ui-group-theme-d .ui-btn,[class*="ui-group-theme-"] .ui-btn.ui-btn-d,.ui-page-theme-d .ui-btn:visited,html .ui-bar-d .ui-btn:visited,html .ui-body-d .ui-btn:visited,html body .ui-btn.ui-btn-d:visited,html body .ui-group-theme-d .ui-btn:visited,[class*="ui-group-theme-"] .ui-btn.ui-btn-d:visited{background:#c1392b;border-color:#c1392b;color:#fff}
-.ui-page-theme-d .ui-btn:active,html .ui-bar-d .ui-btn:active,html .ui-body-d .ui-btn:active,html body .ui-btn.ui-btn-d:active,html body .ui-group-theme-d .ui-btn:active,[class*="ui-group-theme-"] .ui-btn.ui-btn-d:active{background:#e84c3d;border-color:#e84c3d;color:#fff}
-.ui-page-theme-d .ui-btn.ui-btn-active,html .ui-bar-d .ui-btn.ui-btn-active,html .ui-body-d .ui-btn.ui-btn-active,html body .ui-btn.ui-btn-d.ui-btn-active,html body .ui-group-theme-d .ui-btn.ui-btn-active,[class*="ui-group-theme-"] .ui-btn.ui-btn-d.ui-btn-active,.ui-page-theme-d .ui-icon-checkbox-on:after,html .ui-bar-d .ui-icon-checkbox-on:after,html .ui-body-d .ui-icon-checkbox-on:after,html body .ui-group-theme-d .ui-icon-checkbox-on:after,.ui-btn.ui-icon-checkbox-on.ui-btn-d:after,.ui-page-theme-d .ui-flipswitch-active,html .ui-bar-d .ui-flipswitch-active,html .ui-body-d .ui-flipswitch-active,html body .ui-group-theme-d .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-d.ui-flipswitch-active,.ui-page-theme-d .ui-slider-track .ui-btn-active,html .ui-bar-d .ui-slider-track .ui-btn-active,html .ui-body-d .ui-slider-track .ui-btn-active,html body .ui-group-theme-d .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-d .ui-btn-active{background-color:#e84c3d;border-color:#e84c3d;color:#fff}
-.ui-page-theme-d .ui-icon-radio-on:after,html .ui-bar-d .ui-icon-radio-on:after,html .ui-body-d .ui-icon-radio-on:after,html body .ui-group-theme-d .ui-icon-radio-on:after,.ui-btn.ui-icon-radio-on.ui-btn-d:after{border-color:#e84c3d}
+.ui-overlay-d a,.ui-page-theme-d a,html .ui-bar-d a,html .ui-body-d a,html body .ui-group-theme-d a{color:#c0392b;font-weight:bold}
+.ui-overlay-d a:visited,.ui-page-theme-d a:visited,html .ui-bar-d a:visited,html .ui-body-d a:visited,html body .ui-group-theme-d a:visited{color:#e84c3d}
+.ui-overlay-d a:hover,.ui-page-theme-d a:hover,html .ui-bar-d a:hover,html .ui-body-d a:hover,html body .ui-group-theme-d a:hover{color:#e84c3d}
+.ui-overlay-d a:active,.ui-page-theme-d a:active,html .ui-bar-d a:active,html .ui-body-d a:active,html body .ui-group-theme-d a:active{color:#e84c3d}
+.ui-overlay-d .ui-btn,.ui-page-theme-d .ui-btn,html .ui-bar-d .ui-btn,html .ui-body-d .ui-btn,html body .ui-group-theme-d .ui-btn,html head + body .ui-btn.ui-btn-d,.ui-overlay-d .ui-btn:visited,.ui-page-theme-d .ui-btn:visited,html .ui-bar-d .ui-btn:visited,html .ui-body-d .ui-btn:visited,html body .ui-group-theme-d .ui-btn:visited,html head + body .ui-btn.ui-btn-d:visited{background:#c1392b;border-color:#c1392b;color:#fff}
+.ui-overlay-d .ui-btn:hover,.ui-page-theme-d .ui-btn:hover,html .ui-bar-d .ui-btn:hover,html .ui-body-d .ui-btn:hover,html body .ui-group-theme-d .ui-btn:hover,html head + body .ui-btn.ui-btn-d:hover{background:#e84c3d;border-color:#e84c3d;color:#fff}
+.ui-overlay-d .ui-btn:active,.ui-page-theme-d .ui-btn:active,html .ui-bar-d .ui-btn:active,html .ui-body-d .ui-btn:active,html body .ui-group-theme-d .ui-btn:active,html head + body .ui-btn.ui-btn-d:active{background:#e84c3d;border-color:#e84c3d;color:#fff}
+.ui-overlay-d .ui-btn.ui-btn-active,.ui-page-theme-d .ui-btn.ui-btn-active,html .ui-bar-d .ui-btn.ui-btn-active,html .ui-body-d .ui-btn.ui-btn-active,html body .ui-group-theme-d .ui-btn.ui-btn-active,html head + body .ui-btn.ui-btn-d.ui-btn-active,.ui-overlay-d .ui-icon-checkbox-on:after,.ui-page-theme-d .ui-icon-checkbox-on:after,html .ui-bar-d .ui-icon-checkbox-on:after,html .ui-body-d .ui-icon-checkbox-on:after,html body .ui-group-theme-d .ui-icon-checkbox-on:after,.ui-btn.ui-icon-checkbox-on.ui-btn-d:after,.ui-overlay-d .ui-flipswitch-active,.ui-page-theme-d .ui-flipswitch-active,html .ui-bar-d .ui-flipswitch-active,html .ui-body-d .ui-flipswitch-active,html body .ui-group-theme-d .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-d.ui-flipswitch-active,.ui-overlay-d .ui-slider-track .ui-btn-active,.ui-page-theme-d .ui-slider-track .ui-btn-active,html .ui-bar-d .ui-slider-track .ui-btn-active,html .ui-body-d .ui-slider-track .ui-btn-active,html body .ui-group-theme-d .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-d .ui-btn-active{background-color:#e84c3d;border-color:#e84c3d;color:#fff}
+.ui-overlay-d .ui-icon-radio-on:after,.ui-page-theme-d .ui-icon-radio-on:after,html .ui-bar-d .ui-icon-radio-on:after,html .ui-body-d .ui-icon-radio-on:after,html body .ui-group-theme-d .ui-icon-radio-on:after,.ui-btn.ui-icon-radio-on.ui-btn-d:after{border-color:#e84c3d}
 .ui-slider.ui-slider-switch.ui-bar-d .ui-slider-label{background-color:#ebebeb}
 .ui-slider.ui-slider-switch.ui-bar-d .ui-slider-label.ui-btn-active{background-color:#d14031;color:inherit}
 div.ui-slider-switch.ui-bar-d{border:none}
 .ui-slider.ui-slider-switch.ui-bar-d .ui-slider-handle{background-color:#c1392b;border-color:#d14031}
-.ui-page-theme-d .ui-btn:focus,html .ui-bar-d .ui-btn:focus,html .ui-body-d .ui-btn:focus,html body .ui-btn.ui-btn-d:focus,html body .ui-group-theme-d .ui-btn:focus,[class*="ui-group-theme-"] .ui-btn.ui-btn-d:focus,.ui-page-theme-d .ui-focus,html .ui-bar-d .ui-focus,html .ui-body-d .ui-focus,html body .ui-btn-d.ui-focus,html body .ui-body-d.ui-focus,html body .ui-group-theme-d .ui-focus,[class*="ui-group-theme-"] .ui-btn-d.ui-focus,[class*="ui-group-theme-"] .ui-body-d.ui-focus{border-color:#e84c3d;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
+.ui-overlay-d .ui-btn:focus,.ui-page-theme-d .ui-btn:focus,html .ui-bar-d .ui-btn:focus,html .ui-body-d .ui-btn:focus,html body .ui-group-theme-d .ui-btn:focus,html head + body .ui-btn.ui-btn-d:focus,/* Focus buttons and text inputs with div wrap */,.ui-overlay-d .ui-focus,.ui-page-theme-d .ui-focus,html .ui-bar-d .ui-focus,html .ui-body-d .ui-focus,html body .ui-group-theme-d .ui-focus,html head + body .ui-btn-d.ui-focus,html head + body .ui-body-d.ui-focus{border-color:#e84c3d;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
 
-.ui-bar-e,.ui-page-theme-e .ui-bar-inherit,html .ui-bar-e .ui-bar-inherit,html .ui-body-e .ui-bar-inherit,html body .ui-group-theme-e .ui-bar-inherit{background:#fff;border-color:#f1c40f;color:#fff;font-weight:bold}
+.ui-bar-e,.ui-overlay-e .ui-bar-inherit,.ui-page-theme-e .ui-bar-inherit,html .ui-bar-e .ui-bar-inherit,html .ui-body-e .ui-bar-inherit,html body .ui-group-theme-e .ui-bar-inherit{background:#fff;border-color:#f1c40f;color:#fff;font-weight:bold}
 .ui-bar-e{border-width:1px;border-style:solid;background:#f1c40f}
-.ui-page-theme-e,.ui-page-theme-e .ui-panel-wrapper,.ui-page-theme-e .ui-li-count,html .ui-bar-e .ui-li-count,html .ui-body-e .ui-li-count,html body .ui-group-theme-e .ui-li-count,.ui-btn.ui-btn-e > .ui-li-count,.ui-li-static.ui-body-e > .ui-li-count,.ui-li-divider.ui-bar-e > .ui-li-count,.ui-listview li .ui-li-count.ui-body-e{background:#fff;border-color:#f1c40f;color:#34495e}
-.ui-body-e,.ui-page-theme-e .ui-body-inherit,html .ui-bar-e .ui-body-inherit,html .ui-body-e .ui-body-inherit,html body .ui-group-theme-e .ui-body-inherit,.ui-overlay-e{background:#f1c40f;border-color:#f1c40f;color:#fff;background-image:none}
+.ui-overlay-e,.ui-page-theme-e,.ui-page-theme-e .ui-panel-wrapper{background:#fff;border-color:#f1c40f;color:#34495e}
+.ui-body-e,.ui-overlay-e .ui-body-inherit,.ui-page-theme-e .ui-body-inherit,html .ui-bar-e .ui-body-inherit,html .ui-body-e .ui-body-inherit,html body .ui-group-theme-e .ui-body-inherit,html .ui-panel-page-container-e{background:#f1c40f;border-color:#f1c40f;color:#fff;background-image:none}
 .ui-page-theme-e .ui-body-inherit > .ui-body-inherit,html .ui-bar-e .ui-body-inherit > .ui-body-inherit,html .ui-body-e .ui-body-inherit >.ui-body-inherit,html body .ui-group-theme-e .ui-body-inherit > .ui-body-inherit{background:#fff;border-color:#f2c71b}
 .ui-body-e{border-width:1px;border-style:solid}
-.ui-page-theme-e a,html .ui-bar-e a,html .ui-body-e a,html body .ui-group-theme-e a{color:#f1c40f;font-weight:bold}
-.ui-page-theme-e a:visited,html .ui-bar-e a:visited,html .ui-body-e a:visited,html body .ui-group-theme-e a:visited{color:#f4d03f}
-.ui-page-theme-e a:active,html .ui-bar-e a:active,html .ui-body-e a:active,html body .ui-group-theme-e a:active{color:#f4d03f}
-.ui-page-theme-e .ui-btn,html .ui-bar-e .ui-btn,html .ui-body-e .ui-btn,html body .ui-btn.ui-btn-e,html body .ui-group-theme-e .ui-btn,[class*="ui-group-theme-"] .ui-btn.ui-btn-e,.ui-page-theme-e .ui-btn:visited,html .ui-bar-e .ui-btn:visited,html .ui-body-e .ui-btn:visited,html body .ui-btn.ui-btn-e:visited,html body .ui-group-theme-e .ui-btn:visited,[class*="ui-group-theme-"] .ui-btn.ui-btn-e:visited{background:#f1c40f;border-color:#f1c40f;color:#fff}
-.ui-page-theme-e .ui-btn:active,html .ui-bar-e .ui-btn:active,html .ui-body-e .ui-btn:active,html body .ui-btn.ui-btn-e:active,html body .ui-group-theme-e .ui-btn:active,[class*="ui-group-theme-"] .ui-btn.ui-btn-e:active{background:#f4d03f;border-color:#f4d03f;color:#fff}
-.ui-page-theme-e .ui-btn.ui-btn-active,html .ui-bar-e .ui-btn.ui-btn-active,html .ui-body-e .ui-btn.ui-btn-active,html body .ui-btn.ui-btn-e.ui-btn-active,html body .ui-group-theme-e .ui-btn.ui-btn-active,[class*="ui-group-theme-"] .ui-btn.ui-btn-e.ui-btn-active,.ui-page-theme-e .ui-icon-checkbox-on:after,html .ui-bar-e .ui-icon-checkbox-on:after,html .ui-body-e .ui-icon-checkbox-on:after,html body .ui-group-theme-e .ui-icon-checkbox-on:after,.ui-btn.ui-icon-checkbox-on.ui-btn-e:after,.ui-page-theme-e .ui-flipswitch-active,html .ui-bar-e .ui-flipswitch-active,html .ui-body-e .ui-flipswitch-active,html body .ui-group-theme-e .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-e.ui-flipswitch-active,.ui-page-theme-e .ui-slider-track .ui-btn-active,html .ui-bar-e .ui-slider-track .ui-btn-active,html .ui-body-e .ui-slider-track .ui-btn-active,html body .ui-group-theme-e .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-e .ui-btn-active{background-color:#f4d03f;border-color:#f4d03f;color:#fff}
-.ui-page-theme-e .ui-icon-radio-on:after,html .ui-bar-e .ui-icon-radio-on:after,html .ui-body-e .ui-icon-radio-on:after,html body .ui-group-theme-e .ui-icon-radio-on:after,.ui-btn.ui-icon-radio-on.ui-btn-e:after{border-color:#f4d03f}
+.ui-overlay-e a,.ui-page-theme-e a,html .ui-bar-e a,html .ui-body-e a,html body .ui-group-theme-e a{color:#f1c40f;font-weight:bold}
+.ui-overlay-e a:visited,.ui-page-theme-e a:visited,html .ui-bar-e a:visited,html .ui-body-e a:visited,html body .ui-group-theme-e a:visited{color:#f4d03f}
+.ui-overlay-e a:hover,.ui-page-theme-e a:hover,html .ui-bar-e a:hover,html .ui-body-e a:hover,html body .ui-group-theme-e a:hover{color:#f4d03f}
+.ui-overlay-e a:active,.ui-page-theme-e a:active,html .ui-bar-e a:active,html .ui-body-e a:active,html body .ui-group-theme-e a:active{color:#f4d03f}
+.ui-overlay-e .ui-btn,.ui-page-theme-e .ui-btn,html .ui-bar-e .ui-btn,html .ui-body-e .ui-btn,html body .ui-group-theme-e .ui-btn,html head + body .ui-btn.ui-btn-e,.ui-overlay-e .ui-btn:visited,.ui-page-theme-e .ui-btn:visited,html .ui-bar-e .ui-btn:visited,html .ui-body-e .ui-btn:visited,html body .ui-group-theme-e .ui-btn:visited,html head + body .ui-btn.ui-btn-e:visited{background:#f1c40f;border-color:#f1c40f;color:#fff}
+.ui-overlay-e .ui-btn:hover,.ui-page-theme-e .ui-btn:hover,html .ui-bar-e .ui-btn:hover,html .ui-body-e .ui-btn:hover,html body .ui-group-theme-e .ui-btn:hover,html head + body .ui-btn.ui-btn-e:hover{background:#f4d03f;border-color:#f4d03f;color:#fff}
+.ui-overlay-e .ui-btn:active,.ui-page-theme-e .ui-btn:active,html .ui-bar-e .ui-btn:active,html .ui-body-e .ui-btn:active,html body .ui-group-theme-e .ui-btn:active,html head + body .ui-btn.ui-btn-e:active{background:#f4d03f;border-color:#f4d03f;color:#fff}
+.ui-overlay-e .ui-btn.ui-btn-active,.ui-page-theme-e .ui-btn.ui-btn-active,html .ui-bar-e .ui-btn.ui-btn-active,html .ui-body-e .ui-btn.ui-btn-active,html body .ui-group-theme-e .ui-btn.ui-btn-active,html head + body .ui-btn.ui-btn-e.ui-btn-active,.ui-overlay-e .ui-icon-checkbox-on:after,.ui-page-theme-e .ui-icon-checkbox-on:after,html .ui-bar-e .ui-icon-checkbox-on:after,html .ui-body-e .ui-icon-checkbox-on:after,html body .ui-group-theme-e .ui-icon-checkbox-on:after,.ui-btn.ui-icon-checkbox-on.ui-btn-e:after,.ui-overlay-e .ui-flipswitch-active,.ui-page-theme-e .ui-flipswitch-active,html .ui-bar-e .ui-flipswitch-active,html .ui-body-e .ui-flipswitch-active,html body .ui-group-theme-e .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-e.ui-flipswitch-active,.ui-overlay-e .ui-slider-track .ui-btn-active,.ui-page-theme-e .ui-slider-track .ui-btn-active,html .ui-bar-e .ui-slider-track .ui-btn-active,html .ui-body-e .ui-slider-track .ui-btn-active,html body .ui-group-theme-e .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-e .ui-btn-active{background-color:#f4d03f;border-color:#f4d03f;color:#fff}
+.ui-overlay-e .ui-icon-radio-on:after,.ui-page-theme-e .ui-icon-radio-on:after,html .ui-bar-e .ui-icon-radio-on:after,html .ui-body-e .ui-icon-radio-on:after,html body .ui-group-theme-e .ui-icon-radio-on:after,.ui-btn.ui-icon-radio-on.ui-btn-e:after{border-color:#f4d03f}
 .ui-slider.ui-slider-switch.ui-bar-e .ui-slider-label{background-color:#ebebeb}
 .ui-slider.ui-slider-switch.ui-bar-e .ui-slider-label.ui-btn-active{background-color:#f2c922;color:inherit}
 div.ui-slider-switch.ui-bar-e{border:none}
 .ui-slider.ui-slider-switch.ui-bar-e .ui-slider-handle{background-color:#f1c40f;border-color:#f2c922}
-.ui-page-theme-e .ui-btn:focus,html .ui-bar-e .ui-btn:focus,html .ui-body-e .ui-btn:focus,html body .ui-btn.ui-btn-e:focus,html body .ui-group-theme-e .ui-btn:focus,[class*="ui-group-theme-"] .ui-btn.ui-btn-e:focus,.ui-page-theme-e .ui-focus,html .ui-bar-e .ui-focus,html .ui-body-e .ui-focus,html body .ui-btn-e.ui-focus,html body .ui-body-e.ui-focus,html body .ui-group-theme-e .ui-focus,[class*="ui-group-theme-"] .ui-btn-e.ui-focus,[class*="ui-group-theme-"] .ui-body-e.ui-focus{border-color:#f4d03f;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
+.ui-overlay-e .ui-btn:focus,.ui-page-theme-e .ui-btn:focus,html .ui-bar-e .ui-btn:focus,html .ui-body-e .ui-btn:focus,html body .ui-group-theme-e .ui-btn:focus,html head + body .ui-btn.ui-btn-e:focus,/* Focus buttons and text inputs with div wrap */,.ui-overlay-e .ui-focus,.ui-page-theme-e .ui-focus,html .ui-bar-e .ui-focus,html .ui-body-e .ui-focus,html body .ui-group-theme-e .ui-focus,html head + body .ui-btn-e.ui-focus,html head + body .ui-body-e.ui-focus{border-color:#f4d03f;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
 
-.ui-bar-f,.ui-page-theme-f .ui-bar-inherit,html .ui-bar-f .ui-bar-inherit,html .ui-body-f .ui-bar-inherit,html body .ui-group-theme-f .ui-bar-inherit{background:#fff;border-color:#3498db;color:#fff;font-weight:bold}
+.ui-bar-f,.ui-overlay-f .ui-bar-inherit,.ui-page-theme-f .ui-bar-inherit,html .ui-bar-f .ui-bar-inherit,html .ui-body-f .ui-bar-inherit,html body .ui-group-theme-f .ui-bar-inherit{background:#fff;border-color:#3498db;color:#fff;font-weight:bold}
 .ui-bar-f{border-width:1px;border-style:solid;background:#3498db}
-.ui-page-theme-f,.ui-page-theme-f .ui-panel-wrapper,.ui-page-theme-f .ui-li-count,html .ui-bar-f .ui-li-count,html .ui-body-f .ui-li-count,html body .ui-group-theme-f .ui-li-count,.ui-btn.ui-btn-f > .ui-li-count,.ui-li-static.ui-body-f > .ui-li-count,.ui-li-divider.ui-bar-f > .ui-li-count,.ui-listview li .ui-li-count.ui-body-f{background:#fff;border-color:#3498db;color:#34495e}
-.ui-body-f,.ui-page-theme-f .ui-body-inherit,html .ui-bar-f .ui-body-inherit,html .ui-body-f .ui-body-inherit,html body .ui-group-theme-f .ui-body-inherit,.ui-overlay-f{background:#3498db;border-color:#3498db;color:#fff;background-image:none}
+.ui-overlay-f,.ui-page-theme-f,.ui-page-theme-f .ui-panel-wrapper{background:#fff;border-color:#3498db;color:#34495e}
+.ui-body-f,.ui-overlay-f .ui-body-inherit,.ui-page-theme-f .ui-body-inherit,html .ui-bar-f .ui-body-inherit,html .ui-body-f .ui-body-inherit,html body .ui-group-theme-f .ui-body-inherit,html .ui-panel-page-container-f{background:#3498db;border-color:#3498db;color:#fff;background-image:none}
 .ui-page-theme-f .ui-body-inherit > .ui-body-inherit,html .ui-bar-f .ui-body-inherit > .ui-body-inherit,html .ui-body-f .ui-body-inherit >.ui-body-inherit,html body .ui-group-theme-f .ui-body-inherit > .ui-body-inherit{background:#fff;border-color:#3e9ddd}
 .ui-body-f{border-width:1px;border-style:solid}
-.ui-page-theme-f a,html .ui-bar-f a,html .ui-body-f a,html body .ui-group-theme-f a{color:#3498db;font-weight:bold}
-.ui-page-theme-f a:visited,html .ui-bar-f a:visited,html .ui-body-f a:visited,html body .ui-group-theme-f a:visited{color:#5dade2}
-.ui-page-theme-f a:active,html .ui-bar-f a:active,html .ui-body-f a:active,html body .ui-group-theme-f a:active{color:#5dade2}
-.ui-page-theme-f .ui-btn,html .ui-bar-f .ui-btn,html .ui-body-f .ui-btn,html body .ui-btn.ui-btn-f,html body .ui-group-theme-f .ui-btn,[class*="ui-group-theme-"] .ui-btn.ui-btn-f,.ui-page-theme-f .ui-btn:visited,html .ui-bar-f .ui-btn:visited,html .ui-body-f .ui-btn:visited,html body .ui-btn.ui-btn-f:visited,html body .ui-group-theme-f .ui-btn:visited,[class*="ui-group-theme-"] .ui-btn.ui-btn-f:visited{background:#3498db;border-color:#3498db;color:#fff}
-.ui-page-theme-f .ui-btn:active,html .ui-bar-f .ui-btn:active,html .ui-body-f .ui-btn:active,html body .ui-btn.ui-btn-f:active,html body .ui-group-theme-f .ui-btn:active,[class*="ui-group-theme-"] .ui-btn.ui-btn-f:active{background:#5dade2;border-color:#5dade2;color:#fff}
-.ui-page-theme-f .ui-btn.ui-btn-active,html .ui-bar-f .ui-btn.ui-btn-active,html .ui-body-f .ui-btn.ui-btn-active,html body .ui-btn.ui-btn-f.ui-btn-active,html body .ui-group-theme-f .ui-btn.ui-btn-active,[class*="ui-group-theme-"] .ui-btn.ui-btn-f.ui-btn-active,.ui-page-theme-f .ui-icon-checkbox-on:after,html .ui-bar-f .ui-icon-checkbox-on:after,html .ui-body-f .ui-icon-checkbox-on:after,html body .ui-group-theme-f .ui-icon-checkbox-on:after,.ui-btn.ui-icon-checkbox-on.ui-btn-f:after,.ui-page-theme-f .ui-flipswitch-active,html .ui-bar-f .ui-flipswitch-active,html .ui-body-f .ui-flipswitch-active,html body .ui-group-theme-f .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-f.ui-flipswitch-active,.ui-page-theme-f .ui-slider-track .ui-btn-active,html .ui-bar-f .ui-slider-track .ui-btn-active,html .ui-body-f .ui-slider-track .ui-btn-active,html body .ui-group-theme-f .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-f .ui-btn-active{background-color:#5dade2;border-color:#5dade2;color:#fff}
-.ui-page-theme-f .ui-icon-radio-on:after,html .ui-bar-f .ui-icon-radio-on:after,html .ui-body-f .ui-icon-radio-on:after,html body .ui-group-theme-f .ui-icon-radio-on:after,.ui-btn.ui-icon-radio-on.ui-btn-f:after{border-color:#5dade2}
+.ui-overlay-f a,.ui-page-theme-f a,html .ui-bar-f a,html .ui-body-f a,html body .ui-group-theme-f a{color:#3498db;font-weight:bold}
+.ui-overlay-f a:visited,.ui-page-theme-f a:visited,html .ui-bar-f a:visited,html .ui-body-f a:visited,html body .ui-group-theme-f a:visited{color:#5dade2}
+.ui-overlay-f a:hover,.ui-page-theme-f a:hover,html .ui-bar-f a:hover,html .ui-body-f a:hover,html body .ui-group-theme-f a:hover{color:#5dade2}
+.ui-overlay-f a:active,.ui-page-theme-f a:active,html .ui-bar-f a:active,html .ui-body-f a:active,html body .ui-group-theme-f a:active{color:#5dade2}
+.ui-overlay-f .ui-btn,.ui-page-theme-f .ui-btn,html .ui-bar-f .ui-btn,html .ui-body-f .ui-btn,html body .ui-group-theme-f .ui-btn,html head + body .ui-btn.ui-btn-f,.ui-overlay-f .ui-btn:visited,.ui-page-theme-f .ui-btn:visited,html .ui-bar-f .ui-btn:visited,html .ui-body-f .ui-btn:visited,html body .ui-group-theme-f .ui-btn:visited,html head + body .ui-btn.ui-btn-f:visited{background:#3498db;border-color:#3498db;color:#fff}
+.ui-overlay-f .ui-btn:hover,.ui-page-theme-f .ui-btn:hover,html .ui-bar-f .ui-btn:hover,html .ui-body-f .ui-btn:hover,html body .ui-group-theme-f .ui-btn:hover,html head + body .ui-btn.ui-btn-f:hover{background:#5dade2;border-color:#5dade2;color:#fff}
+.ui-overlay-f .ui-btn:active,.ui-page-theme-f .ui-btn:active,html .ui-bar-f .ui-btn:active,html .ui-body-f .ui-btn:active,html body .ui-group-theme-f .ui-btn:active,html head + body .ui-btn.ui-btn-f:active{background:#5dade2;border-color:#5dade2;color:#fff}
+.ui-overlay-f .ui-btn.ui-btn-active,.ui-page-theme-f .ui-btn.ui-btn-active,html .ui-bar-f .ui-btn.ui-btn-active,html .ui-body-f .ui-btn.ui-btn-active,html body .ui-group-theme-f .ui-btn.ui-btn-active,html head + body .ui-btn.ui-btn-f.ui-btn-active,.ui-overlay-f .ui-icon-checkbox-on:after,.ui-page-theme-f .ui-icon-checkbox-on:after,html .ui-bar-f .ui-icon-checkbox-on:after,html .ui-body-f .ui-icon-checkbox-on:after,html body .ui-group-theme-f .ui-icon-checkbox-on:after,.ui-btn.ui-icon-checkbox-on.ui-btn-f:after,.ui-overlay-f .ui-flipswitch-active,.ui-page-theme-f .ui-flipswitch-active,html .ui-bar-f .ui-flipswitch-active,html .ui-body-f .ui-flipswitch-active,html body .ui-group-theme-f .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-f.ui-flipswitch-active,.ui-overlay-f .ui-slider-track .ui-btn-active,.ui-page-theme-f .ui-slider-track .ui-btn-active,html .ui-bar-f .ui-slider-track .ui-btn-active,html .ui-body-f .ui-slider-track .ui-btn-active,html body .ui-group-theme-f .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-f .ui-btn-active{background-color:#5dade2;border-color:#5dade2;color:#fff}
+.ui-overlay-f .ui-icon-radio-on:after,.ui-page-theme-f .ui-icon-radio-on:after,html .ui-bar-f .ui-icon-radio-on:after,html .ui-body-f .ui-icon-radio-on:after,html body .ui-group-theme-f .ui-icon-radio-on:after,.ui-btn.ui-icon-radio-on.ui-btn-f:after{border-color:#5dade2}
 .ui-slider.ui-slider-switch.ui-bar-f .ui-slider-label{background-color:#ebebeb}
 .ui-slider.ui-slider-switch.ui-bar-f .ui-slider-label.ui-btn-active{background-color:#44a0de;color:inherit}
 div.ui-slider-switch.ui-bar-f{border:none}
 .ui-slider.ui-slider-switch.ui-bar-f .ui-slider-handle{background-color:#3498db;border-color:#44a0de}
-.ui-page-theme-f .ui-btn:focus,html .ui-bar-f .ui-btn:focus,html .ui-body-f .ui-btn:focus,html body .ui-btn.ui-btn-f:focus,html body .ui-group-theme-f .ui-btn:focus,[class*="ui-group-theme-"] .ui-btn.ui-btn-f:focus,.ui-page-theme-f .ui-focus,html .ui-bar-f .ui-focus,html .ui-body-f .ui-focus,html body .ui-btn-f.ui-focus,html body .ui-body-f.ui-focus,html body .ui-group-theme-f .ui-focus,[class*="ui-group-theme-"] .ui-btn-f.ui-focus,[class*="ui-group-theme-"] .ui-body-f.ui-focus{border-color:#5dade2;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
+.ui-overlay-f .ui-btn:focus,.ui-page-theme-f .ui-btn:focus,html .ui-bar-f .ui-btn:focus,html .ui-body-f .ui-btn:focus,html body .ui-group-theme-f .ui-btn:focus,html head + body .ui-btn.ui-btn-f:focus,/* Focus buttons and text inputs with div wrap */,.ui-overlay-f .ui-focus,.ui-page-theme-f .ui-focus,html .ui-bar-f .ui-focus,html .ui-body-f .ui-focus,html body .ui-group-theme-f .ui-focus,html head + body .ui-btn-f.ui-focus,html head + body .ui-body-f.ui-focus{border-color:#5dade2;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
 
-.ui-bar-g,.ui-page-theme-g .ui-bar-inherit,html .ui-bar-g .ui-bar-inherit,html .ui-body-g .ui-bar-inherit,html body .ui-group-theme-g .ui-bar-inherit{background:#fff;border-color:#2ecc71;color:#fff;font-weight:bold}
+.ui-bar-g,.ui-overlay-g .ui-bar-inherit,.ui-page-theme-g .ui-bar-inherit,html .ui-bar-g .ui-bar-inherit,html .ui-body-g .ui-bar-inherit,html body .ui-group-theme-g .ui-bar-inherit{background:#fff;border-color:#2ecc71;color:#fff;font-weight:bold}
 .ui-bar-g{border-width:1px;border-style:solid;background:#2ecc71}
-.ui-page-theme-g,.ui-page-theme-g .ui-panel-wrapper,.ui-page-theme-g .ui-li-count,html .ui-bar-g .ui-li-count,html .ui-body-g .ui-li-count,html body .ui-group-theme-g .ui-li-count,.ui-btn.ui-btn-g > .ui-li-count,.ui-li-static.ui-body-g > .ui-li-count,.ui-li-divider.ui-bar-g > .ui-li-count,.ui-listview li .ui-li-count.ui-body-g{background:#fff;border-color:#2ecc71;color:#34495e}
-.ui-body-g,.ui-page-theme-g .ui-body-inherit,html .ui-bar-g .ui-body-inherit,html .ui-body-g .ui-body-inherit,html body .ui-group-theme-g .ui-body-inherit,.ui-overlay-g{background:#2ecc71;border-color:#2ecc71;color:#fff;background-image:none}
+.ui-overlay-g,.ui-page-theme-g,.ui-page-theme-g .ui-panel-wrapper{background:#fff;border-color:#2ecc71;color:#34495e}
+.ui-body-g,.ui-overlay-g .ui-body-inherit,.ui-page-theme-g .ui-body-inherit,html .ui-bar-g .ui-body-inherit,html .ui-body-g .ui-body-inherit,html body .ui-group-theme-g .ui-body-inherit,html .ui-panel-page-container-g{background:#2ecc71;border-color:#2ecc71;color:#fff;background-image:none}
 .ui-page-theme-g .ui-body-inherit > .ui-body-inherit,html .ui-bar-g .ui-body-inherit > .ui-body-inherit,html .ui-body-g .ui-body-inherit >.ui-body-inherit,html body .ui-group-theme-g .ui-body-inherit > .ui-body-inherit{background:#fff;border-color:#35d278}
 .ui-body-g{border-width:1px;border-style:solid}
-.ui-page-theme-g a,html .ui-bar-g a,html .ui-body-g a,html body .ui-group-theme-g a{color:#2ecc71;font-weight:bold}
-.ui-page-theme-g a:visited,html .ui-bar-g a:visited,html .ui-body-g a:visited,html body .ui-group-theme-g a:visited{color:#55d98d}
-.ui-page-theme-g a:active,html .ui-bar-g a:active,html .ui-body-g a:active,html body .ui-group-theme-g a:active{color:#55d98d}
-.ui-page-theme-g .ui-btn,html .ui-bar-g .ui-btn,html .ui-body-g .ui-btn,html body .ui-btn.ui-btn-g,html body .ui-group-theme-g .ui-btn,[class*="ui-group-theme-"] .ui-btn.ui-btn-g,.ui-page-theme-g .ui-btn:visited,html .ui-bar-g .ui-btn:visited,html .ui-body-g .ui-btn:visited,html body .ui-btn.ui-btn-g:visited,html body .ui-group-theme-g .ui-btn:visited,[class*="ui-group-theme-"] .ui-btn.ui-btn-g:visited{background:#2ecc71;border-color:#2ecc71;color:#fff}
-.ui-page-theme-g .ui-btn:active,html .ui-bar-g .ui-btn:active,html .ui-body-g .ui-btn:active,html body .ui-btn.ui-btn-g:active,html body .ui-group-theme-g .ui-btn:active,[class*="ui-group-theme-"] .ui-btn.ui-btn-g:active{background:#55d98d;border-color:#55d98d;color:#fff}
-.ui-page-theme-g .ui-btn.ui-btn-active,html .ui-bar-g .ui-btn.ui-btn-active,html .ui-body-g .ui-btn.ui-btn-active,html body .ui-btn.ui-btn-g.ui-btn-active,html body .ui-group-theme-g .ui-btn.ui-btn-active,[class*="ui-group-theme-"] .ui-btn.ui-btn-g.ui-btn-active,.ui-page-theme-g .ui-icon-checkbox-on:after,html .ui-bar-g .ui-icon-checkbox-on:after,html .ui-body-g .ui-icon-checkbox-on:after,html body .ui-group-theme-g .ui-icon-checkbox-on:after,.ui-btn.ui-icon-checkbox-on.ui-btn-g:after,.ui-page-theme-g .ui-flipswitch-active,html .ui-bar-g .ui-flipswitch-active,html .ui-body-g .ui-flipswitch-active,html body .ui-group-theme-g .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-g.ui-flipswitch-active,.ui-page-theme-g .ui-slider-track .ui-btn-active,html .ui-bar-g .ui-slider-track .ui-btn-active,html .ui-body-g .ui-slider-track .ui-btn-active,html body .ui-group-theme-g .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-g .ui-btn-active{background-color:#55d98d;border-color:#55d98d;color:#fff}
-.ui-page-theme-g .ui-icon-radio-on:after,html .ui-bar-g .ui-icon-radio-on:after,html .ui-body-g .ui-icon-radio-on:after,html body .ui-group-theme-g .ui-icon-radio-on:after,.ui-btn.ui-icon-radio-on.ui-btn-g:after{border-color:#55d98d}
+.ui-overlay-g a,.ui-page-theme-g a,html .ui-bar-g a,html .ui-body-g a,html body .ui-group-theme-g a{color:#2ecc71;font-weight:bold}
+.ui-overlay-g a:visited,.ui-page-theme-g a:visited,html .ui-bar-g a:visited,html .ui-body-g a:visited,html body .ui-group-theme-g a:visited{color:#55d98d}
+.ui-overlay-g a:hover,.ui-page-theme-g a:hover,html .ui-bar-g a:hover,html .ui-body-g a:hover,html body .ui-group-theme-g a:hover{color:#55d98d}
+.ui-overlay-g a:active,.ui-page-theme-g a:active,html .ui-bar-g a:active,html .ui-body-g a:active,html body .ui-group-theme-g a:active{color:#55d98d}
+.ui-overlay-g .ui-btn,.ui-page-theme-g .ui-btn,html .ui-bar-g .ui-btn,html .ui-body-g .ui-btn,html body .ui-group-theme-g .ui-btn,html head + body .ui-btn.ui-btn-g,.ui-overlay-g .ui-btn:visited,.ui-page-theme-g .ui-btn:visited,html .ui-bar-g .ui-btn:visited,html .ui-body-g .ui-btn:visited,html body .ui-group-theme-g .ui-btn:visited,html head + body .ui-btn.ui-btn-g:visited{background:#2ecc71;border-color:#2ecc71;color:#fff}
+.ui-overlay-g .ui-btn:hover,.ui-page-theme-g .ui-btn:hover,html .ui-bar-g .ui-btn:hover,html .ui-body-g .ui-btn:hover,html body .ui-group-theme-g .ui-btn:hover,html head + body .ui-btn.ui-btn-g:hover{background:#55d98d;border-color:#55d98d;color:#fff}
+.ui-overlay-g .ui-btn:active,.ui-page-theme-g .ui-btn:active,html .ui-bar-g .ui-btn:active,html .ui-body-g .ui-btn:active,html body .ui-group-theme-g .ui-btn:active,html head + body .ui-btn.ui-btn-g:active{background:#55d98d;border-color:#55d98d;color:#fff}
+.ui-overlay-g .ui-btn.ui-btn-active,.ui-page-theme-g .ui-btn.ui-btn-active,html .ui-bar-g .ui-btn.ui-btn-active,html .ui-body-g .ui-btn.ui-btn-active,html body .ui-group-theme-g .ui-btn.ui-btn-active,html head + body .ui-btn.ui-btn-g.ui-btn-active,.ui-overlay-g .ui-icon-checkbox-on:after,.ui-page-theme-g .ui-icon-checkbox-on:after,html .ui-bar-g .ui-icon-checkbox-on:after,html .ui-body-g .ui-icon-checkbox-on:after,html body .ui-group-theme-g .ui-icon-checkbox-on:after,.ui-btn.ui-icon-checkbox-on.ui-btn-g:after,.ui-overlay-g .ui-flipswitch-active,.ui-page-theme-g .ui-flipswitch-active,html .ui-bar-g .ui-flipswitch-active,html .ui-body-g .ui-flipswitch-active,html body .ui-group-theme-g .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-g.ui-flipswitch-active,.ui-overlay-g .ui-slider-track .ui-btn-active,.ui-page-theme-g .ui-slider-track .ui-btn-active,html .ui-bar-g .ui-slider-track .ui-btn-active,html .ui-body-g .ui-slider-track .ui-btn-active,html body .ui-group-theme-g .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-g .ui-btn-active{background-color:#55d98d;border-color:#55d98d;color:#fff}
+.ui-overlay-g .ui-icon-radio-on:after,.ui-page-theme-g .ui-icon-radio-on:after,html .ui-bar-g .ui-icon-radio-on:after,html .ui-body-g .ui-icon-radio-on:after,html body .ui-group-theme-g .ui-icon-radio-on:after,.ui-btn.ui-icon-radio-on.ui-btn-g:after{border-color:#55d98d}
 .ui-slider.ui-slider-switch.ui-bar-g .ui-slider-label{background-color:#ebebeb}
 .ui-slider.ui-slider-switch.ui-bar-g .ui-slider-label.ui-btn-active{background-color:#3cd37c;color:inherit}
 div.ui-slider-switch.ui-bar-g{border:none}
 .ui-slider.ui-slider-switch.ui-bar-g .ui-slider-handle{background-color:#2ecc71;border-color:#3cd37c}
-.ui-page-theme-g .ui-btn:focus,html .ui-bar-g .ui-btn:focus,html .ui-body-g .ui-btn:focus,html body .ui-btn.ui-btn-g:focus,html body .ui-group-theme-g .ui-btn:focus,[class*="ui-group-theme-"] .ui-btn.ui-btn-g:focus,.ui-page-theme-g .ui-focus,html .ui-bar-g .ui-focus,html .ui-body-g .ui-focus,html body .ui-btn-g.ui-focus,html body .ui-body-g.ui-focus,html body .ui-group-theme-g .ui-focus,[class*="ui-group-theme-"] .ui-btn-g.ui-focus,[class*="ui-group-theme-"] .ui-body-g.ui-focus{border-color:#55d98d;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
+.ui-overlay-g .ui-btn:focus,.ui-page-theme-g .ui-btn:focus,html .ui-bar-g .ui-btn:focus,html .ui-body-g .ui-btn:focus,html body .ui-group-theme-g .ui-btn:focus,html head + body .ui-btn.ui-btn-g:focus,/* Focus buttons and text inputs with div wrap */,.ui-overlay-g .ui-focus,.ui-page-theme-g .ui-focus,html .ui-bar-g .ui-focus,html .ui-body-g .ui-focus,html body .ui-group-theme-g .ui-focus,html head + body .ui-btn-g.ui-focus,html head + body .ui-body-g.ui-focus{border-color:#55d98d;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
+
+/*!
+* jQuery Mobile 1.4.0-alpha.2
+* Git HEAD hash: fatal: Not a git repository (or any of the parent directories): .git <> Date: Thu Aug 15 2013 14:15:11 UTC
+* http://jquerymobile.com
+*
+* Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
+* Released under the MIT license.
+* http://jquery.org/license
+*
+*
+* Taken from jquery.mobile.theme.css
+*/
 
 /* Globals */
 /* Font
@@ -942,32 +969,39 @@ label.ui-btn {
 -----------------------------------------------------------------------------------------------------------*/
 /* Class ui-btn-corner-all deprecated in 1.4 */
 .ui-corner-all {
-    -webkit-border-radius: 				.6em /*{global-radii-blocks}*/;
-    border-radius: 						.6em /*{global-radii-blocks}*/;
+    -webkit-border-radius:              .6em /*{global-radii-blocks}*/;
+    border-radius:                      .6em /*{global-radii-blocks}*/;
 }
 /* Buttons */
 .ui-btn-corner-all,
 .ui-btn.ui-corner-all,
-    /* Slider track */
+/* Slider track */
 .ui-slider-track.ui-corner-all,
-    /*flipswitch*/
-.ui-flipswitch.ui-corner-all {
-    -webkit-border-radius: 				.3125em /*{global-radii-buttons}*/;
-    border-radius: 						.3125em /*{global-radii-buttons}*/;
+/* Flipswitch */
+.ui-flipswitch.ui-corner-all,
+/* Count bubble */
+.ui-li-count {
+    -webkit-border-radius:              .3125em /*{global-radii-buttons}*/;
+    border-radius:                      .3125em /*{global-radii-buttons}*/;
 }
 /* Icon-only buttons */
 .ui-btn-icon-notext.ui-btn-corner-all,
-.ui-btn-icon-notext.ui-corner-all,
-    /* Count bubbles */
-.ui-li-count {
-    -webkit-border-radius: 				1em /*{global-radii-icononly}*/;
-    border-radius: 						1em /*{global-radii-icononly}*/;
+.ui-btn-icon-notext.ui-corner-all {
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
 }
 /* Radius clip workaround for cleaning up corner trapping */
 .ui-btn-corner-all,
 .ui-corner-all {
     -webkit-background-clip: padding;
     background-clip: padding-box;
+}
+/* Popup arrow */
+.ui-popup.ui-corner-all > .ui-popup-arrow-guide {
+    left: .6em /*{global-radii-blocks}*/;
+    right: .6em /*{global-radii-blocks}*/;
+    top: .6em /*{global-radii-blocks}*/;
+    bottom: .6em /*{global-radii-blocks}*/;
 }
 /* Shadow
 -----------------------------------------------------------------------------------------------------------*/
@@ -979,16 +1013,19 @@ label.ui-btn {
 }
 /* Icons
 -----------------------------------------------------------------------------------------------------------*/
-.ui-btn:after,
+.ui-btn-icon-left:after,
+.ui-btn-icon-right:after,
+.ui-btn-icon-top:after,
+.ui-btn-icon-bottom:after,
+.ui-btn-icon-notext:after,
 html .ui-btn.ui-icon-checkbox-off:after,
 html .ui-btn.ui-icon-radio-off:after {
-    background-color: 					#999 /*{global-icon-color}*/;
-    background-color: 					rgba(0,0,0,.3) /*{global-icon-disc}*/;
+    background-color:                   #999 /*{global-icon-color}*/;
+    background-color:                   rgba(0,0,0,.3) /*{global-icon-disc}*/;
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-border-radius: 1em;
     border-radius: 1em;
-    display: none;
 }
 /* Alt icons */
 .ui-icon-alt.ui-btn:after,
@@ -997,8 +1034,8 @@ html .ui-icon-alt.ui-icon-checkbox-off:after,
 html .ui-icon-alt.ui-icon-radio-off:after,
 html .ui-icon-alt .ui-icon-checkbox-off:after,
 html .ui-icon-alt .ui-icon-radio-off:after {
-    background-color: 					#999 /*{global-icon-color}*/;
-    background-color: 					rgba(255,255,255,.3) /*{global-icon-disc-alt}*/;
+    background-color:                   #999 /*{global-icon-color}*/;
+    background-color:                   rgba(255,255,255,.3) /*{global-icon-disc-alt}*/;
 }
 /* No disc */
 .ui-icon-nodisc.ui-btn:after,
@@ -1008,9 +1045,9 @@ html .ui-icon-alt .ui-icon-radio-off:after {
 /* Icon shadow */
 .ui-shadow-icon.ui-btn:after,
 .ui-shadow-icon .ui-btn:after {
-}
-.ui-icon-action:after, .ui-icon-arrow-d-l:after, .ui-icon-arrow-d-r:after, .ui-icon-arrow-d:after, .ui-icon-arrow-l:after, .ui-icon-arrow-r:after, .ui-icon-arrow-u-l:after, .ui-icon-arrow-u-r:after, .ui-icon-arrow-u:after, .ui-icon-audio:after, .ui-icon-calendar:after, .ui-icon-camera:after, .ui-icon-carat-d:after, .ui-icon-carat-l:after, .ui-icon-carat-r:after, .ui-icon-carat-u:after, .ui-icon-check:after, .ui-icon-clock:after, .ui-icon-cloud:after, .ui-icon-grid:after, .ui-icon-mail:after, .ui-icon-eye:after, .ui-icon-gear:after, .ui-icon-heart:after, .ui-icon-home:after, .ui-icon-info:after, .ui-icon-bullets:after, .ui-icon-bars:after, .ui-icon-navigation:after, .ui-icon-lock:after, .ui-icon-search:after, .ui-icon-location:after, .ui-icon-minus:after, .ui-icon-forbidden:after, .ui-icon-edit:after, .ui-icon-user:after, .ui-icon-phone:after, .ui-icon-plus:after, .ui-icon-power:after, .ui-icon-recycle:after, .ui-icon-forward:after, .ui-icon-refresh:after, .ui-icon-shop:after, .ui-icon-comment:after, .ui-icon-star:after, .ui-icon-tag:after, .ui-icon-back:after, .ui-icon-video:after, .ui-icon-alert:after, .ui-icon-delete:after {
-    display: block;
+    -webkit-box-shadow: 0 1px 0             rgba(255,255,255,.3) /*{global-icon-shadow}*/;
+    -moz-box-shadow: 0 1px 0                rgba(255,255,255,.3) /*{global-icon-shadow}*/;
+    box-shadow: 0 1px 0                     rgba(255,255,255,.3) /*{global-icon-shadow}*/;
 }
 /* Checkbox and radio */
 html .ui-btn.ui-icon-checkbox-off:after,
@@ -1028,8 +1065,8 @@ html .ui-btn.ui-icon-radio-on:after {
     filter: Alpha(Opacity=30);
     opacity: .3;
 }
-.ui-btn.ui-icon-checkbox-off:after,
-.ui-btn.ui-icon-checkbox-on:after {
+html .ui-btn.ui-icon-checkbox-off:after,
+html .ui-btn.ui-icon-checkbox-on:after {
     -webkit-border-radius: .1875em;
     border-radius: .1875em;
 }
@@ -1039,7 +1076,7 @@ html .ui-btn.ui-icon-radio-on:after {
     width: 8px;
     height: 8px;
     border-width: 5px;
-    border-style: solid;
+    border-style: solid; 
 }
 .ui-icon-alt.ui-btn.ui-icon-radio-on:after,
 .ui-icon-alt .ui-btn.ui-icon-radio-on:after {
@@ -1051,11 +1088,13 @@ html .ui-btn.ui-icon-radio-on:after {
     background-size: 2.875em 2.875em;
 }
 
+
 /* Disabled
 -----------------------------------------------------------------------------------------------------------*/
-/* Class ui-disabled deprecated in 1.4 */
+/* Class ui-disabled deprecated in 1.4. :disabled not supported by IE8 so we use [disabled] */
 .ui-disabled,
 .ui-state-disabled,
+button[disabled],
 .ui-select .ui-btn.ui-state-disabled {
     filter: Alpha(Opacity=30);
     opacity: .3;
@@ -1069,7 +1108,15 @@ html .ui-btn.ui-icon-radio-on:after {
     outline: 0;
 }
 /* Unset box-shadow in browsers that don't do it right */
-.ui-noboxshadow * {
+.ui-noboxshadow .ui-shadow,
+.ui-noboxshadow .ui-shadow-inset,
+.ui-noboxshadow .ui-overlay-shadow,
+.ui-noboxshadow .ui-shadow-icon.ui-btn:after,
+.ui-noboxshadow .ui-shadow-icon .ui-btn:after,
+.ui-noboxshadow .ui-focus,
+.ui-noboxshadow .ui-btn:focus,
+.ui-noboxshadow  input:focus,
+.ui-noboxshadow .ui-panel {
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important;
@@ -1079,9 +1126,10 @@ html .ui-btn.ui-icon-radio-on:after {
     outline-width: 1px;
     outline-style: auto;
 }
+
 /*!
-* jQuery Mobile 1.4.0-alpha.1
-* Git HEAD hash: fatal: Not a git repository (or any of the parent directories): .git <> Date: Fri Jul 26 2013 14:29:35 UTC
+* jQuery Mobile 1.4.0-alpha.2
+* Git HEAD hash: fatal: Not a git repository (or any of the parent directories): .git <> Date: Thu Aug 15 2013 14:15:11 UTC
 * http://jquerymobile.com
 *
 * Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
@@ -1110,9 +1158,10 @@ html .ui-btn.ui-icon-radio-on:after {
     min-width: 0;
 }
 @-moz-document url-prefix() {
-	.ui-mobile fieldset {
-		display: table-column;
-	}
+    .ui-mobile fieldset {
+        display: table-column;
+        vertical-align: middle;
+    }
 }
 /* Viewport */
 .ui-mobile-viewport {
@@ -1263,6 +1312,10 @@ div.ui-mobile-viewport {
     border-style: solid;
     position: relative;
 }
+.ui-header:empty,
+.ui-footer:empty {
+    min-height: 2.6875em;
+}
 .ui-header .ui-title,
 .ui-footer .ui-title {
     font-size: 1em;
@@ -1332,9 +1385,6 @@ div.ui-mobile-viewport {
 .ui-mini .ui-btn {
     font-size: inherit;
 }
-.ui-mini .ui-controlgroup-label {
-    font-size: 16px;
-}
 /* Make buttons in toolbars default to mini and inline. */
 .ui-header .ui-btn,
 .ui-footer .ui-btn {
@@ -1351,7 +1401,7 @@ div.ui-mobile-viewport {
 .ui-mini .ui-btn-icon-notext,
 .ui-header .ui-btn-icon-notext,
 .ui-footer .ui-btn-icon-notext {
-    font-size: 16px;
+    font-size: 16px;    
     padding: 0;
 }
 .ui-btn-inline {
@@ -1362,8 +1412,7 @@ div.ui-mobile-viewport {
 .ui-btn-icon-left {
     padding-left: 2.5em;
 }
-.ui-btn-icon-right,
-.ui-listview > li > .ui-btn[class*="ui-icon-"] {
+.ui-btn-icon-right {
     padding-right: 2.5em;
 }
 .ui-btn-icon-top {
@@ -1379,7 +1428,11 @@ div.ui-mobile-viewport {
     padding-left: .3125em;
     padding-right: .3125em;
 }
-.ui-btn[class*="ui-icon-"]:after {
+.ui-btn-icon-left:after,
+.ui-btn-icon-right:after,
+.ui-btn-icon-top:after,
+.ui-btn-icon-bottom:after,
+.ui-btn-icon-notext:after {
     content: "";
     position: absolute;
     display: block;
@@ -1388,16 +1441,14 @@ div.ui-mobile-viewport {
 }
 .ui-btn-icon-notext:after,
 .ui-btn-icon-left:after,
-.ui-btn-icon-right:after,
-.ui-listview > li > .ui-btn[class*="ui-icon-"]:after {
+.ui-btn-icon-right:after {
     top: 50%;
     margin-top: -11px;
 }
 .ui-btn-icon-left:after {
     left: .5625em;
 }
-.ui-btn-icon-right:after,
-.ui-listview > li > .ui-btn[class*="ui-icon-"]:after {
+.ui-btn-icon-right:after {
     right: .5625em;
 }
 .ui-mini.ui-btn-icon-left:after,
@@ -1450,6 +1501,30 @@ div.ui-mobile-viewport {
 .ui-btn-icon-notext.ui-btn-right {
     top: .3125em;
     right: .3125em;
+}
+/* Button elements */
+button.ui-btn,
+.ui-controlgroup-controls button.ui-btn-icon-notext {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+}
+/* Firefox adds a 1px border in a button element. We negate this to make sure they have the same height as other buttons in controlgroups. */
+button.ui-btn::-moz-focus-inner {
+    border: 0;
+}
+button.ui-btn-inline {
+    width: auto;
+}
+button.ui-btn-icon-notext,
+.ui-controlgroup-horizontal .ui-controlgroup-controls button.ui-btn {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 1.75em;
 }
 /* Form labels */
 .ui-mobile label,
@@ -2019,11 +2094,11 @@ div.ui-mobile-viewport {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateX(0); /* Needed to work around an iOS 3.1 bug that causes listview thumbs to disappear when -webkit-visibility:hidden is used. */
     -webkit-transform-origin: 0;
-
+    
     -moz-backface-visibility: hidden;
     -moz-transform: translateX(0);
     -moz-transform-origin: 0;
-
+    
     backface-visibility :hidden;
     transform: translateX(0);
     transform-origin: 0;
@@ -2046,7 +2121,7 @@ div.ui-mobile-viewport {
     -moz-animation-duration: 250ms;
     animation-name: flipintoright;
     animation-duration: 250ms;
-
+    
 }
 .turn.out.reverse {
     -webkit-transform: rotateY(90deg) scale(.9);
@@ -2113,17 +2188,17 @@ div.ui-mobile-viewport {
 .flow {
     -webkit-transform-origin: 50% 30%;
     -webkit-box-shadow: 0 0 20px rgba(0,0,0,.4);
-    -moz-transform-origin: 50% 30%;
+    -moz-transform-origin: 50% 30%; 
     -moz-box-shadow: 0 0 20px rgba(0,0,0,.4);
-    transform-origin: 50% 30%;
+    transform-origin: 50% 30%;  
     box-shadow: 0 0 20px rgba(0,0,0,.4);
 }
 .ui-dialog.flow {
     -webkit-transform-origin: none;
     -webkit-box-shadow: none;
-    -moz-transform-origin: none;
+    -moz-transform-origin: none;    
     -moz-box-shadow: none;
-    transform-origin: none;
+    transform-origin: none; 
     box-shadow: none;
 }
 .flow.out {
@@ -2329,9 +2404,17 @@ li.ui-block-e {
     padding: 0;
     list-style: none;
 }
-[class*="ui-grid-"] .ui-btn,
-[class*="ui-grid-"] button.ui-btn-inline,
-[class*="ui-grid-"] button.ui-btn-icon-notext {
+/* No margin in grids for 100% width button elements until we can use max-width: fill-available; */
+[class*="ui-block-"] > button.ui-btn {
+    margin-right: 0;
+    margin-left: 0;
+}
+[class*="ui-block-"] > .ui-btn,
+[class*="ui-block-"] > .ui-select,
+[class*="ui-block-"] > .ui-checkbox,
+[class*="ui-block-"] > .ui-radio,
+[class*="ui-block-"] > button.ui-btn-inline,
+[class*="ui-block-"] > button.ui-btn-icon-notext {
     margin-right: .3125em;
     margin-left: .3125em;
 }
@@ -2366,7 +2449,7 @@ li.ui-block-e {
 }
 .ui-grid-solo > .ui-block-a {
     width: 100%;
-    float: none;
+    float: none; 
 }
 /* preset breakpoint to switch to stacked grid styles below 35em (560px) */
 @media (max-width: 35em) {
@@ -2375,8 +2458,8 @@ li.ui-block-e {
     .ui-responsive > .ui-block-c,
     .ui-responsive > .ui-block-d,
     .ui-responsive > .ui-block-e {
-        width: 100%;
-        float: none;
+        width: 100%; 
+        float: none; 
     }
 }
 /* fixed page header & footer configuration */
@@ -2417,11 +2500,12 @@ li.ui-block-e {
     filter: Alpha(Opacity=90);
     opacity: .9;
 }
+/* updatePagePadding() will update the padding to actual height of header and footer. */
 .ui-page-header-fixed {
-    padding-top: 2.6875em;
+    padding-top: 2.8125em;
 }
 .ui-page-footer-fixed {
-    padding-bottom: 2.6875em;
+    padding-bottom: 2.8125em;
 }
 .ui-page-header-fullscreen > .ui-content,
 .ui-page-footer-fullscreen > .ui-content {
@@ -2439,7 +2523,7 @@ li.ui-block-e {
     clip: rect(1px,1px,1px,1px);
 }
 .ui-header-fixed .ui-btn,
-.ui-footer-fixed .ui-btn {
+.ui-footer-fixed .ui-btn { 
     z-index: 10;
 }
 /* workarounds for other widgets */
@@ -2527,33 +2611,6 @@ li.ui-block-e {
 .ui-footer .ui-title ~ .ui-navbar .ui-grid-duo .ui-block-a:first-child + .ui-block-b .ui-btn {
     border-top-width: 1px;
 }
-/* TODO: This file only contains CSS for the button widget and should be renamed to jquery.mobile.forms.button.css */
-button.ui-btn {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 100%;
-}
-/* Firefox adds a 1px border in a button element. We negate this to make sure they have the same height as other buttons in controlgroups. */
-button.ui-btn::-moz-focus-inner {
-    border: 0;
-}
-button.ui-btn-inline {
-    width: auto;
-}
-button.ui-btn-icon-notext {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    width: 1.75em;
-}
-/* No margin in grids for 100% width button elements until we can use max-width: fill-available; */
-[class*="ui-grid-"] button.ui-btn {
-    margin-right: 0;
-    margin-left: 0;
-}
 /* Hide the native input element */
 .ui-input-btn input {
     position: absolute;
@@ -2565,7 +2622,7 @@ button.ui-btn-icon-notext {
     border: 0;
     outline: 0;
     -webkit-border-radius: inherit;
-    border-bottom-radius: inherit;
+    border-bottom-radius: inherit;  
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
@@ -2630,17 +2687,23 @@ button.ui-btn-icon-notext {
 }
 .ui-collapsible-content {
     display: block;
-    margin: 0;
-    padding: .625em 1em;
+    margin: 0;  
+    padding: .5em 1em;
+    background-image: none;
+}
+.ui-collapsible-themed-content .ui-collapsible-content {
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
-    background-image: none;
+    border-bottom-width: 1px;
+    border-style: solid;
+}
+.ui-collapsible-inset.ui-collapsible-themed-content .ui-collapsible-content {
+    border-left-width: 1px;
+    border-right-width: 1px;
 }
 .ui-collapsible-inset .ui-collapsible-content {
     margin: 0;
-    border-right-width: 1px;
-    border-left-width: 1px;
 }
 .ui-collapsible-content-collapsed {
     display: none;
@@ -2651,27 +2714,27 @@ button.ui-btn-icon-notext {
 }
 .ui-collapsible-heading,
 .ui-collapsible-heading > .ui-btn {
-    -webkit-border-radius: inherit;
-    border-radius: inherit;
+    -webkit-border-radius: inherit; 
+    border-radius: inherit; 
 }
 .ui-collapsible-set .ui-collapsible.ui-first-child {
-    -webkit-border-top-right-radius: inherit;
+    -webkit-border-top-right-radius: inherit;   
     border-top-right-radius: inherit;
-    -webkit-border-top-left-radius: inherit;
-    border-top-left-radius: inherit;
+    -webkit-border-top-left-radius: inherit;    
+    border-top-left-radius: inherit;        
 }
 .ui-collapsible-content,
 .ui-collapsible-set .ui-collapsible.ui-last-child {
-    -webkit-border-bottom-right-radius: inherit;
+    -webkit-border-bottom-right-radius: inherit;    
     border-bottom-right-radius: inherit;
-    -webkit-border-bottom-left-radius: inherit;
-    border-bottom-left-radius: inherit;
+    -webkit-border-bottom-left-radius: inherit; 
+    border-bottom-left-radius: inherit;     
 }
 .ui-collapsible-themed-content:not(.ui-collapsible-collapsed) > .ui-collapsible-heading {
-    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;  
     border-bottom-right-radius: 0;
-    -webkit-border-bottom-left-radius: 0;
-    border-bottom-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;   
+    border-bottom-left-radius: 0;       
 }
 .ui-collapsible-set .ui-collapsible {
     margin: -1px -1em 0;
@@ -2690,6 +2753,13 @@ fieldset.ui-controlgroup {
 .ui-field-contain .ui-controlgroup,
 .ui-field-contain fieldset.ui-controlgroup {
     margin: 0;
+}
+.ui-mini .ui-controlgroup-label {
+    font-size: 16px;
+}
+.ui-controlgroup.ui-mini .ui-btn-icon-notext,
+.ui-controlgroup .ui-mini.ui-btn-icon-notext {
+    font-size: inherit;
 }
 .ui-controlgroup-controls .ui-btn,
 .ui-controlgroup-controls .ui-checkbox,
@@ -2732,7 +2802,7 @@ fieldset.ui-controlgroup {
 .ui-controlgroup-horizontal .ui-controlgroup-controls button.ui-btn-icon-notext {
     width: 1.5em;
 }
-.ui-controlgroup-controls .ui-btn-icon-notext {
+ .ui-controlgroup-controls .ui-btn-icon-notext {
     height: auto;
     padding: .7em 1em;
 }
@@ -2804,7 +2874,7 @@ fieldset.ui-controlgroup {
     clip: rect(1px,1px,1px,1px);
 }
 .ui-dialog {
-    background: none !important; /* this is to ensure that dialog theming does not apply (by default at least) on the page div */
+     background: none !important; /* this is to ensure that dialog theming does not apply (by default at least) on the page div */
 }
 .ui-dialog-contain {
     width: 92.5%;
@@ -2814,23 +2884,23 @@ fieldset.ui-controlgroup {
     position: relative;
     top: -1em;
 }
-.ui-dialog-contain > .ui-header,
-.ui-dialog-contain > .ui-content,
-.ui-dialog-contain > .ui-footer {
+.ui-dialog-contain > .ui-header, 
+.ui-dialog-contain > .ui-content, 
+.ui-dialog-contain > .ui-footer { 
     display: block;
-    position: relative;
+    position: relative; 
     width: auto;
     margin: 0;
 }
 .ui-dialog-contain > .ui-header {
     overflow: hidden;
-    z-index: 10;
+    z-index: 10; 
     padding: 0;
     border-top-width: 0;
 }
 .ui-dialog-contain > .ui-footer {
-    z-index: 10;
-    padding: 0 1em;
+    z-index: 10; 
+    padding: 0 1em; 
     border-bottom-width: 0;
 }
 .ui-popup-open .ui-header-fixed,
@@ -2952,7 +3022,7 @@ fieldset.ui-controlgroup {
 }
 .ui-popup > .ui-btn-left,
 .ui-popup > .ui-btn-right {
-    position: absolute;
+    position: absolute; 
     top: -11px;
     margin: 0;
     z-index: 1101;
@@ -3005,109 +3075,114 @@ fieldset.ui-controlgroup {
  * arrow positioning code as to which range of values is acceptable for the
  * arrow container's top/left coordinate.
  **/
-.ui-popup.ui-corner-all > .arrow-guide {
-    left: .6em /*{global-radii-blocks}*/;
-    right: .6em /*{global-radii-blocks}*/;
-    top: .6em /*{global-radii-blocks}*/;
-    bottom: .6em /*{global-radii-blocks}*/;
-}
-.arrow-container {
+.ui-popup-arrow-container {
     width: 20px;
     height: 20px;
 }
 /* aside from the "infinities" (-1000,2000), triangle height is used */
-.arrow-container.l {
+.ui-popup-arrow-container.ui-popup-arrow-l {
     left: -10px;
     clip: rect(-1000px,10px,2000px,-1000px);
 }
-.arrow-container.ie.l {
-    clip: rect(-1000px 10px 2000px -1000px);
-}
-.arrow-container.t {
+.ui-popup-arrow-container.ui-popup-arrow-t {
     top: -10px;
     clip: rect(-1000px,2000px,10px,-1000px);
 }
-.arrow-container.ie.t {
-    clip: rect(-1000px 2000px 10px -1000px);
-}
-.arrow-container.r {
+.ui-popup-arrow-container.ui-popup-arrow-r {
     right: -10px;
     clip: rect(-1000px,2000px,2000px,10px);
 }
-.arrow-container.ie.r {
-    clip: rect(-1000px 2000px 2000px 10px);
-}
-.arrow-container.b {
+.ui-popup-arrow-container.ui-popup-arrow-b {
     bottom: -10px;
     clip: rect(10px,2000px,1000px,-1000px);
 }
-.arrow-container.ie.b {
-    clip: rect(10px 2000px 1000px -1000px);
-}
 /**
- * The arrow needs to be centred inside the arrow container such that, when
- * rotated 45 degrees, its corners touch, but do not break through, the sides
- * of the arrow container:
- *
- * +----------+
- * |    /\    |
- * |   /  \  <------ arrow container
- * |  /    \  |
- * | /      \ |
- * |/  arrow \|
- * |\        /|
- * | \      / |
- * |  \    /  |
- * |   \  /   |
- * |    \/    |
- * +----------+
+ * For each side, the arrow is twice the desired size and its corner is aligned
+ * with the edge of the container:
+ *                                           
+ *           /\         /\                +----+         /\
+ *          /  \       /  \                         | /\ |top   /  \
+ *      +----+  \     /  +----+       +-->|/  \|     /    \
+ *  left| /  |   \   /   |  \ |right  |   |    |    /      \
+ *      |/   |    \ /    |   \|             |  /|    |\  /        \
+ *      |\   |    / \    |   /|             | / +----+ \ \ +----+ /
+ *      | \  |   /   \   |  / |       | \        /  \|    |/
+ *      +----+  /     \  +----+       |  \      /    |    |
+ *       ^  \  /       \  /  ^        |   \    /  +->|\  /|
+ *       |   \/         \/   |        |    \  /   |  | \/ |bottom
+ *       |                   |        |     \/    |  +----+
+ *       +-------------------+--------+-----------+
+ *                           |
+ *                    arrow container
+ *                     (clips arrow)
  **/
-.arrow {
-    /* (2*desired triangle height)/sqrt(2) - does not account for border - centred within the outer rectangle */
-    width: 14.142135624px;
-    height: 14.142135624px;
-    /* ( (2*desired triangle height) - (above width/height) ) / 2 */
-    left: 2.928932188px;
-    top: 2.928932188px;
+.ui-popup-arrow-container .ui-popup-arrow {
+    /* (4*desired triangle height)/sqrt(2) - does not account for border - centred within the outer rectangle */
+    width: 28.284271247px;
+    height: 28.284271247px;
+    border-width: 1px;
+    border-style: solid;
 }
-.arrow-container.ie .arrow {
-    /* Fix rotation center  - see http://www.useragentman.com/IETransformsTranslator/ */
-    margin-left: -3px;
-    margin-top: -3px;
+.ui-popup-arrow-container.ui-popup-arrow-t .ui-popup-arrow {
+    left: -4.142135623px;
+    top: 5.857864376px;
 }
-.arrow-background {
+.ui-popup-arrow-container.ui-popup-arrow-b .ui-popup-arrow {
+    left: -4.142135623px;
+    top: -14.142135623px;
+}
+.ui-popup-arrow-container.ui-popup-arrow-l .ui-popup-arrow {
+    left: 5.857864376px;
+    top: -4.142135623px;
+}
+.ui-popup-arrow-container.ui-popup-arrow-r .ui-popup-arrow {
+    left: -14.142135623px;
+    top: -4.142135623px;
+}
+/* Fix rotation center for oldIE - see http://www.useragentman.com/IETransformsTranslator/ */
+.ui-popup-arrow-container.ui-popup-arrow-t.ie .ui-popup-arrow {
+    margin-left: -5.857864376269049px;
+    margin-top: -7.0710678118654755px;
+}
+.ui-popup-arrow-container.ui-popup-arrow-b.ie .ui-popup-arrow {
+    margin-left: -5.857864376269049px;
+    margin-top: -4.142135623730951px;
+}
+ 
+.ui-popup-arrow-container.ui-popup-arrow-l.ie .ui-popup-arrow {
+    margin-left: -7.0710678118654755px;
+    margin-top: -5.857864376269049px;
+}
+.ui-popup-arrow-container.ui-popup-arrow-r.ie .ui-popup-arrow {
+    margin-left: -4.142135623730951px;
+    margin-top: -5.857864376269049px;
+}
+.ui-popup-arrow-background {
     /* desired triangle height is used here */
     width: 20px;
     height: 20px;
 }
-.arrow-container.t .arrow-background {
-    /* 0px triangle height */
+.ui-popup-arrow-container.ui-popup-arrow-t .ui-popup-arrow-background
+.ui-popup-arrow-container.ui-popup-arrow-b .ui-popup-arrow-background {
     background-position: 0 10px;
 }
-.arrow-container.l .arrow-background {
-    /* triangle height 0px */
+.ui-popup-arrow-container.ui-popup-arrow-l .ui-popup-arrow-background,
+.ui-popup-arrow-container.ui-popup-arrow-r .ui-popup-arrow-background {
     background-position: 10px 0;
 }
-/* For some reason (probably because of all the decimal places) there's a
-   rounding error in the background position, so push it over by one */
-.arrow-container.b .arrow-background {
-    background-position: 0 11px;
-}
-.arrow-container.r .arrow-background {
-    background-position: 11px 0;
-}
-.ui-popup > .arrow-guide {
+/* structure */
+.ui-popup > .ui-popup-arrow-guide {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    pointer-events: none;
+    visibility: hidden;
 }
-.arrow-container {
+.ui-popup-arrow-container {
     position: absolute;
 }
-.arrow {
+.ui-popup-arrow {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -3116,57 +3191,57 @@ fieldset.ui-controlgroup {
     overflow: hidden;
     box-sizing: border-box;
 }
-.arrow-container.ie .arrow {
+.ui-popup-arrow-container.ie .ui-popup-arrow {
     -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
     filter: progid:DXImageTransform.Microsoft.Matrix(
-        M11=0.7071067811865474,
-        M12=-0.7071067811865477,
-        M21=0.7071067811865477,
-        M22=0.7071067811865474,
-        SizingMethod='auto expand');
+            M11=0.7071067811865474,
+            M12=-0.7071067811865477,
+            M21=0.7071067811865477,
+            M22=0.7071067811865474,
+            SizingMethod='auto expand');
 }
-.arrow-background {
+.ui-popup-arrow-background {
     position: absolute;
     border: 0;
 }
-.arrow-container.ie .arrow-background {
+.ui-popup-arrow-container.ie .ui-popup-arrow-background {
     background: none;
 }
-.arrow-container.t .arrow-background,
-.arrow-container.b .arrow-background {
+.ui-popup-arrow-container.ui-popup-arrow-t .ui-popup-arrow-background,
+.ui-popup-arrow-container.ui-popup-arrow-b .ui-popup-arrow-background {
     /* Undo rotation and reflect in x axis */
     -webkit-transform: rotate(-45deg) scale(1, -1);
     -moz-transform: rotate(-45deg) scale(1, -1);
     -ms-transform: rotate(-45deg) scale(1, -1);
     transform: rotate(-45deg) scale(1, -1);
 }
-.arrow-container.t.ie .arrow-background,
-.arrow-container.b.ie .arrow-background {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=-0.7071067811865467, M21=-0.7071067811865467, M22=-0.7071067811865483, SizingMethod='auto expand')";
-    filter: progid:DXImageTransform.Microsoft.Matrix(
-        M11=0.7071067811865483,
-        M12=-0.7071067811865467,
-        M21=-0.7071067811865467,
-        M22=-0.7071067811865483,
-        SizingMethod='auto expand');
+.ui-popup-arrow-container.ui-popup-arrow-t.ie .ui-popup-arrow-background,
+.ui-popup-arrow-container.ui-popup-arrow-b.ie .ui-popup-arrow-background {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=-0.7071067811865467, M21=-0.7071067811865467, M22=-0.7071067811865483, SizingMethod='auto expand')";
+   filter: progid:DXImageTransform.Microsoft.Matrix(
+            M11=0.7071067811865483,
+            M12=-0.7071067811865467,
+            M21=-0.7071067811865467,
+            M22=-0.7071067811865483,
+            SizingMethod='auto expand');
 }
-.arrow-container.l .arrow-background,
-.arrow-container.r .arrow-background {
+.ui-popup-arrow-container.ui-popup-arrow-l .ui-popup-arrow-background,
+.ui-popup-arrow-container.ui-popup-arrow-r .ui-popup-arrow-background {
     /* Undo rotation and reflect in y axis */
     -webkit-transform: rotate(-45deg) scale(-1, 1);
     -moz-transform: rotate(-45deg) scale(-1, 1);
     -ms-transform: rotate(-45deg) scale(-1, 1);
     transform: rotate(-45deg) scale(-1, 1);
 }
-.arrow-container.l.ie .arrow-background,
-.arrow-container.r.ie .arrow-background {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-0.7071067811865483, M12=0.7071067811865467, M21=0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
-    filter: progid:DXImageTransform.Microsoft.Matrix(
-        M11=-0.7071067811865483,
-        M12=0.7071067811865467,
-        M21=0.7071067811865467,
-        M22=0.7071067811865483,
-        SizingMethod='auto expand');
+.ui-popup-arrow-container.ui-popup-arrow-l.ie .ui-popup-arrow-background,
+.ui-popup-arrow-container.ui-popup-arrow-r.ie .ui-popup-arrow-background {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-0.7071067811865483, M12=0.7071067811865467, M21=0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
+   filter: progid:DXImageTransform.Microsoft.Matrix(
+            M11=-0.7071067811865483,
+            M12=0.7071067811865467,
+            M21=0.7071067811865467,
+            M22=0.7071067811865483,
+            SizingMethod='auto expand');
 }
 .ui-checkbox,
 .ui-radio {
@@ -3247,7 +3322,7 @@ fieldset.ui-controlgroup {
     max-height: 100%;
     outline: 0;
     -webkit-border-radius: inherit;
-    border-radius: inherit;
+    border-radius: inherit; 
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
@@ -3256,15 +3331,15 @@ fieldset.ui-controlgroup {
     z-index: 2;
 }
 @-moz-document url-prefix() {
-	.ui-select .ui-btn select {
-		opacity: 0.0001;
-	}
+    .ui-select .ui-btn select {
+        opacity: 0.0001;
+    }
 }
 /* Display none because of issues with IE/WP's filter alpha opacity */
 .ui-select .ui-state-disabled select {
     display: none;
 }
-/* Because we add all classes of the select and option elements to the span... */
+/* Because we add all classes of the select and option elements to the span... */ 
 .ui-select span.ui-state-disabled {
     filter: Alpha(Opacity=100);
     opacity: 1;
@@ -3286,7 +3361,7 @@ fieldset.ui-controlgroup {
     padding-right: 4.6875em;
 }
 .ui-select .ui-btn-icon-right .ui-li-count {
-    right: 3.636em;
+    right: 3.2em;
 }
 /* We set the rules for the span as well to fix an issue on Chrome with text-overflow ellipsis for the button in combination with text-align center. */
 .ui-select .ui-btn > span:not(.ui-li-count) {
@@ -3304,7 +3379,7 @@ fieldset.ui-controlgroup {
 .ui-selectmenu .ui-header {
     margin: 0;
     padding: 0;
-    border: 0;
+    border-width: 0;
 }
 .ui-selectmenu.ui-dialog .ui-header {
     z-index: 1;
@@ -3331,7 +3406,7 @@ fieldset.ui-controlgroup {
 .ui-selectmenu .ui-selectmenu-list {
     margin: 0;
     -webkit-border-radius: inherit;
-    border-radius: inherit;
+    border-radius: inherit; 
 }
 .ui-header:not(.ui-screen-hidden) + .ui-selectmenu-list {
     -webkit-border-top-right-radius: 0;
@@ -3361,13 +3436,15 @@ fieldset.ui-controlgroup {
 .ui-panel-inner > .ui-listview {
     margin: -1em;
 }
-.ui-collapsible-content > .ui-listview {
-    margin: -.625em -1em;
-}
 .ui-content .ui-listview-inset,
-.ui-panel-inner > .ui-listview-inset,
-.ui-collapsible-content > .ui-listview-inset {
+.ui-panel-inner > .ui-listview-inset {
     margin: 1em 0;
+}
+.ui-collapsible-content > .ui-listview {
+    margin: -.5em -1em;
+}
+.ui-collapsible-content > .ui-listview-inset {
+    margin: .5em 0;
 }
 .ui-listview > li {
     display: block;
@@ -3415,7 +3492,7 @@ fieldset.ui-controlgroup {
 }
 .ui-listview > li.ui-first-child,
 .ui-listview > li.ui-first-child > a.ui-btn {
-    -webkit-border-top-right-radius: inherit;
+    -webkit-border-top-right-radius: inherit;   
     border-top-right-radius: inherit;
     -webkit-border-top-left-radius: inherit;
     border-top-left-radius: inherit;
@@ -3434,7 +3511,7 @@ fieldset.ui-controlgroup {
     border-bottom-right-radius: 0;
 }
 .ui-listview > li.ui-first-child > a.ui-btn + a.ui-btn {
-    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-left-radius: 0;  
     border-top-left-radius: 0;
     -webkit-border-top-right-radius: inherit;
     border-top-right-radius: inherit;
@@ -3447,15 +3524,15 @@ fieldset.ui-controlgroup {
 }
 .ui-listview > li.ui-first-child img:first-child:not(.ui-li-icon) {
     -webkit-border-top-left-radius: inherit;
-    border-top-left-radius: inherit;
+    border-top-left-radius: inherit;    
 }
 .ui-listview > li.ui-last-child img:first-child:not(.ui-li-icon) {
     -webkit-border-bottom-left-radius: inherit;
-    border-bottom-left-radius: inherit;
+    border-bottom-left-radius: inherit; 
 }
 .ui-collapsible-content > .ui-listview:not(.ui-listview-inset) {
     -webkit-border-radius: inherit;
-    border-bottom-radius: inherit;
+    border-bottom-radius: inherit;  
 }
 .ui-listview .ui-li-static {
     padding: .7em 1em;
@@ -3472,7 +3549,7 @@ fieldset.ui-controlgroup {
 .ui-listview .ui-li-divider.ui-li-has-count {
     padding-right: 2.8125em;
 }
-.ui-listview .ui-li-has-count > .ui-btn[class*="ui-icon-"] {
+.ui-listview .ui-li-has-count > .ui-btn-icon-right {
     padding-right: 4.6875em;
 }
 .ui-listview .ui-li-has-thumb > .ui-btn,
@@ -3480,6 +3557,7 @@ fieldset.ui-controlgroup {
     min-height: 3.625em;
     padding-left: 6.25em;
 }
+/* ui-li-has-icon deprecated in 1.4. TODO: remove in 1.5 */
 .ui-listview .ui-li-has-icon > .ui-btn,
 .ui-listview .ui-li-static.ui-li-has-icon {
     min-height: 1.25em;
@@ -3488,30 +3566,32 @@ fieldset.ui-controlgroup {
 /* Used by both listview and custom multiple select button */
 .ui-li-count {
     position: absolute;
-    font-size: 12px;
+    font-size: 12.5px;
     font-weight: bold;
     text-align: center;
     border-width: 1px;
     border-style: solid;
-    padding: 0 .5em;
-    line-height: 1.666em;
-    min-height: 1.666em;
-    min-width: .666em;
-    right: .833em;
+    padding: 0 .48em;
+    line-height: 1.6em;
+    min-height: 1.6em;
+    min-width: .64em;
+    right: .8em;
     top: 50%;
-    margin-top: -.916em;
+    margin-top: -.88em;
 }
-.ui-listview .ui-btn[class*="ui-icon-"] .ui-li-count {
-    right: 3.636em;
+.ui-listview .ui-btn-icon-right .ui-li-count {
+    right: 3.2em;
 }
 .ui-listview .ui-li-has-thumb > img:first-child,
-.ui-listview .ui-li-has-thumb > .ui-btn > img:first-child {
+.ui-listview .ui-li-has-thumb > .ui-btn > img:first-child,
+.ui-listview .ui-li-has-thumb .ui-li-thumb {
     position: absolute;
     left: 0;
     top: 0;
     max-height: 5em;
     max-width: 5em;
 }
+/* ui-li-has-icon deprecated in 1.4. TODO: remove in 1.5 */
 .ui-listview .ui-li-has-icon > img:first-child,
 .ui-listview .ui-li-has-icon > .ui-btn > img:first-child {
     position: absolute;
@@ -3622,6 +3702,22 @@ ol.ui-listview > li p:first-child ~ *,
 ol.ui-listview > li img:first-child + * ~ * {
     margin-top: 0;
     text-indent: 2.04em; /* (1.4em + .3em) * .9em / .75em */
+}
+html .ui-filterable + .ui-listview,
+html .ui-filterable.ui-listview {
+    margin-top: .5em;
+}
+.ui-collapsible-content > form.ui-filterable {
+    margin-top: -.5em;
+}
+.ui-collapsible-content > .ui-input-search.ui-filterable {
+    margin-top: 0;
+}
+.ui-collapsible-content > .ui-filterable + .ui-listview:not(.ui-listview-inset) > li.ui-first-child,
+.ui-collapsible-content > .ui-filterable + .ui-listview:not(.ui-listview-inset) > li.ui-first-child > a.ui-btn,
+.ui-collapsible-content > .ui-filterable.ui-listview:not(.ui-listview-inset) > li.ui-first-child,
+.ui-collapsible-content > .ui-filterable.ui-listview:not(.ui-listview-inset) > li.ui-first-child > a.ui-btn {
+    border-top-width: 1px;
 }
 div.ui-slider {
     height: 30px;
@@ -3784,7 +3880,7 @@ div.ui-slider-switch.ui-mini {
         display: inline-block;
         width: 5.8em;
     }
-}
+}   
 /* slider tooltip
 -----------------------------------------------------------------------------------------------------------*/
 .ui-slider-popup {
@@ -3867,20 +3963,15 @@ div.ui-rangeslider label {
 }
 .ui-input-text,
 .ui-input-search {
-    margin: -.5em -.5em 1.5em -.5em;
+    margin: .5em 0;
     background-image: none;
     border-width: 1px;
     border-style: solid;
-}
-.ui-input-inset,
-textarea.ui-input-text {
-    margin: .5em 0;
 }
 .ui-input-text input,
 .ui-input-search input,
 textarea.ui-input-text {
     padding: .4em;
-    min-height: 2.2em;
     line-height: 1.4em;
     display: block;
     width: 100%;
@@ -3893,6 +3984,7 @@ textarea.ui-input-text {
 .ui-input-text input,
 .ui-input-search input {
     margin: 0;
+    min-height: 2.2em;
     text-align: left; /* Opera aligns type="date" right by default */
     border: 0;
     background: transparent none;
@@ -3901,7 +3993,6 @@ textarea.ui-input-text {
     border-radius: inherit;
 }
 textarea.ui-input-text {
-    height: 3.125em;
     overflow: auto;
     resize: vertical;
 }
@@ -3956,7 +4047,7 @@ textarea.ui-mini {
     position: absolute;
     right: 0;
     top: 50%;
-    margin: -15px .3125em 0;
+    margin: -14px .3125em 0;
     border: 0;
     background-color: transparent;
 }
@@ -4071,7 +4162,7 @@ for Android 4.1 */
     .ui-field-contain .ui-flipswitch.ui-flipswitch-active {
         width: 1.875em;
     }
-}
+}   
 .ui-table {
     border: 0;
     border-collapse: collapse;
@@ -4110,14 +4201,14 @@ for Android 4.1 */
 /* Add alternating row stripes */
 .table-stripe tbody tr:nth-child(odd) td,
 .table-stripe tbody tr:nth-child(odd) th {
-    background-color: #eeeeee; /* non-RGBA fallback  */
-    background-color: rgba(0,0,0,0.04);
+  background-color: #eeeeee; /* non-RGBA fallback  */
+  background-color: rgba(0,0,0,0.04);
 }
 /* Add stroke to the header and last item */
 .table-stripe thead th,
 .table-stripe tbody tr:last-child {
-    border-bottom: 1px solid #d6d6d6; /* non-RGBA fallback  */
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid #d6d6d6; /* non-RGBA fallback  */
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 /*
  Styles for the table columntoggle mode
@@ -4208,35 +4299,35 @@ for Android 4.1 */
  Styles for the table columntoggle mode
 */
 .ui-table-reflow td .ui-table-cell-label,
-.ui-table-reflow th .ui-table-cell-label {
+.ui-table-reflow th .ui-table-cell-label { 
     display: none;
 }
-/* Mobile first styles: Begin with the stacked presentation at narrow widths */
+/* Mobile first styles: Begin with the stacked presentation at narrow widths */ 
 @media only all {
-    /* Hide the table headers */
-    .ui-table-reflow thead td,
+    /* Hide the table headers */ 
+    .ui-table-reflow thead td, 
     .ui-table-reflow thead th {
         display: none;
     }
-    /* Show the table cells as a block level element */
+    /* Show the table cells as a block level element */ 
     .ui-table-reflow td,
-    .ui-table-reflow th {
+    .ui-table-reflow th { 
         text-align: left;
         display: block;
     }
-    /* Add a fair amount of top margin to visually separate each row when stacked */
+    /* Add a fair amount of top margin to visually separate each row when stacked */  
     .ui-table-reflow tbody th {
         margin-top: 3em;
     }
-    /* Make the label elements a percentage width */
+    /* Make the label elements a percentage width */ 
     .ui-table-reflow td .ui-table-cell-label,
-    .ui-table-reflow th .ui-table-cell-label {
-        padding: .4em;
-        min-width: 30%;
+    .ui-table-reflow th .ui-table-cell-label { 
+        padding: .4em; 
+        min-width: 30%; 
         display: inline-block;
         margin: -.4em 1em -.4em -.4em;
     }
-    /* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */
+    /* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */ 
     .ui-table-reflow th .ui-table-cell-label-top,
     .ui-table-reflow td .ui-table-cell-label-top {
         display: block;
@@ -4247,13 +4338,13 @@ for Android 4.1 */
         font-weight: normal;
     }
 }
-/* Breakpoint to show as a standard table at 560px (35em x 16px) or wider */
+/* Breakpoint to show as a standard table at 560px (35em x 16px) or wider */ 
 @media ( min-width: 35em ) {
     /* Fixes table rendering when switching between breakpoints in Safari <= 5. See https://github.com/jquery/jquery-mobile/issues/5380 */
     .ui-table-reflow.ui-responsive {
         display: table-row-group;
     }
-    /* Show the table header rows */
+    /* Show the table header rows */ 
     .ui-table-reflow.ui-responsive td,
     .ui-table-reflow.ui-responsive th,
     .ui-table-reflow.ui-responsive tbody th,
@@ -4263,14 +4354,14 @@ for Android 4.1 */
         display: table-cell;
         margin: 0;
     }
-    /* Hide the labels in each cell */
+    /* Hide the labels in each cell */ 
     .ui-table-reflow.ui-responsive td .ui-table-cell-label,
-    .ui-table-reflow.ui-responsive th .ui-table-cell-label {
+    .ui-table-reflow.ui-responsive th .ui-table-cell-label { 
         display: none;
     }
 }
-/* Hack to make IE9 and WP7.5 treat cells like block level elements, scoped to ui-responsive class */
-/* Applied in a max-width media query up to the table layout breakpoint so we don't need to negate this*/
+/* Hack to make IE9 and WP7.5 treat cells like block level elements, scoped to ui-responsive class */ 
+/* Applied in a max-width media query up to the table layout breakpoint so we don't need to negate this*/ 
 @media ( max-width: 35em ) {
     .ui-table-reflow.ui-responsive td,
     .ui-table-reflow.ui-responsive th {
@@ -4304,7 +4395,7 @@ for Android 4.1 */
     padding-bottom: 1px;
 }
 .ui-panel-display-reveal {
-    z-index: 0;
+    z-index: 1;
 }
 .ui-panel-display-push {
     z-index: 999;
@@ -4315,11 +4406,12 @@ for Android 4.1 */
 .ui-panel-inner {
     padding: 1em;
 }
-/* container and page */
+/* container */
 .ui-panel-page-container {
-    -webkit-transform: translate3d(0,0,0);
+    overflow-x: visible;
 }
-.ui-panel-page-container .ui-page-active {
+/* page */
+.ui-panel-page-container-themed .ui-page-active {
     background: none;
 }
 /* wrapper */
@@ -4330,7 +4422,7 @@ for Android 4.1 */
     overflow-x: hidden;
     z-index: 999;
 }
-/* fiixed toolbars */
+/* fixed toolbars */
 .ui-panel-fixed-toolbar {
     overflow-x: hidden;
 }
@@ -4354,6 +4446,7 @@ for Android 4.1 */
     transition: transform 300ms ease;
 }
 /* hardware acceleration for smoother transitions on WebKit browsers */
+.ui-panel-animate.ui-panel-page-container,
 .ui-panel-animate.ui-panel:not(.ui-panel-display-reveal) {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translate3d(0,0,0);
@@ -4373,12 +4466,12 @@ for Android 4.1 */
 }
 /* panel left open */
 .ui-panel-position-left.ui-panel-display-reveal, /* negate "panel left" for reveal */
-.ui-panel-position-left.ui-panel-open {
+.ui-panel-open.ui-panel-position-left {
     left: 0;
 }
 /* animated: panel left open (for overlay and push) */
-.ui-panel-animate.ui-panel-position-left.ui-panel-open.ui-panel-display-overlay,
-.ui-panel-animate.ui-panel-position-left.ui-panel-open.ui-panel-display-push {
+.ui-panel-animate.ui-panel-open.ui-panel-position-left.ui-panel-display-overlay,
+.ui-panel-animate.ui-panel-open.ui-panel-position-left.ui-panel-display-push {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
     -moz-transform: none;
@@ -4401,22 +4494,22 @@ for Android 4.1 */
     right: 0;
 }
 /* animated: panel right open (for overlay and push) */
-.ui-panel-animate.ui-panel-position-right.ui-panel-open.ui-panel-display-overlay,
-.ui-panel-animate.ui-panel-position-right.ui-panel-open.ui-panel-display-push {
+.ui-panel-animate.ui-panel-open.ui-panel-position-right.ui-panel-display-overlay,
+.ui-panel-animate.ui-panel-open.ui-panel-position-right.ui-panel-display-push {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
     -moz-transform: none;
 }
 /* positioning: pages, fixed toolbars and dismiss */
 /* panel left open */
-.ui-panel-page-content-position-left.ui-panel-page-content-open,
-.ui-panel-dismiss-position-left.ui-panel-dismiss-open {
+.ui-panel-page-content-position-left,
+.ui-panel-dismiss-open.ui-panel-dismiss-position-left {
     left: 17em;
     right: -17em;
 }
 /* animated: panel left open (for reveal and push) */
-.ui-panel-animate.ui-panel-page-content-position-left.ui-panel-page-content-open.ui-panel-page-content-display-reveal,
-.ui-panel-animate.ui-panel-page-content-position-left.ui-panel-page-content-open.ui-panel-page-content-display-push {
+.ui-panel-animate.ui-panel-page-content-position-left.ui-panel-page-content-display-reveal,
+.ui-panel-animate.ui-panel-page-content-position-left.ui-panel-page-content-display-push {
     left: 0;
     right: 0;
     -webkit-transform: translate3d(17em,0,0);
@@ -4424,14 +4517,14 @@ for Android 4.1 */
     transform: translate3d(17em,0,0);
 }
 /* panel right open */
-.ui-panel-page-content-position-right.ui-panel-page-content-open,
-.ui-panel-dismiss-position-right.ui-panel-dismiss-open {
+.ui-panel-page-content-position-right,
+.ui-panel-dismiss-open.ui-panel-dismiss-position-right {
     left: -17em;
     right: 17em;
 }
 /* animated: panel right open (for reveal and push) */
-.ui-panel-animate.ui-panel-page-content-position-right.ui-panel-page-content-open.ui-panel-page-content-display-reveal,
-.ui-panel-animate.ui-panel-page-content-position-right.ui-panel-page-content-open.ui-panel-page-content-display-push {
+.ui-panel-animate.ui-panel-page-content-position-right.ui-panel-page-content-display-reveal, 
+.ui-panel-animate.ui-panel-page-content-position-right.ui-panel-page-content-display-push {
     left: 0;
     right: 0;
     -webkit-transform: translate3d(-17em,0,0);
@@ -4439,7 +4532,7 @@ for Android 4.1 */
     transform: translate3d(-17em,0,0);
 }
 /* negate "panel left/right open" for overlay */
-.ui-panel-page-content-open.ui-panel-page-content-display-overlay {
+.ui-panel-page-content-display-overlay {
     left: 0;
 }
 /* shadows and borders */
@@ -4463,45 +4556,41 @@ for Android 4.1 */
     -moz-box-shadow: -5px 0 5px rgba(0,0,0,.15);
     box-shadow: -5px 0 5px rgba(0,0,0,.15);
 }
-.ui-panel-display-push.ui-panel-open.ui-panel-position-left {
+.ui-panel-open.ui-panel-position-left.ui-panel-display-push {
     border-right-width: 1px;
     margin-right: -1px;
 }
-.ui-panel-page-content-open.ui-panel-page-content-position-left.ui-panel-page-content-display-push {
+.ui-panel-page-content-position-left.ui-panel-page-content-display-push {
     margin-left: 1px;
     width: auto;
 }
-.ui-panel-display-push.ui-panel-open.ui-panel-position-right {
+.ui-panel-open.ui-panel-position-right.ui-panel-display-push {
     border-left-width: 1px;
     margin-left: -1px;
 }
-.ui-panel-page-content-open.ui-panel-page-content-position-right.ui-panel-page-content-display-push {
+.ui-panel-page-content-position-right.ui-panel-page-content-display-push {
     margin-right: 1px;
     width: auto;
 }
 /* wrap on wide viewports once open */
-@media (min-width:55em){
+@media (min-width:55em) {
     .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-left.ui-panel-page-content-display-push,
-    .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-left.ui-panel-page-content-display-reveal,
-    .ui-responsive-panel.ui-panel-fixed-toolbar.ui-panel-page-content-open.ui-panel-page-content-position-left.ui-panel-page-content-display-push,
-    .ui-responsive-panel.ui-panel-fixed-toolbar.ui-panel-page-content-open.ui-panel-page-content-position-left.ui-panel-page-content-display-reveal {
+    .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-left.ui-panel-page-content-display-reveal {
         margin-right: 17em;
     }
     .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-right.ui-panel-page-content-display-push,
-    .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-right.ui-panel-page-content-display-reveal,
-    .ui-responsive-panel.ui-panel-fixed-toolbar.ui-panel-page-content-open.ui-panel-page-content-position-right.ui-panel-page-content-display-push,
-    .ui-responsive-panel.ui-panel-fixed-toolbar.ui-panel-page-content-open.ui-panel-page-content-position-right.ui-panel-page-content-display-reveal {
+    .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-right.ui-panel-page-content-display-reveal {
         margin-left: 17em;
     }
     .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-display-push,
     .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-display-reveal {
-        width: auto;
+        width: auto;    
     }
-    .ui-responsive-panel .ui-panel-dismiss-display-push {
+    .ui-responsive-panel .ui-panel-dismiss-display-push,
+    .ui-responsive-panel.ui-page-active ~ .ui-panel-dismiss-display-push {
         display: none;
     }
 }
-@import url( "jquery.mobile.filterable.css" );
 
 /* customizations to jqm.structure.css */
 
