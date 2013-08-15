@@ -774,7 +774,7 @@
 .ui-slider.ui-slider-switch.ui-bar-a .ui-slider-label.ui-btn-active{background-color:#f3f3f3;color:inherit}
 div.ui-slider-switch.ui-bar-a{border:none}
 .ui-slider.ui-slider-switch.ui-bar-a .ui-slider-handle{background-color:#f2f2f2;border-color:#f3f3f3}
-.ui-overlay-a .ui-btn:focus,.ui-page-theme-a .ui-btn:focus,html .ui-bar-a .ui-btn:focus,html .ui-body-a .ui-btn:focus,html body .ui-group-theme-a .ui-btn:focus,html head + body .ui-btn.ui-btn-a:focus,/* Focus buttons and text inputs with div wrap */,.ui-overlay-a .ui-focus,.ui-page-theme-a .ui-focus,html .ui-bar-a .ui-focus,html .ui-body-a .ui-focus,html body .ui-group-theme-a .ui-focus,html head + body .ui-btn-a.ui-focus,html head + body .ui-body-a.ui-focus{border-color:#a1a6a9;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
+.ui-overlay-a .ui-btn:focus,.ui-page-theme-a .ui-btn:focus,html .ui-bar-a .ui-btn:focus,html .ui-body-a .ui-btn:focus,html body .ui-group-theme-a .ui-btn:focus,html head + body .ui-btn.ui-btn-a:focus,.ui-overlay-a .ui-focus,.ui-page-theme-a .ui-focus,html .ui-bar-a .ui-focus,html .ui-body-a .ui-focus,html body .ui-group-theme-a .ui-focus,html head + body .ui-btn-a.ui-focus,html head + body .ui-body-a.ui-focus{border-color:#a1a6a9;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
 
 .ui-bar-b,.ui-overlay-b .ui-bar-inherit,.ui-page-theme-b .ui-bar-inherit,html .ui-bar-b .ui-bar-inherit,html .ui-body-b .ui-bar-inherit,html body .ui-group-theme-b .ui-bar-inherit{background:#fff;border-color:#16a085;color:#fff;font-weight:bold}
 .ui-bar-b{border-width:1px;border-style:solid;background:#16a085}
@@ -795,7 +795,7 @@ div.ui-slider-switch.ui-bar-a{border:none}
 .ui-slider.ui-slider-switch.ui-bar-b .ui-slider-label.ui-btn-active{background-color:#19b798;color:inherit}
 div.ui-slider-switch.ui-bar-b{border:none}
 .ui-slider.ui-slider-switch.ui-bar-b .ui-slider-handle{background-color:#16a085;border-color:#19b798}
-.ui-overlay-b .ui-btn:focus,.ui-page-theme-b .ui-btn:focus,html .ui-bar-b .ui-btn:focus,html .ui-body-b .ui-btn:focus,html body .ui-group-theme-b .ui-btn:focus,html head + body .ui-btn.ui-btn-b:focus,/* Focus buttons and text inputs with div wrap */,.ui-overlay-b .ui-focus,.ui-page-theme-b .ui-focus,html .ui-bar-b .ui-focus,html .ui-body-b .ui-focus,html body .ui-group-theme-b .ui-focus,html head + body .ui-btn-b.ui-focus,html head + body .ui-body-b.ui-focus{border-color:#1abc9c;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
+.ui-overlay-b .ui-btn:focus,.ui-page-theme-b .ui-btn:focus,html .ui-bar-b .ui-btn:focus,html .ui-body-b .ui-btn:focus,html body .ui-group-theme-b .ui-btn:focus,html head + body .ui-btn.ui-btn-b:focus,.ui-overlay-b .ui-focus,.ui-page-theme-b .ui-focus,html .ui-bar-b .ui-focus,html .ui-body-b .ui-focus,html body .ui-group-theme-b .ui-focus,html head + body .ui-btn-b.ui-focus,html head + body .ui-body-b.ui-focus{border-color:#1abc9c;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
 
 .ui-bar-c,.ui-overlay-c .ui-bar-inherit,.ui-page-theme-c .ui-bar-inherit,html .ui-bar-c .ui-bar-inherit,html .ui-body-c .ui-bar-inherit,html body .ui-group-theme-c .ui-bar-inherit{background:#2c3e50;border-color:#2c3e50;color:#fff;font-weight:bold}
 .ui-bar-c{border-width:1px;border-style:solid;background:#2c3e50}
@@ -816,7 +816,7 @@ div.ui-slider-switch.ui-bar-b{border:none}
 .ui-slider.ui-slider-switch.ui-bar-c .ui-slider-label.ui-btn-active{background-color:#374d64;color:inherit}
 div.ui-slider-switch.ui-bar-c{border:none}
 .ui-slider.ui-slider-switch.ui-bar-c .ui-slider-handle{background-color:#2c3e50;border-color:#374d64}
-.ui-overlay-c .ui-btn:focus,.ui-page-theme-c .ui-btn:focus,html .ui-bar-c .ui-btn:focus,html .ui-body-c .ui-btn:focus,html body .ui-group-theme-c .ui-btn:focus,html head + body .ui-btn.ui-btn-c:focus,/* Focus buttons and text inputs with div wrap */,.ui-overlay-c .ui-focus,.ui-page-theme-c .ui-focus,html .ui-bar-c .ui-focus,html .ui-body-c .ui-focus,html body .ui-group-theme-c .ui-focus,html head + body .ui-btn-c.ui-focus,html head + body .ui-body-c.ui-focus{border-color:#4e6d8d;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
+.ui-overlay-c .ui-btn:focus,.ui-page-theme-c .ui-btn:focus,html .ui-bar-c .ui-btn:focus,html .ui-body-c .ui-btn:focus,html body .ui-group-theme-c .ui-btn:focus,html head + body .ui-btn.ui-btn-c:focus,.ui-overlay-c .ui-focus,.ui-page-theme-c .ui-focus,html .ui-bar-c .ui-focus,html .ui-body-c .ui-focus,html body .ui-group-theme-c .ui-focus,html head + body .ui-btn-c.ui-focus,html head + body .ui-body-c.ui-focus{border-color:#4e6d8d;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
 
 .ui-bar-d,.ui-overlay-d .ui-bar-inherit,.ui-page-theme-d .ui-bar-inherit,html .ui-bar-d .ui-bar-inherit,html .ui-body-d .ui-bar-inherit,html body .ui-group-theme-d .ui-bar-inherit{background:#fff;border-color:#c1392b;color:#fff;font-weight:bold}
 .ui-bar-d{border-width:1px;border-style:solid;background:#c1392b}
@@ -837,7 +837,7 @@ div.ui-slider-switch.ui-bar-c{border:none}
 .ui-slider.ui-slider-switch.ui-bar-d .ui-slider-label.ui-btn-active{background-color:#d14031;color:inherit}
 div.ui-slider-switch.ui-bar-d{border:none}
 .ui-slider.ui-slider-switch.ui-bar-d .ui-slider-handle{background-color:#c1392b;border-color:#d14031}
-.ui-overlay-d .ui-btn:focus,.ui-page-theme-d .ui-btn:focus,html .ui-bar-d .ui-btn:focus,html .ui-body-d .ui-btn:focus,html body .ui-group-theme-d .ui-btn:focus,html head + body .ui-btn.ui-btn-d:focus,/* Focus buttons and text inputs with div wrap */,.ui-overlay-d .ui-focus,.ui-page-theme-d .ui-focus,html .ui-bar-d .ui-focus,html .ui-body-d .ui-focus,html body .ui-group-theme-d .ui-focus,html head + body .ui-btn-d.ui-focus,html head + body .ui-body-d.ui-focus{border-color:#e84c3d;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
+.ui-overlay-d .ui-btn:focus,.ui-page-theme-d .ui-btn:focus,html .ui-bar-d .ui-btn:focus,html .ui-body-d .ui-btn:focus,html body .ui-group-theme-d .ui-btn:focus,html head + body .ui-btn.ui-btn-d:focus,.ui-overlay-d .ui-focus,.ui-page-theme-d .ui-focus,html .ui-bar-d .ui-focus,html .ui-body-d .ui-focus,html body .ui-group-theme-d .ui-focus,html head + body .ui-btn-d.ui-focus,html head + body .ui-body-d.ui-focus{border-color:#e84c3d;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
 
 .ui-bar-e,.ui-overlay-e .ui-bar-inherit,.ui-page-theme-e .ui-bar-inherit,html .ui-bar-e .ui-bar-inherit,html .ui-body-e .ui-bar-inherit,html body .ui-group-theme-e .ui-bar-inherit{background:#fff;border-color:#f1c40f;color:#fff;font-weight:bold}
 .ui-bar-e{border-width:1px;border-style:solid;background:#f1c40f}
@@ -858,7 +858,7 @@ div.ui-slider-switch.ui-bar-d{border:none}
 .ui-slider.ui-slider-switch.ui-bar-e .ui-slider-label.ui-btn-active{background-color:#f2c922;color:inherit}
 div.ui-slider-switch.ui-bar-e{border:none}
 .ui-slider.ui-slider-switch.ui-bar-e .ui-slider-handle{background-color:#f1c40f;border-color:#f2c922}
-.ui-overlay-e .ui-btn:focus,.ui-page-theme-e .ui-btn:focus,html .ui-bar-e .ui-btn:focus,html .ui-body-e .ui-btn:focus,html body .ui-group-theme-e .ui-btn:focus,html head + body .ui-btn.ui-btn-e:focus,/* Focus buttons and text inputs with div wrap */,.ui-overlay-e .ui-focus,.ui-page-theme-e .ui-focus,html .ui-bar-e .ui-focus,html .ui-body-e .ui-focus,html body .ui-group-theme-e .ui-focus,html head + body .ui-btn-e.ui-focus,html head + body .ui-body-e.ui-focus{border-color:#f4d03f;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
+.ui-overlay-e .ui-btn:focus,.ui-page-theme-e .ui-btn:focus,html .ui-bar-e .ui-btn:focus,html .ui-body-e .ui-btn:focus,html body .ui-group-theme-e .ui-btn:focus,html head + body .ui-btn.ui-btn-e:focus,.ui-overlay-e .ui-focus,.ui-page-theme-e .ui-focus,html .ui-bar-e .ui-focus,html .ui-body-e .ui-focus,html body .ui-group-theme-e .ui-focus,html head + body .ui-btn-e.ui-focus,html head + body .ui-body-e.ui-focus{border-color:#f4d03f;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
 
 .ui-bar-f,.ui-overlay-f .ui-bar-inherit,.ui-page-theme-f .ui-bar-inherit,html .ui-bar-f .ui-bar-inherit,html .ui-body-f .ui-bar-inherit,html body .ui-group-theme-f .ui-bar-inherit{background:#fff;border-color:#3498db;color:#fff;font-weight:bold}
 .ui-bar-f{border-width:1px;border-style:solid;background:#3498db}
@@ -879,7 +879,7 @@ div.ui-slider-switch.ui-bar-e{border:none}
 .ui-slider.ui-slider-switch.ui-bar-f .ui-slider-label.ui-btn-active{background-color:#44a0de;color:inherit}
 div.ui-slider-switch.ui-bar-f{border:none}
 .ui-slider.ui-slider-switch.ui-bar-f .ui-slider-handle{background-color:#3498db;border-color:#44a0de}
-.ui-overlay-f .ui-btn:focus,.ui-page-theme-f .ui-btn:focus,html .ui-bar-f .ui-btn:focus,html .ui-body-f .ui-btn:focus,html body .ui-group-theme-f .ui-btn:focus,html head + body .ui-btn.ui-btn-f:focus,/* Focus buttons and text inputs with div wrap */,.ui-overlay-f .ui-focus,.ui-page-theme-f .ui-focus,html .ui-bar-f .ui-focus,html .ui-body-f .ui-focus,html body .ui-group-theme-f .ui-focus,html head + body .ui-btn-f.ui-focus,html head + body .ui-body-f.ui-focus{border-color:#5dade2;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
+.ui-overlay-f .ui-btn:focus,.ui-page-theme-f .ui-btn:focus,html .ui-bar-f .ui-btn:focus,html .ui-body-f .ui-btn:focus,html body .ui-group-theme-f .ui-btn:focus,html head + body .ui-btn.ui-btn-f:focus,.ui-overlay-f .ui-focus,.ui-page-theme-f .ui-focus,html .ui-bar-f .ui-focus,html .ui-body-f .ui-focus,html body .ui-group-theme-f .ui-focus,html head + body .ui-btn-f.ui-focus,html head + body .ui-body-f.ui-focus{border-color:#5dade2;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
 
 .ui-bar-g,.ui-overlay-g .ui-bar-inherit,.ui-page-theme-g .ui-bar-inherit,html .ui-bar-g .ui-bar-inherit,html .ui-body-g .ui-bar-inherit,html body .ui-group-theme-g .ui-bar-inherit{background:#fff;border-color:#2ecc71;color:#fff;font-weight:bold}
 .ui-bar-g{border-width:1px;border-style:solid;background:#2ecc71}
@@ -900,7 +900,7 @@ div.ui-slider-switch.ui-bar-f{border:none}
 .ui-slider.ui-slider-switch.ui-bar-g .ui-slider-label.ui-btn-active{background-color:#3cd37c;color:inherit}
 div.ui-slider-switch.ui-bar-g{border:none}
 .ui-slider.ui-slider-switch.ui-bar-g .ui-slider-handle{background-color:#2ecc71;border-color:#3cd37c}
-.ui-overlay-g .ui-btn:focus,.ui-page-theme-g .ui-btn:focus,html .ui-bar-g .ui-btn:focus,html .ui-body-g .ui-btn:focus,html body .ui-group-theme-g .ui-btn:focus,html head + body .ui-btn.ui-btn-g:focus,/* Focus buttons and text inputs with div wrap */,.ui-overlay-g .ui-focus,.ui-page-theme-g .ui-focus,html .ui-bar-g .ui-focus,html .ui-body-g .ui-focus,html body .ui-group-theme-g .ui-focus,html head + body .ui-btn-g.ui-focus,html head + body .ui-body-g.ui-focus{border-color:#55d98d;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
+.ui-overlay-g .ui-btn:focus,.ui-page-theme-g .ui-btn:focus,html .ui-bar-g .ui-btn:focus,html .ui-body-g .ui-btn:focus,html body .ui-group-theme-g .ui-btn:focus,html head + body .ui-btn.ui-btn-g:focus,.ui-overlay-g .ui-focus,.ui-page-theme-g .ui-focus,html .ui-bar-g .ui-focus,html .ui-body-g .ui-focus,html body .ui-group-theme-g .ui-focus,html head + body .ui-btn-g.ui-focus,html head + body .ui-body-g.ui-focus{border-color:#55d98d;-webkit-transition:border linear .2s;-moz-transition:border linear .2s;-o-transition:border linear .2s;transition:border linear .2s}
 
 /*!
 * jQuery Mobile 1.4.0-alpha.2
